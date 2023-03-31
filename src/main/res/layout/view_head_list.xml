@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_list" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="@dimen/dimen_sw_12sp" android:textStyle="bold" android:textColor="@color/abc_dialog_material_background" android:id="@+id/tv_all_num" android:background="@drawable/shape_c4_alpha20" android:paddingLeft="@dimen/dimen_sw_13dp" android:paddingTop="@dimen/dimen_sw_3dp" android:paddingRight="@dimen/dimen_sw_13dp" android:paddingBottom="@dimen/dimen_sw_3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_4dp" android:text="0"/>
+</LinearLayout>

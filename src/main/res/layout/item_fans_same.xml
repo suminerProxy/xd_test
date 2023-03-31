@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_horizontal" android:background="@color/color_white" android:paddingTop="5dp" android:layout_width="115dp" android:layout_height="165dp">
+        <com.taihebase.activity.view.LoadImageView android:id="@+id/iv" android:layout_width="100dp" android:layout_height="100dp" android:scaleType="centerCrop"/>
+        <RelativeLayout android:id="@+id/ll_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:layout_below="@+id/iv" android:layout_alignLeft="@+id/iv" android:layout_alignRight="@+id/iv">
+            <View android:id="@+id/viewBg" android:background="@color/color_black" android:layout_width="4dp" android:layout_height="10dp" android:layout_marginTop="3dp"/>
+            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/black1" android:ellipsize="end" android:id="@+id/txt_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:singleLine="true" android:layout_toRightOf="@+id/viewBg"/>
+        </RelativeLayout>
+        <TextView android:textSize="10sp" android:textColor="@color/black3" android:ellipsize="end" android:id="@+id/txt_show_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13dp" android:singleLine="true" android:layout_alignLeft="@+id/iv" android:layout_alignRight="@+id/iv" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

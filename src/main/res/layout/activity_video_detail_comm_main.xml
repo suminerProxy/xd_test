@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.soli.pullupdownrefresh.PullRefreshLayout android:id="@+id/pullRefreshLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dimen_sw_65dp">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.taihebase.activity.view.LoadMoreRecyclerView android:id="@+id/recycleList" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </com.soli.pullupdownrefresh.PullRefreshLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:background="@color/color_white" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingTop="@dimen/dimen_sw_10dp" android:paddingRight="@dimen/dimen_sw_20dp" android:paddingBottom="@dimen/dimen_sw_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:elevation="12dp">
+        <TextView android:textSize="12sp" android:textColor="@color/abc_list_divider_mtrl_alpha" android:gravity="center_vertical" android:id="@+id/detail_input" android:background="@drawable/shape_40dp_f8" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_36dp" android:text="@string/video_input_hi"/>
+    </LinearLayout>
+</RelativeLayout>

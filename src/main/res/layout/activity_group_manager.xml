@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#f2f3f5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.tencent.qcloud.tuicore.component.TitleBarLayout android:id="@+id/group_manage_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/page_title_height"/>
+    <com.tencent.qcloud.tuicore.component.LineControllerView android:id="@+id/group_manage_set_manager" android:layout_width="match_parent" android:layout_height="@dimen/group_profile_item_height" app:canNav="true" app:isTop="true" app:name="@string/group_set_manager"/>
+    <com.tencent.qcloud.tuicore.component.LineControllerView android:id="@+id/group_manage_mute_all" android:layout_width="match_parent" android:layout_height="@dimen/group_profile_item_height" app:canNav="false" app:isSwitch="true" app:isTop="true" app:name="@string/group_mute_all"/>
+    <TextView android:textSize="11.52sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:layout_marginRight="16dp" android:layout_marginBottom="10dp" android:text="@string/group_mute_tip" android:lineHeight="17.28dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/group_manage_add_mute_member" android:background="@color/white" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="@dimen/group_profile_item_height">
+        <ImageView android:background="?attr/group_add_icon" android:layout_width="19.2dp" android:layout_height="19.2dp" android:layout_marginRight="13.44dp" android:scaleType="centerCrop"/>
+        <TextView android:textSize="15.36sp" android:textColor="#444444" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_add_mute_member_tip" android:layout_weight="1" android:lineHeight="23sp"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/group_manage_muted_member_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

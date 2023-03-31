@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/crowd_de_parent" android:background="@color/color_white_mine_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/rl_bottom_content" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true" layout="@layout/crowd_bottom_btn"/>
+    <androidx.core.widget.NestedScrollView android:id="@+id/scrollView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_sw_70dp" android:layout_above="@+id/rl_bottom_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="18sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/txt_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginTop="@dimen/dimen_sw_15dp" android:layout_marginRight="@dimen/dimen_sw_20dp" android:lineSpacingExtra="2dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_15dp" android:layout_marginBottom="@dimen/dimen_sw_15dp" android:layout_marginStart="@dimen/dimen_sw_20dp">
+                <TextView android:textSize="12sp" android:textColor="@color/red_base" android:gravity="center" android:id="@+id/tv_mode" android:background="@drawable/shap_red_border" android:visibility="gone" android:layout_width="@dimen/dimen_sw_39dp" android:layout_height="@dimen/dimen_sw_20dp"/>
+                <TextView android:textSize="11sp" android:textColor="@color/black3" android:gravity="center" android:id="@+id/crowdType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_sw_10dp"/>
+            </LinearLayout>
+            <com.taihebase.activity.view.LoadImageView android:id="@+id/crowdDetailImage" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_224dp" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginRight="@dimen/dimen_sw_20dp" android:layout_marginBottom="@dimen/dimen_sw_25dp" app:liv_corner_radius="4dp"/>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_sw_20dp">
+                <TextView android:textSize="20sp" android:textColor="@color/red_base" android:id="@+id/crowdDetailPrice" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="12sp" android:textColor="@color/abc_ic_star_half_black_36dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="已筹" android:layout_weight="1" android:layout_marginStart="@dimen/dimen_sw_10dp"/>
+                <TextView android:textSize="11sp" android:textColor="@color/abc_ic_star_half_black_36dp" android:id="@+id/crowdProgressNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5dp" android:layout_marginEnd="20dp"/>
+            </LinearLayout>
+            <ProgressBar android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="4dp" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginTop="@dimen/dimen_sw_14dp" android:layout_marginRight="@dimen/dimen_sw_20dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/crowd_progress_bar" style="?android:attr/progressBarStyleHorizontal"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_25dp" android:layout_marginTop="@dimen/dimen_sw_20dp" android:layout_marginRight="@dimen/dimen_sw_25dp">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="14sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/crowdDetailMoney" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="11sp" android:textColor="@color/abc_ic_star_half_black_36dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="目标金额"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <View android:background="@color/color_line" android:layout_width="0.1dp" android:layout_height="24dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="14sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/crowdDetailNum" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="11sp" android:textColor="@color/abc_ic_star_half_black_36dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="支持次数"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <View android:background="@color/color_line" android:layout_width="0.1dp" android:layout_height="24dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="14sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/crowdDetailDay" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="11sp" android:textColor="@color/abc_ic_star_half_black_36dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="剩余天数"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:textColor="@color/red_base" android:id="@+id/raiseType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginTop="@dimen/dimen_sw_18dp" android:layout_marginRight="@dimen/dimen_sw_20dp" android:layout_marginBottom="@dimen/dimen_sw_18dp" android:lineSpacingExtra="2dp"/>
+            <View android:id="@+id/am_view" android:background="@color/default_system_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp"/>
+            <com.showstartfans.activity.view.AnnouncementView android:orientation="vertical" android:id="@+id/announcement_p" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dimen_sw_20dp"/>
+            <View android:id="@+id/line_ss" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginRight="@dimen/dimen_sw_20dp" style="@style/lineHorizontalEB"/>
+            <RelativeLayout android:id="@+id/rl_initiator" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_92dp" android:layout_margin="@dimen/dimen_sw_20dp">
+                <com.taihebase.activity.view.LoadImageView android:id="@+id/initiatorImage" android:layout_width="@dimen/dimen_sw_60dp" android:layout_height="@dimen/dimen_sw_60dp" android:layout_centerVertical="true" app:roundAsCircle="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_16dp" android:layout_marginRight="@dimen/dimen_sw_20dp" android:layout_toRightOf="@+id/initiatorImage" android:layout_centerVertical="true">
+                    <TextView android:textSize="16sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:id="@+id/initiatorName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/black3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_7dp" android:text="项目发起人"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/iv_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_icon_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name"/>
+            </RelativeLayout>
+            <View style="@style/lineHorizontalf8"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/music_p" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="18sp" android:textColor="@color/abc_ic_ab_back_material" android:paddingLeft="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_30dp" android:layout_marginRight="@dimen/dimen_sw_20dp" android:text="项目介绍"/>
+            <com.github.lzyzsd.jsbridge.BridgeWebView android:id="@+id/des_webview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginTop="@dimen/dimen_sw_15dp" android:layout_marginRight="@dimen/dimen_sw_20dp" android:layout_marginBottom="@dimen/dimen_sw_20dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.taihebase.activity.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</RelativeLayout>

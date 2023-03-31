@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="28dp">
+    <TextView android:textSize="11sp" android:textColor="@color/superplayer_white" android:gravity="center" android:id="@+id/vip_tips" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    <TextView android:textSize="11sp" android:textColor="@color/vip_color" android:gravity="center" android:id="@+id/vip_tips_go" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="购买完整观看特权" android:drawableRight="@drawable/arrow_right_vip" android:drawablePadding="6dp"/>
+</merge>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/sobot_container" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.sobot.chat.widget.SobotMHLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:sobot_mhv_HeightRatio="0.7">
+        <RelativeLayout android:gravity="center_vertical" android:background="@color/sobot_common_gray6" android:layout_width="match_parent" android:layout_height="60dp">
+            <ImageView android:id="@+id/sobot_btn_back" android:paddingLeft="10dp" android:paddingTop="12.5dp" android:paddingRight="10dp" android:paddingBottom="12.5dp" android:layout_width="60dp" android:layout_height="40dp" android:layout_marginLeft="10dp" android:src="@drawable/sobot_dialog_back" android:layout_centerVertical="true" android:paddingStart="10dp" android:paddingEnd="10dp" android:layout_marginStart="10dp"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/sobot_common_black" android:gravity="center" android:id="@+id/sobot_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/sobot_btn_cancle" android:layout_width="60dp" android:layout_height="40dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <TextView android:layout_gravity="center_vertical" android:background="@drawable/sobot_icon_evaluation_cancel" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/sobot_line_1dp" android:layout_width="match_parent" android:layout_height="@dimen/sobot_line_height_0_4_dp"/>
+        <ListView android:scrollbarSize="10dp" android:scrollbarThumbVertical="@drawable/sobot_custom_scroll_style" android:id="@+id/sobot_activity_post_category_listview" android:background="@color/sobot_white" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0dp" android:overScrollMode="never"/>
+    </com.sobot.chat.widget.SobotMHLinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingRight="@dimen/dimen_sw_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_main" android:background="@drawable/shape_20dp_b6" android:paddingLeft="@dimen/dimen_sw_12dp" android:paddingRight="@dimen/dimen_sw_12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_1dp" android:layout_marginBottom="@dimen/dimen_sw_1dp">
+        <TextView android:textSize="@dimen/dimen_sw_12sp" android:textColor="@color/abc_ic_ab_back_material" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:lines="1"/>
+        <TextView android:textSize="@dimen/dimen_sw_12sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/tv_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_5dp" android:layout_marginBottom="@dimen/dimen_sw_5dp"/>
+        <ImageButton android:id="@+id/ibtn_delete" android:background="@null" android:paddingLeft="@dimen/dimen_sw_8dp" android:paddingTop="@dimen/dimen_sw_5dp" android:paddingBottom="@dimen/dimen_sw_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_chacha"/>
+    </LinearLayout>
+</FrameLayout>

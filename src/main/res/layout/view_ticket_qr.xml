@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/dimen_sw_2dp" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="@dimen/dimen_sw_8dp" app:cardElevation="0dp" app:cardPreventCornerOverlap="false">
+        <View android:id="@+id/v_bg" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/sdv_code" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/dimen_sw_5dp" android:src="@drawable/load_bg" android:scaleType="fitXY"/>
+    </androidx.cardview.widget.CardView>
+    <com.showstartfans.activity.view.LineAnimalView android:layout_gravity="center" android:id="@+id/animal_line" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

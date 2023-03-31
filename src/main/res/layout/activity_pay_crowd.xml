@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/color_white_mine_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/txt_pay_tips" android:background="#000000" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingTop="@dimen/dimen_sw_5dp" android:paddingRight="@dimen/dimen_sw_15dp" android:paddingBottom="@dimen/dimen_sw_5dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tips_pay_confirm"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/button_order" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_60dp" android:layout_alignParentBottom="true" android:elevation="12dp">
+        <Button android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/txt_buy" android:background="@drawable/crow_buy_button" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_45dp" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginRight="@dimen/dimen_sw_20dp" android:text="@string/pay_now_str"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/button_order" android:layout_below="@+id/txt_pay_tips">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.showstartfans.activity.view.PayAddressView android:id="@+id/payAddress" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/phone_p" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_55dp" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:layout_marginRight="@dimen/dimen_sw_15dp">
+                <ImageView android:layout_width="@dimen/dimen_sw_15dp" android:layout_height="wrap_content" android:src="@drawable/icon_mobile" android:contentDescription="@string/app_name" android:layout_marginEnd="@dimen/dimen_sw_5dp"/>
+                <TextView android:textSize="13sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/hintPhone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机："/>
+                <com.showstartfans.activity.view.AreaEditText android:id="@+id/areaEdit" android:layout_width="match_parent" android:layout_height="wrap_content" app:area_edit_textSize="13" app:area_gravity="1" app:area_width="@dimen/dimen_sw_55dp"/>
+            </LinearLayout>
+            <View android:id="@+id/line" android:layout_marginStart="@dimen/dimen_sw_15dp" style="@style/lineHorizontalEB"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_email" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_55dp" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:layout_marginRight="@dimen/dimen_sw_15dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zhifu_email" android:contentDescription="@string/app_name"/>
+                <TextView android:textSize="13sp" android:textColor="@color/abc_ic_ab_back_material" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邮箱：" android:layout_marginStart="@dimen/dimen_sw_5dp"/>
+                <EditText android:textSize="13sp" android:id="@+id/edt_email" android:hint="填写您的邮箱地址" android:maxLength="100" android:inputType="text" android:layout_marginStart="@dimen/dimen_sw_15dp" style="@style/editTextPhoneNum"/>
+            </LinearLayout>
+            <View style="@style/lineHorizontalf8"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_115dp">
+                <com.taihebase.activity.view.LoadImageView android:id="@+id/image_crowd" android:layout_width="@dimen/dimen_sw_120dp" android:layout_height="@dimen/dimen_sw_80dp" app:liv_corner_radius="@dimen/normal_radius"/>
+                <TextView android:textSize="14sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:id="@+id/txt_crowd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:maxLines="2"/>
+            </LinearLayout>
+            <View android:layout_marginStart="@dimen/dimen_sw_15dp" style="@style/lineHorizontalEB"/>
+            <RelativeLayout android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_55dp">
+                <TextView android:textSize="13sp" android:textColor="@color/abc_ic_star_half_black_36dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="回报" android:layout_centerVertical="true"/>
+                <TextView android:textSize="13sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:id="@+id/item_repay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_135dp" android:maxLines="2" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:layout_marginLeft="@dimen/dimen_sw_15dp" style="@style/lineHorizontalEB"/>
+            <com.showstartfans.activity.view.ItemTextView android:id="@+id/item_repay_time" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_55dp" app:item_left_text="预计回报时间" app:item_left_textSize="13" app:item_right_textSize="13"/>
+            <View style="@style/lineHorizontalf8"/>
+            <com.showstartfans.activity.view.ItemTextView android:id="@+id/item_unit_price" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_55dp" app:item_left_text="单价" app:item_left_textSize="13" app:item_right_textSize="13"/>
+            <View android:layout_marginStart="@dimen/dimen_sw_15dp" style="@style/lineHorizontalEB"/>
+            <com.showstartfans.activity.view.ItemTextView android:id="@+id/item_freight" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_55dp" app:item_left_text="发货方式" app:item_left_textSize="13" app:item_right_textSize="13"/>
+            <View android:layout_marginStart="@dimen/dimen_sw_15dp" style="@style/lineHorizontalEB"/>
+            <LinearLayout android:gravity="center_vertical" android:background="@color/color_white" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_55dp">
+                <TextView android:textSize="13sp" android:textColor="@color/abc_ic_star_half_black_36dp" android:id="@+id/ticket_num_hint" android:layout_width="0dp" android:layout_height="wrap_content" android:text="支持数量" android:layout_weight="1"/>
+                <com.showstartfans.activity.view.GoodsCounterView android:id="@+id/ticketnum" android:layout_width="@dimen/dimen_sw_120dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_16dp"/>
+            </LinearLayout>
+            <View android:layout_marginStart="@dimen/dimen_sw_15dp" style="@style/lineHorizontalEB"/>
+            <com.showstartfans.activity.view.ItemTextView android:id="@+id/item_actual_payment" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_55dp" app:item_left_text="实付款" app:item_left_textSize="13" app:item_right_color="@color/red_base" app:item_right_textSize="16"/>
+            <View style="@style/lineHorizontalf8"/>
+            <RelativeLayout android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingTop="@dimen/dimen_sw_18dp" android:paddingRight="@dimen/dimen_sw_15dp" android:paddingBottom="@dimen/dimen_sw_18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13sp" android:textColor="@color/black3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="备注信息："/>
+                <EditText android:textSize="13sp" android:textColor="@color/black1" android:textColorHint="@color/black3" android:id="@+id/copyright" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_70dp" android:hint="您最多可输入100字" android:maxLength="100"/>
+            </RelativeLayout>
+            <View style="@style/lineHorizontalf8"/>
+            <com.showstartfans.activity.view.SelectPaymentView android:id="@+id/paymentView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

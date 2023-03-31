@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="13sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/layout_top" android:background="@color/abc_ic_ab_back_material" android:paddingLeft="@dimen/dimen_sw_10dp" android:paddingRight="@dimen/dimen_sw_10dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_30dp" android:text="@string/auto_gone" android:drawableRight="@drawable/icon_chacha"/>
+    <com.soli.pullupdownrefresh.PullRefreshLayout android:id="@+id/pullRefreshLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/layout_bottom" android:layout_below="@+id/layout_top">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ListView android:id="@+id/listView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:divider="@null" android:dividerHeight="0dp"/>
+        </FrameLayout>
+    </com.soli.pullupdownrefresh.PullRefreshLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/layout_bottom" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_65dp" android:layout_alignParentBottom="true" android:elevation="12dp">
+        <TextView android:textSize="14sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_2" android:maxLines="1"/>
+        <TextView android:textSize="15sp" android:textColor="@color/red_base" android:ellipsize="end" android:id="@+id/tv_sum" android:paddingLeft="@dimen/dimen_sw_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_sw_15dp" android:maxLines="1"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_balance" android:background="@drawable/crow_buy_button" android:layout_width="@dimen/dimen_sw_150dp" android:layout_height="@dimen/dimen_sw_40dp" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginRight="@dimen/dimen_sw_20dp" android:text="结算"/>
+    </LinearLayout>
+</RelativeLayout>

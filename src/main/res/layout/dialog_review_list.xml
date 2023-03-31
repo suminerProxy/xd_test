@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/shape_12dp_whilte_top" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_sw_180dp" app:layout_constraintBottom_toBottomOf="0">
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/layout_top" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_40dp" app:layout_constraintTop_toTopOf="0">
+            <TextView android:gravity="center" android:id="@+id/comm_hot" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/fans_comm_hot" android:paddingStart="@dimen/dimen_sw_20dp" style="@style/text_style_13_C1"/>
+            <View android:background="@color/abc_ic_voice_search_api_material" android:layout_width="0.5dp" android:layout_height="10dp" android:layout_marginLeft="@dimen/dimen_sw_8dp" android:layout_marginRight="@dimen/dimen_sw_8dp"/>
+            <TextView android:gravity="center" android:id="@+id/comm_new" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/fans_comm_new" style="@style/text_style_13_C4"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/Close" android:padding="@dimen/dimen_sw_14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+            <com.taihebase.activity.view.svg.SvgImageView android:layout_width="@dimen/dimen_sw_14dp" android:layout_height="@dimen/dimen_sw_14dp" app:srcCompat="@drawable/ic_nav_icon_close" app:svg_color="@color/abc_ic_ab_back_material"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/dimen_sw_5dp" app:layout_constraintBottom_toTopOf="@+id/layout_bottom" app:layout_constraintTop_toBottomOf="@+id/layout_top">
+            <com.taihebase.activity.view.LoadMoreRecyclerView android:id="@+id/rv_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/layout_bottom" android:paddingTop="@dimen/dimen_sw_10dp" android:paddingRight="@dimen/dimen_sw_20dp" android:paddingBottom="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+            <TextView android:textSize="@dimen/dimen_sw_12sp" android:textColor="@color/abc_list_divider_mtrl_alpha" android:gravity="center_vertical" android:background="@drawable/shape_40dp_f8" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginRight="@dimen/dimen_sw_15dp" android:text="随乐而起,有感而发" android:lines="1" android:maxLength="150" android:layout_weight="1" android:imeOptions="flagNoExtractUi|flagNoFullscreen" android:paddingStart="@dimen/dimen_sw_20dp"/>
+            <TextView android:textSize="15sp" android:textColor="@color/color_white" android:gravity="center" android:background="@drawable/crow_buy_button" android:layout_width="@dimen/dimen_sw_80dp" android:layout_height="@dimen/dimen_sw_35dp" android:text="发送"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

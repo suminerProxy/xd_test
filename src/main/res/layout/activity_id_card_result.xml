@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/identity_ocr_result_page_top_margin" android:layout_marginBottom="@dimen/identity_ocr_main_margin_left">
+        <TextView android:textSize="@dimen/identity_ocr_result_page_font_size_big" android:textColor="#000000" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/identity_ocr_result_title"/>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="@dimen/identity_ocr_main_margin_left" android:src="@drawable/identity_ocr_img_comm_close_black"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="80dp">
+        <TextView android:textSize="@dimen/identity_ocr_result_page_font_size_small" android:textColor="#000000" android:gravity="center_vertical" android:background="#ededed" android:paddingLeft="@dimen/identity_ocr_main_margin_left" android:layout_width="match_parent" android:layout_height="@dimen/identity_ocr_result_page_tips_height" android:text="@string/identity_ocr_result_tips"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/identity_ocr_main_margin_left">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/identity_ocr_result_card_images" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/identity_ocr_main_margin_left">
+                <ImageView android:id="@+id/identity_ocr_id_card_front_default" android:layout_width="0dp" android:layout_height="100dp" android:src="@drawable/identity_ocr_id_card_front_default" android:scaleType="fitXY" android:layout_weight="1"/>
+                <View android:layout_width="@dimen/identity_ocr_main_margin_left" android:layout_height="1dp"/>
+                <ImageView android:id="@+id/identity_ocr_id_card_back_default" android:layout_width="0dp" android:layout_height="100dp" android:src="@drawable/identity_ocr_id_card_back_default" android:scaleType="fitXY" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/identity_ocr_result_bankcard_images" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/identity_ocr_main_margin_left">
+                <ImageView android:id="@+id/identity_ocr_bankcard_front_default" android:layout_width="0dp" android:layout_height="200dp" android:src="@drawable/identity_ocr_id_card_front_default" android:scaleType="fitXY" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/identity_ocr_result_page_card_item_height">
+                <TextView android:textSize="@dimen/identity_ocr_result_page_font_size_big" android:textColor="#000000" android:id="@+id/identity_ocr_result_page_id_name_tv" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/identity_ocr_result_id_name" android:layout_weight="2"/>
+                <EditText android:textSize="@dimen/identity_ocr_result_page_font_size_small" android:textColor="#8f191f25" android:gravity="end|center_vertical" android:id="@+id/identity_ocr_result_page_id_name" android:background="#ffffff" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="6" android:inputType="text" android:imeOptions="actionDone"/>
+                <ImageView android:layout_gravity="center" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="1dp" android:src="@drawable/identity_ocr_id_next_icon"/>
+            </LinearLayout>
+            <View android:background="#ededed" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/identity_ocr_result_page_id_no_ll" android:layout_width="match_parent" android:layout_height="@dimen/identity_ocr_result_page_card_item_height">
+                <TextView android:textSize="@dimen/identity_ocr_result_page_font_size_big" android:textColor="#000000" android:id="@+id/identity_ocr_result_page_id_no_tv" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/identity_ocr_result_id_no" android:layout_weight="2"/>
+                <EditText android:textSize="@dimen/identity_ocr_result_page_font_size_small" android:textColor="#8f191f25" android:gravity="end|center_vertical" android:id="@+id/identity_ocr_result_page_id_no" android:background="#ffffff" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="6" android:inputType="text" android:imeOptions="actionDone"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/identity_ocr_result_page_id_no_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="1dp" android:src="@drawable/identity_ocr_id_next_icon"/>
+            </LinearLayout>
+            <View android:background="#ededed" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <Button android:textSize="@dimen/identity_ocr_result_page_font_size_big" android:textColor="#ffffff" android:layout_gravity="bottom" android:id="@+id/identity_ocr_result_ok" android:background="@drawable/result_round_shape" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/identity_ocr_result_page_bottom_margin" android:text="@string/identity_ocr_result_btn_txt"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/identity_loading_overlay" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.8"/>
+        <com.aliyun.identity.platform.IdentityLoadingOverlay android:id="@+id/identity_loading_overlay_inner" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <com.aliyun.identity.platform.IdentityAlertOverlay android:id="@+id/identity_alert_overlay" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@+id/identity_ocr_result_close" android:layout_width="70dp" android:layout_height="50dp" android:layout_marginTop="10dp"/>
+</FrameLayout>

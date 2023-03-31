@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/image_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_def_address"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black3" android:id="@+id/txt_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="定位不明，请告诉你的具体位置"/>
+    <TextView android:textSize="13sp" android:textColor="@color/black1" android:gravity="center" android:id="@+id/btnTry" android:background="@drawable/shap_bg_width_gray" android:visibility="visible" android:layout_width="130dp" android:layout_height="35dp" android:layout_marginTop="21dp" android:text="开启定位功能"/>
+</LinearLayout>

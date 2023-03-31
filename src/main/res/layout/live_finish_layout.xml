@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#121212" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.view.LoadImageView android:id="@+id/station_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_375dp" android:scaleType="centerCrop"/>
+    <View android:background="@drawable/live_finish_head_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_375dp"/>
+    <FrameLayout android:id="@+id/btn_back" android:background="@drawable/shape_live_close_bg" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginTop="@dimen/dimen_sw_49dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true">
+        <ImageView android:layout_gravity="center" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/video_icon_close" android:contentDescription="@string/app_name"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/status_str" android:layout_width="130dp" android:layout_height="31.5dp" android:layout_marginLeft="51dp" android:layout_marginTop="@dimen/dimen_sw_48dp" android:src="@drawable/live_jiesu" android:layout_below="@+id/btn_back" android:contentDescription="@string/app_exit_atteniton"/>
+    <RelativeLayout android:id="@+id/station_head" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="51dp" android:layout_marginTop="@dimen/dimen_sw_66dp" android:layout_below="@+id/status_str">
+        <com.taihebase.activity.view.LoadImageView android:layout_gravity="center_vertical" android:id="@+id/user_logo" android:layout_width="50dp" android:layout_height="50dp" app:roundAsCircle="true"/>
+        <com.taihebase.activity.view.LoadImageView android:id="@+id/artistType" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/icon_avatar_default" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:roundAsCircle="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/color_white" android:id="@+id/station_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="51dp" android:layout_marginTop="20dp" android:lines="1" android:layout_below="@+id/station_head"/>
+    <TextView android:textSize="14sp" android:textColor="@color/abc_ic_voice_search_api_material" android:id="@+id/station_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="@dimen/dimen_sw_66dp" android:text="直播时长" android:lines="1" android:layout_below="@+id/station_name"/>
+    <TextView android:textSize="45sp" android:textStyle="bold" android:textColor="@color/color_white" android:id="@+id/station_times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="15dp" android:text="00:00" android:lines="1" android:layout_below="@+id/station_time"/>
+    <ImageView android:id="@+id/logo" android:layout_width="100dp" android:layout_height="80dp" android:layout_marginTop="@dimen/dimen_sw_76dp" android:layout_marginRight="50dp" android:src="@drawable/logo_b" android:layout_below="@+id/station_name" android:layout_alignParentRight="true"/>
+    <LinearLayout android:id="@+id/num_p" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_64dp" android:layout_below="@+id/station_times">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="@color/abc_ic_voice_search_api_material" android:layout_gravity="top|center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="新增关注" android:lines="1"/>
+            <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="bottom|center_horizontal" android:id="@+id/new_fouce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20" android:lines="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="@color/abc_ic_voice_search_api_material" android:layout_gravity="top|center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="累计用户" android:lines="1"/>
+            <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="bottom|center_horizontal" android:id="@+id/all_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20" android:lines="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="@color/abc_ic_voice_search_api_material" android:layout_gravity="top|center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="点赞次数" android:lines="1"/>
+            <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/color_white" android:layout_gravity="bottom|center_horizontal" android:id="@+id/zan_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2110" android:lines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/color_white" android:gravity="center" android:id="@+id/station_btn" android:background="@drawable/crow_buy_button" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="50dp" android:layout_marginTop="42dp" android:layout_marginRight="50dp" android:text="确定" android:layout_below="@+id/num_p"/>
+</RelativeLayout>

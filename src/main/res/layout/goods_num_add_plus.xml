@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/ivBagSub" android:layout_width="@dimen/dimen_sw_28dp" android:layout_height="@dimen/dimen_sw_28dp" android:src="@drawable/number_reduce_removes" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name"/>
+    <TextView android:textSize="14sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:id="@+id/tvBagNum" android:layout_width="@dimen/dimen_sw_60dp" android:layout_height="@dimen/dimen_sw_28dp" android:text="0" android:layout_toRightOf="@+id/ivBagSub"/>
+    <ImageView android:id="@+id/ivBagPlus" android:layout_width="@dimen/dimen_sw_28dp" android:layout_height="@dimen/dimen_sw_28dp" android:src="@drawable/number_reduce_adds" android:layout_toRightOf="@+id/tvBagNum" android:layout_centerVertical="true" android:contentDescription="@string/app_name"/>
+</merge>

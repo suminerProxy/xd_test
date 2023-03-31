@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/ll_search_item" android:background="@color/color_white_mine_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_tour" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/tourLine" android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="10dp"/>
+        <TextView android:textSize="15sp" android:textColor="@color/color_black" android:gravity="center_vertical" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_below="@+id/tourLine" android:layout_marginStart="20dp"/>
+        <TextView android:textColor="@color/red_base" android:gravity="center_vertical" android:id="@+id/tourCity" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_below="@+id/tourLine" android:layout_marginStart="5dp" android:layout_toEndOf="@+id/tv_time"/>
+        <View android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_below="@+id/tv_time" style="@style/lineHorizontalEB"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp">
+        <com.taihebase.activity.view.LoadImageView android:id="@+id/goodsImg" android:layout_width="136dp" android:layout_height="182.5dp" android:layout_marginTop="5dp" app:actualImageScaleType="6" app:liv_corner_radius="6dp" app:placeholderImage="@color/color_image_bg" app:progressBarImage="@color/color_image_bg"/>
+        <ImageView android:layout_gravity="bottom|right" android:id="@+id/iv_success" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/icon_success" android:contentDescription="@string/app_name"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4dp" android:layout_marginStart="10dp">
+            <ImageView android:id="@+id/actGroup" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="55dp" android:layout_marginTop="40dp" android:src="@drawable/cm_title_qunliao" android:contentDescription="@string/app_name"/>
+            <ImageView android:id="@+id/actExclusiveTag" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="55dp" android:src="@drawable/cm_title_dujia" android:contentDescription="@string/app_name"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="182dp" android:layout_marginTop="5dp" android:layout_marginStart="15dp" android:layout_toEndOf="@+id/goodsImg">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:id="@+id/goodsName" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:minLines="2"/>
+                <TextView android:textSize="12sp" android:textColor="#aaaaaa" android:ellipsize="end" android:id="@+id/siteName" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:singleLine="true"/>
+                <TextView android:textSize="@dimen/text_litte" android:textColor="#aaaaaa" android:ellipsize="end" android:id="@+id/startTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:singleLine="true"/>
+                <TextView android:textSize="@dimen/text_litte" android:textColor="#aaaaaa" android:ellipsize="end" android:id="@+id/lv_aw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:singleLine="true"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textSize="19sp" android:textStyle="bold" android:textColor="@color/home_price_c" android:ellipsize="end" android:id="@+id/actPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="11sp" android:textColor="@color/abc_list_divider_mtrl_alpha" android:ellipsize="end" android:gravity="center" android:id="@+id/actPNum" android:paddingTop="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="7dp" android:layout_centerVertical="true" android:drawableStart="@drawable/icon_heart" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

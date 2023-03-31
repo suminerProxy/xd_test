@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/dimen_sw_12sp" android:textColor="@color/red_base" android:gravity="center" android:id="@+id/tvTitle" android:background="@drawable/shape_4dp_red_border_red_fill" android:paddingLeft="@dimen/dimen_sw_12dp" android:paddingRight="@dimen/dimen_sw_12dp" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_36dp" android:layout_marginTop="@dimen/dimen_sw_10dp" android:layout_marginRight="@dimen/dimen_sw_8dp" android:layout_marginBottom="@dimen/dimen_sw_10dp" android:text="Tab"/>
+</FrameLayout>

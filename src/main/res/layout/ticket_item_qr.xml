@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextClock android:textSize="14sp" android:textColor="#ccffffff" android:gravity="center" android:id="@+id/qr_time" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_20dp" android:layout_marginBottom="@dimen/dimen_sw_6dp" android:format12Hour="HH:mm:ss   yyyy.MM.dd" android:format24Hour="HH:mm:ss   yyyy.MM.dd"/>
+    <com.showstartfans.activity.view.TicketQRCodeView android:id="@+id/qr_code_view" android:layout_width="@dimen/dimen_sw_163dp" android:layout_height="@dimen/dimen_sw_163dp"/>
+</LinearLayout>

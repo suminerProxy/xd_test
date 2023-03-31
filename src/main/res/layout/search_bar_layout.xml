@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/core_header_start_color" android:paddingTop="12dp" android:paddingBottom="15.36dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/shape_search" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="@dimen/search_bar_height" android:layout_marginLeft="@dimen/search_bar_margin" android:layout_marginRight="@dimen/search_bar_margin">
+        <ImageView android:id="@+id/search_button" android:background="@drawable/core_search_icon" android:layout_width="20dp" android:layout_height="20dp" android:textCursorDrawable="@drawable/my_cursor"/>
+        <TextView android:textSize="16.3sp" android:textColor="@color/search_tip_text_color" android:ellipsize="end" android:gravity="center" android:id="@+id/search_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/btn_margin_left" android:text="@string/search" android:singleLine="true"/>
+    </LinearLayout>
+</RelativeLayout>

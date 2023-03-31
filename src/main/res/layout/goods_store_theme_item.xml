@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.view.LoadImageView android:id="@+id/topImage" android:layout_width="match_parent" android:layout_height="match_parent" android:adjustViewBounds="true" app:placeholderImage="@color/color_image_bg"/>
+    <com.taihebase.activity.view.LoadImageView android:id="@+id/top_yy_image" android:layout_width="match_parent" android:layout_height="match_parent" android:adjustViewBounds="true" app:placeholderImage="@drawable/store_bg_yy" app:placeholderImageScaleType="0"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="60dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/theme_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="@dimen/dimen_sw_100dp" android:maxLines="2" android:lineSpacingExtra="2dp"/>
+        <View android:id="@+id/line" android:background="@drawable/line_shape_5dp_bg" android:layout_width="45dp" android:layout_height="3dp" android:layout_marginLeft="20dp" android:layout_marginTop="15dp"/>
+        <TextView android:textSize="14sp" android:textColor="#b9ffffff" android:ellipsize="end" android:id="@+id/theme_come" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="@dimen/dimen_sw_15dp" android:layout_marginRight="@dimen/dimen_sw_100dp" android:maxLines="2" android:lineSpacingExtra="2dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/theme_goods" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp"/>
+    </LinearLayout>
+</RelativeLayout>

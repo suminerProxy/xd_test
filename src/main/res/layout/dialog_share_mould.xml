@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/layout_parent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/bg_sharemould" android:scaleType="centerCrop"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dimen_sw_10dp" android:paddingRight="@dimen/dimen_sw_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layout_mould" android:background="@drawable/shape_n12_16dp" android:paddingTop="@dimen/dimen_sw_20dp" android:paddingBottom="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dimen_sw_20sp" android:textColor="@color/abc_vector_test" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用特别的方式分享"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_list_mould" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_28dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/shape_n12_16dp" android:padding="@dimen/dimen_sw_20dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_8dp">
+            <TextView android:textSize="@dimen/dimen_sw_15sp" android:textColor="@color/abc_ic_star_half_black_36dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分享演出至"/>
+            <com.showstartfans.activity.view.ShareView android:id="@+id/view_share" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_14dp"/>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/layout_close" android:background="@drawable/shape_n12_100dp" android:layout_width="@dimen/dimen_sw_40dp" android:layout_height="@dimen/dimen_sw_40dp" android:layout_marginTop="@dimen/dimen_sw_32dp">
+            <com.taihebase.activity.view.svg.SvgImageView android:layout_gravity="center" android:layout_width="@dimen/dimen_sw_15dp" android:layout_height="@dimen/dimen_sw_15dp" app:srcCompat="@drawable/ic_nav_icon_close" app:svg_color="@color/abc_vector_test"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:background="@color/color_white" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_60dp" android:paddingStart="6dp" android:paddingEnd="10dp" android:elevation="12dp">
+    <FrameLayout android:id="@+id/group_c" android:layout_width="@dimen/dimen_sw_45dp" android:layout_height="match_parent" android:layout_marginStart="14dp">
+        <TextView android:textSize="@dimen/dimen_sw_11sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:layout_gravity="bottom|center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_sw_8dp" android:text="现场" android:drawableTop="@drawable/icon_show_scene" android:drawablePadding="@dimen/dimen_sw_5dp"/>
+    </FrameLayout>
+    <FrameLayout android:gravity="center_vertical" android:id="@+id/show_d_comm" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="14dp">
+        <TextView android:textSize="@dimen/dimen_sw_11sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:layout_gravity="bottom|center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_sw_8dp" android:text="评论" android:drawableTop="@drawable/leave_message" android:drawablePadding="@dimen/dimen_sw_5dp"/>
+        <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:layout_gravity="top" android:id="@+id/txt_comment_num" android:background="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:paddingStart="2dp" android:layout_marginStart="20dp"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/want_p" android:layout_width="@dimen/dimen_sw_45dp" android:layout_height="match_parent" android:layout_marginStart="14dp">
+        <TextView android:textSize="@dimen/dimen_sw_11sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:layout_gravity="bottom|center_horizontal" android:id="@+id/wantIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_sw_8dp" android:text="收藏" android:drawableTop="@drawable/icon_start_black" android:drawablePadding="@dimen/dimen_sw_5dp"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="@dimen/dimen_sw_13dp">
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/buyTv" android:background="@drawable/crow_buy_button" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_45dp" android:text="立即购票"/>
+        <ImageView android:layout_gravity="right" android:id="@+id/ypjz_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:src="@drawable/ypjz_icon" android:contentDescription="@string/app_name"/>
+    </FrameLayout>
+</LinearLayout>

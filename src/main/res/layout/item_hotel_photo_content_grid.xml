@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.taihebase.activity.view.RatioLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_5dp" android:layout_marginRight="@dimen/dimen_sw_5dp" app:ratio="1">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/sdv_conver" android:layout_width="match_parent" android:layout_height="match_parent" app:roundedCornerRadius="8dp"/>
+    </com.taihebase.activity.view.RatioLayout>
+</FrameLayout>

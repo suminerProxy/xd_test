@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:paddingBottom="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/ticket_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="票档"/>
+    <LinearLayout android:gravity="right" android:id="@+id/other_msg" android:visibility="visible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_10dp" android:layout_weight="1">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_2dp" android:src="@drawable/icon_wraning" android:contentDescription="@string/app_name"/>
+        <TextView android:textSize="12sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="right" android:paddingLeft="@dimen/dimen_sw_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前场次演出时间待定，购票后请关注官方消息"/>
+    </LinearLayout>
+</LinearLayout>

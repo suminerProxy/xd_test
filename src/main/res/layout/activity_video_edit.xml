@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#161616" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.view.TopBarEmptyView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+        <com.taihebase.activity.view.svg.SvgImageView android:layout_gravity="center_vertical" android:id="@+id/barBackIcon" android:padding="@dimen/dimen_sw_13dp" android:layout_width="@dimen/toolbar_height" android:layout_height="match_parent" app:srcCompat="@drawable/ic_nav_icon_back_black" app:svg_color="@color/white"/>
+        <TextView android:textSize="@dimen/dimen_sw_16sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_Sure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_sw_15dp" android:minWidth="@dimen/dimen_sw_60dp" android:minHeight="@dimen/dimen_sw_32dp" android:text="确定"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.showstartfans.activity.view.videocut.ZVideoView android:layout_gravity="center" android:id="@+id/videoPlayer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/layout_bottom" android:paddingBottom="@dimen/dimen_sw_100dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_20dp">
+            <com.showstartfans.activity.view.videocut.VideoTrimmerView android:id="@+id/videoCutTimeView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

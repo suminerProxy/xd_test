@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/color_white_mine_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.soli.pullupdownrefresh.PullRefreshLayout android:id="@+id/pull_re" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/default_system_background" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+                <com.showstartfans.activity.view.MyCollapsingToolbarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="0x3">
+                    <FrameLayout android:background="@color/color_white_mine_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <View android:background="@drawable/tab_show_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_160dp"/>
+                        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingTop="@dimen/dimen_sw_104dp" android:paddingBottom="@dimen/dimen_sw_28dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <com.showstartfans.activity.view.FormatTextView android:textSize="@dimen/dimen_sw_24dp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/show_name" android:paddingRight="@dimen/dimen_sw_40dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/city_sp"/>
+                            </LinearLayout>
+                            <com.taihebase.activity.view.AutoGoneTextView android:textSize="@dimen/dimen_sw_12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:id="@+id/tv_num_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_12dp"/>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/tag_parent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_sw_10dp">
+                                <LinearLayout android:gravity="center_vertical" android:id="@+id/tag_studio" android:background="@drawable/border_line_40dp_c8" android:paddingLeft="@dimen/dimen_sw_2dp" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_28dp" android:layout_marginTop="@dimen/dimen_sw_12dp" android:paddingEnd="@dimen/dimen_sw_12dp">
+                                    <com.taihebase.activity.view.LoadImageView android:id="@+id/studio_logo" android:layout_width="@dimen/dimen_sw_24dp" android:layout_height="@dimen/dimen_sw_24dp" android:scaleType="centerCrop" app:fadeDuration="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:roundAsCircle="true"/>
+                                    <TextView android:textSize="12sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/site_name" android:paddingLeft="@dimen/dimen_sw_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawableRight="@drawable/arrow_small_back" android:drawablePadding="@dimen/dimen_sw_4dp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <com.showstartfans.activity.view.HeadListView android:id="@+id/vHeadList" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_29dp"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <com.taihebase.activity.widget.Toolbar android:layout_gravity="top" android:id="@+id/toolbar" android:background="@color/color_red" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="1"/>
+                </com.showstartfans.activity.view.MyCollapsingToolbarLayout>
+                <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/abc_btn_check_to_on_mtrl_015" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="1">
+                    <com.flyco.tablayout.SlidingTabLayout android:id="@+id/tab_Top" android:paddingLeft="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_40dp" app:tl_indicator_corner_radius="2dp" app:tl_indicator_height="0dp" app:tl_indicator_width="@dimen/dimen_sw_20dp" app:tl_indicator_width_equal_title="true" app:tl_tab_padding="@dimen/dimen_sw_7dp" app:tl_textBold="1" app:tl_textSelectColor="@color/abc_vector_test" app:tl_textUnselectColor="@color/N5" app:tl_textsize="@dimen/dimen_sw_16sp" app:tl_unselecttextsize="@dimen/dimen_sw_15sp"/>
+                </LinearLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.viewpager.widget.ViewPager android:id="@+id/vp_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            <skin.support.svg.SkinSvgImageView android:layout_gravity="end|bottom" android:id="@+id/record" android:background="@drawable/shap_40dp_c1" android:padding="@dimen/dimen_sw_15dp" android:visibility="gone" android:layout_width="@dimen/dimen_sw_50dp" android:layout_height="@dimen/dimen_sw_50dp" android:layout_marginBottom="@dimen/dimen_sw_49dp" android:layout_marginEnd="@dimen/dimen_sw_15dp" app:srcCompat="@drawable/add_group_member" app:svg_color="@color/color_white"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.soli.pullupdownrefresh.PullRefreshLayout>
+</FrameLayout>

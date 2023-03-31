@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="abc_config_activityDefaultDur">220</integer>
+    <integer name="abc_config_activityShortDur">150</integer>
+    <integer name="abc_action_menu_overflow_description">1000</integer>
+    <integer name="app_bar_elevation_anim_duration">150</integer>
+    <integer name="abc_activity_chooser_view_see_all">150</integer>
+    <integer name="abc_activitychooserview_choose_application">127</integer>
+    <integer name="config_tooltipAnimTime">150</integer>
+    <integer name="default_underline_indicator_fade_delay">300</integer>
+    <integer name="default_underline_indicator_fade_length">400</integer>
+    <integer name="abc_font_family_body_2_material">2</integer>
+    <integer name="design_tab_indicator_anim_duration_ms">300</integer>
+    <integer name="exo_media_button_opacity_percentage_disabled">33</integer>
+    <integer name="exo_media_button_opacity_percentage_enabled">100</integer>
+    <integer name="abc_font_family_display_2_material">6</integer>
+    <integer name="abc_font_family_display_3_material">320</integer>
+    <integer name="abc_font_family_display_4_material">4</integer>
+    <integer name="abc_font_family_headline_material">100</integer>
+    <integer name="abc_font_family_menu_material">100</integer>
+    <integer name="abc_font_family_subhead_material">1</integer>
+    <integer name="mtrl_calendar_selection_text_lines">1</integer>
+    <integer name="mtrl_calendar_year_selector_span">3</integer>
+    <integer name="abc_menu_ctrl_shortcut_label">75</integer>
+    <integer name="abc_menu_delete_shortcut_label">120</integer>
+    <integer name="abc_menu_enter_shortcut_label">100</integer>
+    <integer name="abc_menu_function_shortcut_label">250</integer>
+    <integer name="abc_menu_meta_shortcut_label">200</integer>
+    <integer name="abc_menu_shift_shortcut_label">4</integer>
+    <integer name="abc_menu_space_shortcut_label">7</integer>
+    <integer name="abc_menu_sym_shortcut_label">2</integer>
+    <integer name="abc_prepend_shortcut_label">4</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+</resources>

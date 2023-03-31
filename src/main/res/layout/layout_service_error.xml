@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/btnTry1" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/image_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cm_def_empty" android:contentDescription="@string/app_name"/>
+    <TextView android:textSize="13sp" android:textColor="@color/black3" android:id="@+id/txt_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="程序哥哥正在维护秀动"/>
+    <TextView android:textSize="14sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:id="@+id/btnTry" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="21dp" android:layout_marginRight="20dp" android:text="重新加载"/>
+</LinearLayout>

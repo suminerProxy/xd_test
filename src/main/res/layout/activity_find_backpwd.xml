@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.showstartfans.activity.view.AreaEditText android:id="@+id/areaEdit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginRight="40dp" app:area_edit_leftMargin="25dp" app:area_gravity="2" app:area_view_height="50dp" app:area_width="50dp"/>
+    <View android:layout_marginLeft="40dp" android:layout_marginRight="40dp" style="@style/lineHorizontalEB"/>
+    <RelativeLayout android:paddingRight="40dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="40dp" android:layout_marginTop="15dp">
+        <TextView android:textSize="14sp" android:textColor="@color/black1" android:id="@+id/txt_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="验证码" android:layout_centerVertical="true"/>
+        <EditText android:id="@+id/edt_find_code" android:layout_marginLeft="75dp" android:hint="验证码" android:inputType="number" style="@style/editTextPhoneNum"/>
+        <TextView android:textColor="@color/black3" android:id="@+id/txt_send_code" android:background="@drawable/shap_send_code_bg_unclick" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="接收验证码" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:layout_alignParentBottom="true" style="@style/lineHorizontalEB"/>
+    </RelativeLayout>
+    <RelativeLayout android:paddingRight="40dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="40dp" android:layout_marginTop="15dp">
+        <TextView android:textSize="14sp" android:textColor="@color/black1" android:id="@+id/txt_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登录密码" android:layout_centerVertical="true"/>
+        <EditText android:id="@+id/edt_find_pwd" android:layout_marginLeft="75dp" android:hint="设置登录密码" android:drawableRight="@drawable/icon_eyeclose" android:inputType="textPassword" style="@style/editTextPhoneNum"/>
+        <View android:layout_alignParentBottom="true" style="@style/lineHorizontalEB"/>
+    </RelativeLayout>
+    <Button android:id="@+id/nextBtn" android:layout_height="50dp" android:layout_marginLeft="40dp" android:layout_marginTop="50dp" android:layout_marginRight="40dp" android:text="确定" android:onClick="onClickXml" style="@style/reg_next_btn_style"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/goods_zb" android:background="@drawable/station_two_left" android:layout_width="0dp" android:layout_height="@dimen/dimen_sw_65dp" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center_vertical" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_65dp" android:text="@string/periphery_goods"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/goods_num" android:paddingLeft="@dimen/dimen_sw_15dp" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_65dp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/goods_crowed" android:background="@drawable/station_two_right" android:layout_width="0dp" android:layout_height="@dimen/dimen_sw_65dp" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center_vertical" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_65dp" android:text="@string/crowd_project"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/crowed_num" android:paddingLeft="@dimen/dimen_sw_15dp" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_65dp"/>
+    </LinearLayout>
+</merge>

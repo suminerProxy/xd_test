@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/layout_goods" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/goods_p" android:background="@drawable/shap_white_corners6_no_line_bg" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingTop="@dimen/dimen_sw_13dp" android:paddingRight="@dimen/dimen_sw_15dp" android:paddingBottom="@dimen/dimen_sw_13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title" android:layout_toEndOf="@+id/studio_logo">
+        <com.taihebase.activity.view.LoadImageView android:id="@+id/imageLoading" android:layout_width="@dimen/dimen_sw_62dp" android:layout_height="@dimen/dimen_sw_62dp" app:liv_corner_radius="@dimen/normal_radius"/>
+        <TextView android:textSize="14sp" android:textColor="@color/abc_dialog_material_background" android:ellipsize="end" android:id="@+id/txt_googs_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_12dp" android:maxLines="2" android:layout_toRightOf="@+id/imageLoading" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.showstartfans.activity.crop.view.GestureCropImageView android:id="@+id/image_view_crop" android:paddingLeft="@dimen/dimen_sw_26dp" android:paddingRight="@dimen/dimen_sw_26dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/dimen_sw_26dp"/>
+    <com.showstartfans.activity.crop.view.TouchOverlayView android:id="@+id/view_overlay" android:paddingLeft="@dimen/dimen_sw_26dp" android:paddingRight="@dimen/dimen_sw_26dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/dimen_sw_26dp"/>
+</merge>

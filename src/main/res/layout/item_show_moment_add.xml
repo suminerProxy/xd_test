@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="@dimen/dimen_sw_55dp" android:layout_height="@dimen/dimen_sw_55dp">
+    <skin.support.svg.SkinSvgImageView android:layout_gravity="center" android:background="@drawable/shape_4dp_c1" android:padding="@dimen/dimen_sw_17dp" android:layout_width="@dimen/dimen_sw_55dp" android:layout_height="@dimen/dimen_sw_55dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:srcCompat="@drawable/add_group_member" app:svg_color="@color/color_white"/>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/parent_p" android:background="@drawable/show_bg_msg" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingTop="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ticket_history_title"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.taihebase.activity.view.LoadMoreRecyclerView android:id="@+id/ticket_history_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_sw_16dp" android:overScrollMode="never"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="horizontal" android:id="@+id/radioGroup" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_45dp">
+            <RadioButton android:id="@+id/radioBtnBegin" android:layout_width="0dp" android:layout_height="match_parent" android:checked="true" android:text="演出" android:layout_weight="1" style="@style/txtTabListTitle"/>
+            <RadioButton android:id="@+id/tab_crowd" android:layout_width="0dp" android:layout_height="match_parent" android:text="众筹" android:layout_weight="1" style="@style/txtTabListTitle"/>
+            <RadioButton android:id="@+id/tab_goods" android:layout_width="0dp" android:layout_height="match_parent" android:text="周边" android:layout_weight="1" style="@style/txtTabListTitle"/>
+        </RadioGroup>
+        <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignBottom="@+id/radioGroup"/>
+        <com.viewpagerindicator.UnderlinePageIndicator android:id="@+id/indicator" android:background="@drawable/transparent" android:visibility="visible" android:layout_width="match_parent" android:layout_height="2dp" android:layout_alignBottom="@+id/radioGroup" app:fades="false" app:selectedColor="@color/red_base"/>
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

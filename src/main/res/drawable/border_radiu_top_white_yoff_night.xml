@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/cardShadowColor_1_night"/>
+            <corners android:topLeftRadius="6dp" android:topRightRadius="6dp"/>
+            <padding android:left="1.5dp" android:top="2dp" android:right="1.5dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/cardShadowColor_2_night"/>
+            <corners android:topLeftRadius="6dp" android:topRightRadius="6dp"/>
+            <padding android:left="1.5dp" android:top="2dp" android:right="1.5dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/cardShadowColor_3_night"/>
+            <corners android:topLeftRadius="6dp" android:topRightRadius="6dp"/>
+            <padding android:left="1.5dp" android:top="2dp" android:right="1.5dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/cardShadowColor_4_night"/>
+            <corners android:topLeftRadius="6dp" android:topRightRadius="6dp"/>
+            <padding android:left="1.5dp" android:top="2dp" android:right="1.5dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/cardShadowColor_5_night"/>
+            <corners android:topLeftRadius="6dp" android:topRightRadius="6dp"/>
+            <padding android:left="1.5dp" android:top="2dp" android:right="1.5dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="6dp" android:topRightRadius="6dp"/>
+            <solid android:color="#1c1c1c"/>
+        </shape>
+    </item>
+</layer-list>

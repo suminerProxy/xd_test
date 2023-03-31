@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sobot_auto_complete">@color/sobot_common_gray6</color>
+    <color name="sobot_auto_complete_press">@color/sobot_common_gray8</color>
+    <color name="sobot_btn_bg_disable">@color/sobot_common_gray6</color>
+    <color name="sobot_chat_evaluate_question_select_textColor">@color/sobot_common_white</color>
+    <color name="sobot_chat_file_bgColor">@color/sobot_transparent</color>
+    <color name="sobot_color_bottom_bg">@color/sobot_common_gray6</color>
+    <color name="sobot_color_setting_item_pressed">@color/sobot_common_gray6</color>
+    <color name="sobot_common_bg">#000000</color>
+    <color name="sobot_common_gray1">#d1d1d6</color>
+    <color name="sobot_common_gray2">#7c7c80</color>
+    <color name="sobot_common_gray3">#7c7c80</color>
+    <color name="sobot_common_gray4">#262628</color>
+    <color name="sobot_common_gray5">#272729</color>
+    <color name="sobot_common_gray6">#1b1b1c</color>
+    <color name="sobot_common_gray7">#262628</color>
+    <color name="sobot_common_gray8">#353538</color>
+    <color name="sobot_common_msg_bg_gray">#1b1b1c</color>
+    <color name="sobot_common_msg_bg_white">#262628</color>
+    <color name="sobot_common_post_msg_gray">#262628</color>
+    <color name="sobot_common_text_gray">#7c7c80</color>
+    <color name="sobot_common_wenzi_black">#ffffff</color>
+    <color name="sobot_common_wenzi_green">@color/sobot_common_gray1</color>
+    <color name="sobot_common_wenzi_green_white">@color/sobot_common_white</color>
+    <color name="sobot_common_wenzi_transparent_gray">@color/sobot_common_gray7</color>
+    <color name="sobot_common_wenzi_white">#ffffff</color>
+    <color name="sobot_common_wenzi_yellow_transparent">#00000000</color>
+    <color name="sobot_lable_bg_color">@color/sobot_white</color>
+    <color name="sobot_lable_nomal_bg_color">@color/sobot_common_gray7</color>
+    <color name="sobot_lable_stroke_color">@color/sobot_common_gray7</color>
+    <color name="sobot_listview_remind">@color/sobot_common_gray7</color>
+    <color name="sobot_post_msg_template_text_color">@color/sobot_common_wenzi_green</color>
+    <color name="sobot_right_msg_text_color">#ffffff</color>
+    <color name="sobot_white">#000000</color>
+</resources>

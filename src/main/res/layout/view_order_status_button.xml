@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="13sp" android:gravity="center" android:id="@+id/tv_left" android:background="@drawable/gray_white_border_bg_selector" android:layout_width="70dp" android:layout_height="30dp" android:text="左边的文字"/>
+    <TextView android:textSize="13sp" android:gravity="center" android:id="@+id/tv_right" android:background="@drawable/red_white_border2_bg_selector" android:layout_width="70dp" android:layout_height="30dp" android:layout_marginLeft="15dp" android:text="右边的文字"/>
+    <com.showstartfans.activity.view.textview.CountDownTextView android:textSize="13sp" android:textColor="@color/color_red" android:gravity="center" android:id="@+id/cdtv_time" android:background="@drawable/red_white_border2_bg_selector" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="15dp" android:text="右边的文字"/>
+</LinearLayout>

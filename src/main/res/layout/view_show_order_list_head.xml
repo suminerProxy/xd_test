@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/head_p" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/payHintLly" android:background="@drawable/im_ripple_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_45dp">
+        <TextView android:textSize="13sp" android:textColor="@color/abc_ic_star_half_black_36dp" android:ellipsize="end" android:gravity="center" android:id="@+id/txt_desc" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_45dp" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:text="@string/tips_order" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:id="@+id/txt_call_tel" android:background="@drawable/shap_100dp_c2" android:layout_width="@dimen/dimen_sw_70dp" android:layout_height="@dimen/dimen_sw_23dp" android:layout_marginRight="@dimen/dimen_sw_20dp" android:text="@string/customer_service" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/line" android:background="@color/color_line" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.3dp"/>
+    <LinearLayout android:id="@+id/presenter_see_p" android:background="@drawable/im_ripple_line" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_45dp">
+        <TextView android:textSize="13sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="@dimen/dimen_sw_45dp" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:text="演出赠票" android:layout_weight="1"/>
+        <TextView android:textSize="12sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:id="@+id/presenter_see" android:background="@drawable/shap_100dp_c2" android:layout_width="@dimen/dimen_sw_70dp" android:layout_height="@dimen/dimen_sw_23dp" android:layout_marginRight="@dimen/dimen_sw_20dp" android:text="查看"/>
+    </LinearLayout>
+</LinearLayout>

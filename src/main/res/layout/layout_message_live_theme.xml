@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/layout_live_theme" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/layout_live_theme_main" android:background="@drawable/shape_6dp_f8_line" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title" android:layout_toEndOf="@+id/studio_logo">
+        <com.taihebase.activity.view.LoadImageView android:id="@+id/live_item" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_147dp" app:liv_corner_radiu_bottomLeft="0dp" app:liv_corner_radiu_bottomRight="0dp" app:liv_corner_radiu_topLeft="6dp" app:liv_corner_radiu_topRight="6dp"/>
+        <TextView android:textSize="13sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:id="@+id/live_title" android:padding="@dimen/dimen_sw_12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="6" android:layout_below="@+id/live_item" android:lineSpacingExtra="2dp"/>
+    </RelativeLayout>
+</FrameLayout>

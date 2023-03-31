@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_50dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.taihebase.activity.view.svg.SvgImageView android:id="@+id/sdv_loading" android:layout_width="@dimen/dimen_sw_12dp" android:layout_height="@dimen/dimen_sw_12dp" app:srcCompat="@drawable/ic_loading_2" app:svg_color="@color/abc_ic_ab_back_material"/>
+        <TextView android:textSize="@dimen/dimen_sw_12sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_8dp" android:text="酒店信息由腾轩旅游集团提供"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

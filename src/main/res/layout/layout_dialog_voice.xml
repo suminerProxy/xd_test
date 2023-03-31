@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:background="@drawable/dialog_bg" android:paddingLeft="30dp" android:paddingTop="30dp" android:paddingRight="30dp" android:paddingBottom="30dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="13sp" android:textColor="#666666" android:id="@+id/voicedesc" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="13sp" android:textColor="#eb484a" android:gravity="center" android:id="@+id/retryGet" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="重新获取"/>
+    <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="20dp"/>
+    <TextView android:textSize="16sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="输入语音验证码"/>
+    <com.showstartfans.activity.view.PinEntryEditText android:textSize="18sp" android:id="@+id/codeInputView" android:background="@null" android:visibility="visible" android:layout_width="190dp" android:layout_height="42dp" android:layout_marginTop="20dp" android:singleLine="true" android:maxLength="4" app:pinBackgroundDrawable="@drawable/verification_edit_bg_normal" app:pinCharacterSpacing="10dp" app:pinTextBottomPadding="11dp"/>
+    <Button android:textColor="@color/color_white" android:id="@+id/btn_confirm" android:background="@drawable/gray_btn_corners2_selecter" android:layout_width="190dp" android:layout_height="40dp" android:layout_marginTop="15dp" android:text="@string/Confirm"/>
+</LinearLayout>

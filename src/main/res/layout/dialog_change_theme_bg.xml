@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/note_parent" android:background="@drawable/shape_10dp_white" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:paddingBottom="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:background="@drawable/shape_10dp_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_25dp" android:text="更换主题背景"/>
+    <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/dimen_sw_20dp"/>
+    <TextView android:textSize="15sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center_vertical" android:id="@+id/open_ablume" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_50dp" android:layout_marginTop="@dimen/dimen_sw_10dp" android:layout_marginBottom="@dimen/dimen_sw_10dp" android:text="从手机相册选择"/>
+</LinearLayout>

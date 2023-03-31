@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.view.TopBarEmptyView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/barBackIcon" android:paddingLeft="@dimen/dimen_sw_10dp" android:paddingRight="@dimen/dimen_sw_10dp" android:layout_width="wrap_content" android:layout_height="@dimen/head_view_height" android:src="@drawable/b_back_black" android:scaleType="centerInside" android:contentDescription="@string/app_name"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="18sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvTitleTime" android:layout_width="wrap_content" android:layout_height="@dimen/toolbar_height" android:singleLine="true"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/shape_border_grey_grey" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dimen_sw_11sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/tvDayNum" android:paddingLeft="@dimen/dimen_sw_6dp" android:paddingRight="@dimen/dimen_sw_3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_2dp" android:text="共一晚"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_sw_5dp" android:src="@drawable/arrow_small_back"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageButton android:id="@+id/btnKefu" android:background="@null" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/mine_icon_services"/>
+    </LinearLayout>
+    <com.soli.pullupdownrefresh.PullRefreshLayout android:id="@+id/refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.taihebase.activity.view.LoadMoreRecyclerView android:orientation="vertical" android:id="@+id/list" android:paddingBottom="@dimen/dimen_sw_30dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </com.soli.pullupdownrefresh.PullRefreshLayout>
+</LinearLayout>

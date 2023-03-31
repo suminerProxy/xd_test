@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="bottom" android:orientation="vertical" android:paddingBottom="@dimen/dimen_sw_45dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center" android:id="@+id/slide_logo" android:layout_width="@dimen/dimen_sw_375dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_sw_50dp" android:scaleType="fitCenter" android:layout_weight="1" app:actualImageScaleType="2" app:fadeDuration="0"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/abc_dialog_material_background" android:gravity="right" android:id="@+id/slide_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginRight="@dimen/dimen_sw_30dp"/>
+        <TextView android:textSize="13sp" android:textColor="@color/abc_ic_voice_search_api_material" android:gravity="right" android:id="@+id/slide_des" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_120dp" android:layout_marginTop="@dimen/dimen_sw_10dp" android:layout_marginRight="@dimen/dimen_sw_30dp"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/open_p" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@+id/xy_p" android:paddingTop="@dimen/dimen_sw_20dp" android:paddingBottom="@dimen/dimen_sw_16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/sure_xy" android:layout_width="@dimen/dimen_sw_12dp" android:layout_height="@dimen/dimen_sw_12dp" android:src="@drawable/pay_unselect" android:contentDescription="@string/user_real_name"/>
+            <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:gravity="center" android:id="@+id/xy_str" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_5dp" android:text="我已阅读并同意" android:layout_toRightOf="@+id/sure_xy"/>
+            <TextView android:textSize="12sp" android:textColor="@color/red_base" android:gravity="center" android:id="@+id/xy_url" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_5dp" android:text="《秀动票夹使用协议》" android:layout_toRightOf="@+id/xy_str"/>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/open_tick" android:background="@drawable/crow_buy_button" android:layout_width="@dimen/dimen_sw_145dp" android:layout_height="@dimen/dimen_sw_45dp" android:text="开启票夹" android:layout_below="@+id/xy_p" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="13sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:id="@+id/btn_cal" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_45dp" android:layout_marginLeft="@dimen/dimen_sw_30dp" android:text="拒绝开启" android:layout_toRightOf="@+id/open_tick" android:layout_below="@+id/xy_p"/>
+    </RelativeLayout>
+</LinearLayout>

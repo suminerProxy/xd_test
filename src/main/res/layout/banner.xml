@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/bannerContainer" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.widget.banner.view.BannerViewPager android:id="@+id/bannerViewPager" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_gravity="bottom" android:paddingRight="6dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom|right" android:orientation="horizontal" android:id="@+id/circleIndicator" android:background="@drawable/shap_in_banner_bg" android:paddingLeft="6dp" android:paddingRight="6dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="10dp"/>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_22dp" android:layout_marginTop="@dimen/dimen_sw_20dp">
+        <TextView android:textColor="@color/abc_ic_ab_back_material" android:text="日" style="@style/weekName"/>
+        <TextView android:textColor="@color/abc_ic_voice_search_api_material" android:text="一" style="@style/weekName"/>
+        <TextView android:textColor="@color/abc_ic_voice_search_api_material" android:text="二" style="@style/weekName"/>
+        <TextView android:textColor="@color/abc_ic_voice_search_api_material" android:text="三" style="@style/weekName"/>
+        <TextView android:textColor="@color/abc_ic_voice_search_api_material" android:text="四" style="@style/weekName"/>
+        <TextView android:textColor="@color/abc_ic_voice_search_api_material" android:text="五" style="@style/weekName"/>
+        <TextView android:textColor="@color/abc_ic_ab_back_material" android:text="六" style="@style/weekName"/>
+    </LinearLayout>
+    <calander.custom.ScrollableLayout android:orientation="vertical" android:id="@+id/scrollableLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rl_head" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.showstartfans.activity.view.ViewPagerExtend android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_300dp"/>
+        </RelativeLayout>
+        <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_marginTop="@dimen/dimen_sw_10dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ListView android:id="@+id/pullToRefreshListView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:dividerHeight="0dp"/>
+            <TextView android:textSize="13sp" android:textColor="#ff999999" android:gravity="center" android:id="@+id/txt_emtpy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80dp" android:text="这里静悄悄，期待TA的躁动吧" android:drawableTop="@drawable/cm_def_empty" android:drawablePadding="@dimen/dimen_sw_20dp" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </calander.custom.ScrollableLayout>
+</LinearLayout>

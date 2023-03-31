@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/share_p" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/none_view" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    <LinearLayout android:gravity="right" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_85dp" android:src="@drawable/live_icon_shouqi" android:contentDescription="@string/app_name"/>
+        <RelativeLayout android:orientation="vertical" android:id="@+id/share_vi" android:background="#121212" android:layout_width="@dimen/dimen_sw_150dp" android:layout_height="match_parent">
+            <TextView android:textSize="13sp" android:textColor="@color/color_white" android:gravity="center_horizontal" android:id="@+id/share_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_45dp" android:layout_marginBottom="10dp" android:text="节目单" android:drawableLeft="@drawable/live_icon_jiemudan" android:drawablePadding="3dp" android:layout_centerHorizontal="true"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/menu_rv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="6dp" android:layout_marginRight="10dp" android:layout_below="@+id/share_title"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

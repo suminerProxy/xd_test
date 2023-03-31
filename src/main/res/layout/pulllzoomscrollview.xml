@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/headViewBgRly" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/headViewBg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@null" android:scaleType="centerCrop"/>
+        </RelativeLayout>
+        <FrameLayout android:background="#f4f4f4" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/headViewBgRly">
+            <RelativeLayout android:id="@+id/bottomViewContent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <RelativeLayout android:id="@+id/headViewContent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

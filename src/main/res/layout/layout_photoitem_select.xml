@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.taihebase.activity.view.RatioLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:ratio="1">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_photo_lpsi" android:layout_width="match_parent" android:layout_height="match_parent" app:fadeDuration="0"/>
+            <View android:id="@+id/V_Filter" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.5"/>
+            <FrameLayout android:layout_gravity="top|right" android:id="@+id/layout_check" android:clipToPadding="false" android:layout_width="@dimen/dimen_sw_50dp" android:layout_height="@dimen/dimen_sw_50dp">
+                <FrameLayout android:layout_gravity="top|right" android:paddingBottom="@dimen/dimen_sw_2dp" android:clipToPadding="false" android:layout_width="@dimen/dimen_sw_20dp" android:layout_height="@dimen/dimen_sw_20dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp">
+                    <CheckBox android:id="@+id/cb_photo_lpsi" android:background="@drawable/selector_check" android:clickable="false" android:duplicateParentState="true" android:layout_width="@dimen/dimen_sw_20dp" android:layout_height="@dimen/dimen_sw_20dp" android:button="@null"/>
+                    <TextView android:textSize="@dimen/dimen_sw_13sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_check_index" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_20dp" android:text="0"/>
+                    <ImageView android:id="@+id/iv_gougoou" android:layout_width="@dimen/dimen_sw_20dp" android:layout_height="@dimen/dimen_sw_20dp" android:src="@mipmap/default_red"/>
+                </FrameLayout>
+            </FrameLayout>
+            <TextView android:textSize="12sp" android:textColor="#ffffff" android:layout_gravity="bottom|right" android:id="@+id/tv_Flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" android:text="flag" android:shadowColor="#88000000" android:shadowDx="0" android:shadowDy="0.5" android:shadowRadius="10"/>
+        </FrameLayout>
+    </com.taihebase.activity.view.RatioLayout>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:background="@color/color_white_mine_bg" android:paddingTop="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_address_content" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_weight="1">
+            <TextView android:textSize="15sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:id="@+id/txt_address_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="5" android:singleLine="true"/>
+            <TextView android:textSize="15sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:id="@+id/txt_address_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:maxEms="8" android:singleLine="true" android:layout_toRightOf="@+id/txt_address_name"/>
+            <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/txt_default" android:background="@drawable/crow_buy_button" android:layout_width="35dp" android:layout_height="16dp" android:layout_marginLeft="8dp" android:layout_marginTop="3dp" android:layout_marginRight="8dp" android:text="默认" android:layout_toRightOf="@+id/txt_address_phone"/>
+            <TextView android:textSize="13sp" android:textColor="@color/abc_ic_voice_search_api_material" android:id="@+id/txt_address_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_below="@+id/txt_address_name" android:lineSpacingExtra="4dp"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/icon_p" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/image_select_default" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_sw_15dp" android:src="@drawable/icon_gougou_red" android:contentDescription="@string/app_name"/>
+            <ImageView android:id="@+id/iv_Edit" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_edit" android:contentDescription="@string/app_name"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/default_system_background" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginTop="@dimen/dimen_sw_20dp" android:layout_marginRight="@dimen/dimen_sw_20dp"/>
+</LinearLayout>

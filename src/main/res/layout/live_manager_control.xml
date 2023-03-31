@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingRight="10dp" android:paddingBottom="9.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/live_manager_pop_bg" android:paddingTop="18dp" android:paddingBottom="18dp" android:layout_width="66dp" android:layout_height="wrap_content">
+        <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:gravity="center" android:id="@+id/manager_jy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="禁言" android:drawableTop="@drawable/live_jy_un" android:drawablePadding="5dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:gravity="center" android:id="@+id/manager_share" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="23.5dp" android:text="分享" android:drawableTop="@drawable/live_icon_share_gray" android:drawablePadding="5dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:gravity="center" android:id="@+id/manager_over" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="23.5dp" android:layout_marginBottom="12dp" android:text="结束" android:drawableTop="@drawable/live_icon_over" android:drawablePadding="5dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/layoutParent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layoutMain" android:background="@color/color_white_mine_bg" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_17dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_52dp">
+        <TextView android:textSize="@dimen/dimen_sw_15sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center_vertical" android:id="@+id/tv_Title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.showstartfans.activity.view.DyTextView android:textSize="@dimen/dimen_sw_13sp" android:textColor="@color/abc_ic_voice_search_api_material" android:ellipsize="end" android:gravity="right" android:id="@+id/tv_Title_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginRight="@dimen/dimen_sw_20dp" android:maxLines="1" android:layout_weight="1"/>
+        <ImageView android:id="@+id/ivArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_icon_next"/>
+    </LinearLayout>
+    <View android:id="@+id/V_line" android:background="@color/abc_switch_thumb_material" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/dimen_sw_17dp" android:layout_marginRight="@dimen/dimen_sw_17dp"/>
+</LinearLayout>

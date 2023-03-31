@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/gradient_n12_b5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.view.LoadMoreRecyclerView android:orientation="vertical" android:id="@+id/list" android:paddingBottom="@dimen/dimen_sw_30dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</FrameLayout>

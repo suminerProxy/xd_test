@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingTop="@dimen/dimen_sw_30dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.showstartfans.activity.view.UserHeaderView android:id="@+id/uhv_user_header" android:layout_width="@dimen/dimen_sw_44dp" android:layout_height="@dimen/dimen_sw_44dp" android:layout_marginLeft="@dimen/dimen_sw_20dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_9dp" app:layout_constraintBottom_toBottomOf="@+id/uhv_user_header" app:layout_constraintLeft_toRightOf="@+id/uhv_user_header" app:layout_constraintTop_toTopOf="@+id/uhv_user_header">
+        <TextView android:textSize="@dimen/dimen_sw_14sp" android:textColor="#dddddd" android:id="@+id/tv_fans_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/dimen_sw_11sp" android:textColor="#999999" android:id="@+id/tv_fans_photo_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_3dp"/>
+    </LinearLayout>
+    <com.taihebase.activity.view.RatioLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_16dp" app:layout_constraintTop_toBottomOf="@+id/uhv_user_header" app:ratio="0.74">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/bg_conver" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <View android:background="#1a000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom|right" android:id="@+id/layout_conver_change" android:background="@drawable/shape_100dp_black_ng" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingTop="@dimen/dimen_sw_5dp" android:paddingRight="@dimen/dimen_sw_15dp" android:paddingBottom="@dimen/dimen_sw_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_sw_20dp" android:layout_marginBottom="@dimen/dimen_sw_20dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_image"/>
+                <TextView android:textSize="@dimen/dimen_sw_12sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_3dp" android:text="换封面"/>
+            </LinearLayout>
+        </FrameLayout>
+    </com.taihebase.activity.view.RatioLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

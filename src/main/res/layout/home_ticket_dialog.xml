@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/close_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@+id/parent_noot">
+        <ImageView android:id="@+id/img_close_coupon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_close_pay_scs" android:contentDescription="@string/app_name"/>
+        <TextView android:background="@color/color_white" android:layout_width="1dp" android:layout_height="@dimen/dimen_sw_20dp" android:layout_marginTop="-1dp"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/parent_noot" android:background="@drawable/home_ticket_d" android:layout_width="@dimen/dimen_sw_290dp" android:layout_height="@dimen/dimen_sw_400dp" android:layout_below="@+id/close_btn">
+        <TextView android:textSize="14sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/title_str" android:paddingLeft="@dimen/dimen_sw_70dp" android:paddingRight="@dimen/dimen_sw_70dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_115dp"/>
+        <TextView android:textSize="18sp" android:textColor="#eb484a" android:gravity="center" android:id="@+id/title_content" android:paddingLeft="@dimen/dimen_sw_50dp" android:paddingRight="@dimen/dimen_sw_50dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_110dp" android:layout_marginBottom="@dimen/dimen_sw_127dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/off_btn" android:background="@drawable/order_in_button" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_45dp" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginTop="@dimen/dimen_sw_15dp" android:layout_marginRight="@dimen/dimen_sw_20dp" android:layout_marginBottom="@dimen/dimen_sw_20dp" android:text="去票夹" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

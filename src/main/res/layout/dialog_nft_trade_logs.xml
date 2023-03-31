@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/shape_12dp_33_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dimen_sw_16sp" android:textColor="#fbedca" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_28dp" android:layout_marginTop="@dimen/dimen_sw_16dp" android:text="交易记录"/>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/shape_nft_black_8dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_258dp" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:layout_marginTop="@dimen/dimen_sw_16dp" android:layout_marginRight="@dimen/dimen_sw_15dp" android:layout_marginBottom="@dimen/dimen_sw_75dp" android:layout_marginHorizontal="@dimen/dimen_sw_15dp">
+            <com.showstartfans.activity.view.NftTradeLogsTabTitle android:id="@+id/tabTitle" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_43dp"/>
+            <View android:background="#2f2f2f" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_0_5dp"/>
+            <com.showstartfans.activity.view.scrollxy.TwoWayNestedScrollView android:id="@+id/vTwoWayScroll" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+                <com.taihebase.activity.widget.NoScollRecyclerView android:id="@+id/NpRecycle" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </com.showstartfans.activity.view.scrollxy.TwoWayNestedScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

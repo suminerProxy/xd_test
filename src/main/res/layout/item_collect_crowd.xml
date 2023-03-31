@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/ll_search_item" android:background="@drawable/item_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingTop="@dimen/dimen_sw_25dp" android:paddingRight="@dimen/dimen_sw_15dp" android:paddingBottom="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_120dp">
+        <com.taihebase.activity.view.LoadImageView android:id="@+id/convert" android:layout_width="@dimen/dimen_sw_120dp" android:layout_height="@dimen/dimen_sw_80dp" android:src="@null" app:liv_border_color="@color/color_red" app:liv_border_width="0dp" app:liv_corner_radius="@dimen/normal_radius"/>
+        <TextView android:textSize="15sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:maxLines="2" android:minLines="2" android:layout_toRightOf="@+id/convert" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:layout_marginRight="@dimen/dimen_sw_15dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_55dp">
+        <TextView android:textSize="15sp" android:textColor="@color/abc_ic_star_half_black_36dp" android:ellipsize="end" android:id="@+id/tv_end" android:paddingTop="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:layout_marginRight="@dimen/dimen_sw_13dp" android:text="@string/activity_over" android:singleLine="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:id="@+id/txtCancel" android:background="@drawable/shap_bg_width_gray_2radius" android:layout_width="@dimen/dimen_sw_70dp" android:layout_height="@dimen/dimen_sw_30dp" android:layout_marginRight="15dp" android:text="取消收藏" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View style="@style/lineHorizontalf8"/>
+</LinearLayout>

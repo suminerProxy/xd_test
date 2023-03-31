@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:textSize="15sp" android:textColor="@color/black1" android:textColorHint="@color/abc_list_divider_mtrl_alpha" android:gravity="top" android:id="@+id/input_so" android:background="@null" android:padding="5dp" android:layout_width="match_parent" android:layout_height="120dp" android:hint="补充内容让我们更好地进行处理" android:maxLength="240" android:lineSpacingExtra="5dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/abc_list_divider_mtrl_alpha" android:gravity="right" android:id="@+id/input_num" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="0/240"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rc_album" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:overScrollMode="never"/>
+</LinearLayout>

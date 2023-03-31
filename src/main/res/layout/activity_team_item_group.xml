@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_90dp">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/users_p" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_18dp" android:layout_marginTop="@dimen/dimen_sw_15dp" android:layout_marginRight="@dimen/dimen_sw_18dp" android:layout_marginBottom="@dimen/dimen_sw_10dp">
+        <RelativeLayout android:layout_width="@dimen/dimen_sw_98dp" android:layout_height="@dimen/dimen_sw_40dp">
+            <com.showstartfans.activity.view.TeamGroupUserView android:id="@+id/team_user_icon" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_40dp" android:layout_marginLeft="@dimen/dimen_sw_3dp"/>
+            <ImageView android:id="@+id/team_success_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name"/>
+        </RelativeLayout>
+        <TextView android:textSize="14sp" android:textColor="@color/abc_ic_voice_search_api_material" android:gravity="center" android:id="@+id/team_status" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_8dp" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/team_status_button" android:background="@drawable/team_button_gray_" android:layout_width="@dimen/dimen_sw_68dp" android:layout_height="@dimen/dimen_sw_30dp"/>
+    </LinearLayout>
+    <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/dimen_sw_18dp" android:layout_marginTop="@dimen/dimen_sw_10dp" android:layout_marginRight="@dimen/dimen_sw_18dp"/>
+</LinearLayout>

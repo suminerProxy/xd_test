@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.taihebase.activity.view.svg.SvgImageView android:id="@+id/siv_Icon" android:layout_width="@dimen/dimen_sw_14dp" android:layout_height="wrap_content" app:srcCompat="@drawable/icon_group_notice" app:svg_color="@color/abc_ic_ab_back_material"/>
+        <TextView android:textSize="@dimen/dimen_sw_14sp" android:textColor="@color/abc_ic_star_half_black_36dp" android:id="@+id/tvGongGao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_3dp" android:text="公告"/>
+    </LinearLayout>
+    <View android:id="@+id/VLine" android:background="@color/abc_switch_thumb_material" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/dimen_sw_9dp"/>
+    <com.showstartfans.activity.view.GroupNoticeView android:id="@+id/view_group_notice" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_11dp"/>
+</LinearLayout>

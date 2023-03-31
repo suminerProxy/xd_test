@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/parent_p" android:background="@drawable/shape_1c_20dp_top" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_10dp">
+        <RadioGroup android:orientation="horizontal" android:id="@+id/radioGroup" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginLeft="20dp">
+            <RadioButton android:id="@+id/radioBtn1" android:visibility="gone" android:layout_width="@dimen/dimen_sw_56dp" android:layout_height="match_parent" android:checked="true" android:text="贡献榜" style="@style/tab_live_user"/>
+            <RadioButton android:id="@+id/radioBtn2" android:layout_width="@dimen/dimen_sw_35dp" android:layout_height="match_parent" android:checked="true" android:text="观众" style="@style/tab_live_user"/>
+        </RadioGroup>
+        <View android:background="@color/live_share_line" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_marginTop="6dp" android:layout_alignBottom="@+id/radioGroup"/>
+        <FrameLayout android:id="@+id/indicator_line" android:layout_width="@dimen/dimen_sw_25dp" android:layout_height="2dp" android:layout_marginLeft="25dp" android:layout_marginTop="6dp" android:layout_marginRight="20dp" android:layout_alignBottom="@+id/radioGroup"/>
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

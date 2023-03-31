@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="14sp" android:textColor="@color/red_base" android:gravity="center" android:id="@+id/txt_coupon_not" android:background="@color/color_white" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingTop="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_15dp" android:paddingBottom="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="不使用优惠券"/>

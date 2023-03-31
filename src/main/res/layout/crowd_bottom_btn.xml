@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:background="@color/color_white" android:paddingRight="@dimen/dimen_sw_10dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_60dp" android:elevation="12dp">
+    <FrameLayout android:gravity="center_vertical" android:id="@+id/show_d_comm" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="@dimen/dimen_sw_20dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/wantGotoIcon" android:layout_width="@dimen/dimen_sw_20dp" android:layout_height="@dimen/dimen_sw_20dp" android:src="@drawable/icon_start_black" android:contentDescription="@string/app_name"/>
+        <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:layout_gravity="top" android:id="@+id/wantGotoTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_10dp" android:layout_marginStart="@dimen/dimen_sw_20dp"/>
+    </FrameLayout>
+    <FrameLayout android:gravity="center_vertical" android:id="@+id/layout_review" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="@dimen/dimen_sw_14dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/txt_comment_icon" android:layout_width="@dimen/dimen_sw_20dp" android:layout_height="@dimen/dimen_sw_20dp" android:src="@drawable/leave_message" android:contentDescription="@string/app_name"/>
+        <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:layout_gravity="top" android:id="@+id/txt_comment_num" android:background="@color/color_white" android:paddingLeft="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_9dp" android:layout_marginStart="@dimen/dimen_sw_20dp"/>
+    </FrameLayout>
+    <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/buyTv" android:background="@drawable/crow_buy_button" android:layout_width="0dp" android:layout_height="@dimen/dimen_sw_45dp" android:text="支持" android:layout_weight="1" android:layout_marginStart="19dp"/>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/default_system_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.showstartfans.activity.view.textview.CountDownTextView android:textSize="13sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/cdtv_time" android:background="@color/abc_ic_ab_back_material" android:layout_width="match_parent" android:layout_height="30dp"/>
+    <ScrollView android:id="@+id/sc" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/cdtv_time">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tips" android:background="@color/abc_ic_ab_back_material" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginBottom="10dp" android:layout_above="@+id/sc"/>
+            <RelativeLayout android:id="@+id/take_qr" android:background="@drawable/goods_order_qrcode" android:visibility="gone" android:layout_width="match_parent" android:layout_height="270dp" android:layout_marginLeft="5dp" android:layout_marginTop="6dp" android:layout_marginRight="5dp" android:layout_marginBottom="6dp">
+                <com.taihebase.activity.view.LoadImageView android:id="@+id/image_qr_code" android:layout_width="130dp" android:layout_height="130dp" android:layout_marginTop="30dp" android:layout_centerHorizontal="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="29dp" android:layout_alignParentBottom="true">
+                    <TextView android:textSize="15sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:id="@+id/show_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1"/>
+                    <TextView android:textSize="12sp" android:gravity="center" android:id="@+id/show_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:lines="1"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:background="@color/color_white" android:paddingLeft="15dp" android:paddingRight="15dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="88dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <TextView android:textSize="17sp" android:textColor="@color/color_black" android:id="@+id/tv_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/abc_item_background_holo_light" android:id="@+id/tv_order_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+                </LinearLayout>
+                <com.showstartfans.activity.view.OrderStatusTextView android:textSize="13sp" android:id="@+id/ostv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="15dp"/>
+            <RelativeLayout android:id="@+id/user_ex_addr" android:background="@color/color_white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <TextView android:textSize="17sp" android:textColor="@color/color_black" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/abc_item_background_holo_light" android:id="@+id/tv_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/take_goods_phone" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="70dp">
+                <TextView android:textSize="18sp" android:textColor="@color/abc_ic_ab_back_material" android:layout_width="0dp" android:layout_height="wrap_content" android:text="联系电话" android:layout_weight="1"/>
+                <TextView android:textSize="15sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/take_phone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View android:background="#f8f8f8" android:layout_width="match_parent" android:layout_height="10dp"/>
+            <com.showstartfans.activity.view.GoodsListView android:id="@+id/glv_good_list_view" android:background="@color/color_white" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_marginLeft="15dp"/>
+            <RelativeLayout android:id="@+id/layout_wuliu" android:background="@color/color_white" android:paddingLeft="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="65dp">
+                <TextView android:textSize="14sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/tv_expressNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="物流单号:" android:layout_centerVertical="true"/>
+                <TextView android:textSize="12sp" android:textColor="@color/color_red" android:id="@+id/tv_WuLiu" android:background="@drawable/red_white_border4_bg_selector" android:paddingLeft="6dp" android:paddingTop="5dp" android:paddingRight="6dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="查看物流" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/color_white" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.showstartfans.activity.view.OrderDetailsItemView android:id="@+id/order_num_str" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+                <com.showstartfans.activity.view.OrderDetailsItemView android:id="@+id/odiv_xia_dan_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+                <com.showstartfans.activity.view.OrderDetailsItemView android:id="@+id/odiv_pay_type" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+                <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+                <com.showstartfans.activity.view.OrderDetailsItemView android:id="@+id/odiv_zong_e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+                <com.showstartfans.activity.view.OrderDetailsItemView android:id="@+id/odiv_yun_fei" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+                <com.showstartfans.activity.view.OrderDetailsItemView android:id="@+id/odiv_you_hj" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+            </LinearLayout>
+            <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.3dp"/>
+            <RelativeLayout android:gravity="center_vertical" android:background="@color/color_white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="55dp">
+                <TextView android:textSize="20sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/pay_stutus_str" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/goods_actually_paid"/>
+                <TextView android:textSize="20sp" android:textColor="@color/color_red" android:id="@+id/tv_amountPayable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

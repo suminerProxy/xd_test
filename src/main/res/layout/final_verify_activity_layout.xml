@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/identity_loading_overlay" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.8"/>
+        <com.aliyun.identity.platform.IdentityLoadingOverlay android:id="@+id/identity_loading_overlay_inner" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <com.aliyun.identity.platform.IdentityAlertOverlay android:id="@+id/identity_alert_overlay" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

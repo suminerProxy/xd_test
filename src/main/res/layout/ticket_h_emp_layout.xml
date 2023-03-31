@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ticket_home_emp" android:scaleType="fitCenter" android:contentDescription="@string/app_name" app:actualImageScaleType="2" app:fadeDuration="0"/>
+    <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:gravity="center" android:id="@+id/emp_title" android:paddingTop="@dimen/dimen_sw_28dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_85dp" android:layout_marginRight="@dimen/dimen_sw_85dp" android:text="购票后，票品会放入票夹中，通过票夹出示票品验票进场"/>
+</LinearLayout>

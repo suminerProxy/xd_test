@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.view.TopBarEmptyView android:id="@+id/topView" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0"/>
+    <FrameLayout android:id="@+id/layout_title" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" app:layout_constraintTop_toBottomOf="@+id/topView">
+        <ImageView android:id="@+id/iv_back" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/b_back_black"/>
+        <TextView android:textSize="@dimen/dimen_sw_16sp" android:textColor="@color/abc_textfield_default_mtrl_alpha" android:layout_gravity="center" android:id="@+id/tv_gen" android:background="@drawable/shape_20dp_c1" android:paddingLeft="@dimen/dimen_sw_14dp" android:paddingTop="@dimen/dimen_sw_7dp" android:paddingRight="@dimen/dimen_sw_14dp" android:paddingBottom="@dimen/dimen_sw_7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_sw_20dp" android:text="生成"/>
+    </FrameLayout>
+    <com.showstartfans.activity.view.InvitationView android:id="@+id/view_invitation" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/layout_title"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

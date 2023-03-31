@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/full_vip_p" android:background="@color/black_80" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14sp" android:textColor="@color/superplayer_white" android:gravity="center" android:layout_width="182dp" android:layout_height="wrap_content" android:text="@string/vip_tips_one"/>
+    <TextView android:textSize="14sp" android:textColor="@color/superplayer_white" android:gravity="center" android:layout_width="182dp" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/vip_tips_two"/>
+    <TextView android:textSize="13sp" android:textColor="@color/default_black" android:gravity="center" android:id="@+id/get_vip_full" android:background="@drawable/vip_button" android:paddingLeft="50dp" android:paddingRight="50dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="20dp" android:text="获取完整观看特权"/>
+</LinearLayout>

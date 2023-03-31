@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="13sp" android:textColor="@color/black1" android:id="@+id/txt_order_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="13sp" android:textColor="@color/abc_item_background_holo_light" android:ellipsize="end" android:id="@+id/txt_order_num" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:singleLine="true" android:layout_toLeftOf="@+id/txt_order_state"/>
+    </RelativeLayout>
+    <View android:layout_marginLeft="15dp" android:layout_marginRight="15dp" style="@style/lineHorizontalEB"/>
+    <RelativeLayout android:id="@+id/rl_activity_detail" android:paddingLeft="15dp" android:paddingTop="20dp" android:paddingRight="15dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.taihebase.activity.view.LoadImageView android:id="@+id/goodsImg" android:background="@color/color_image_bg" android:layout_width="75dp" android:layout_height="100dp" android:layout_marginRight="15dp" android:src="@null" android:scaleType="centerCrop" app:liv_border_color="@color/color_red" app:liv_border_width="0dp" app:liv_corner_radius="@dimen/normal_radius"/>
+        <ImageView android:id="@+id/actExclusiveTag" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/act_exclusive_s" android:scaleType="centerCrop" android:layout_alignRight="@+id/goodsImg"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="100dp" android:layout_toRightOf="@+id/goodsImg">
+            <TextView android:textSize="16sp" android:textColor="@color/black1" android:ellipsize="end" android:id="@+id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" android:lineSpacingExtra="5dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/abc_item_background_holo_light" android:id="@+id/txt_show_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/abc_item_background_holo_light" android:id="@+id/txt_place" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_toRightOf="@+id/goodsImg" android:layout_below="@+id/txt_show_time"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

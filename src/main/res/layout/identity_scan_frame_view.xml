@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/identity_face_scan_frame_view_gap" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/identity_face_id_fade" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:id="@+id/identity_face_scan_line_id_top_gap" android:layout_width="match_parent" android:layout_height="24dp"/>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/identity_face_id_scan_line" android:layout_width="@dimen/identity_face_page_scan_line_width" android:layout_height="6dp" android:src="@mipmap/identity_face_img_scan_line" android:scaleType="fitXY"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/identity_face_gap_view_left" android:layout_width="0dp" android:layout_height="4dp" android:layout_weight="1"/>
+            <ImageView android:id="@+id/identity_face_id_scan_frame_left" android:layout_width="@dimen/identity_face_page_logo_width" android:layout_height="@dimen/identity_face_page_logo_height" android:src="@mipmap/identity_face_img_scan_frame_left" android:scaleType="fitXY"/>
+            <View android:id="@+id/identity_face_id_scan_line_gap" android:layout_width="@dimen/identity_face_page_scan_frame_gap_size" android:layout_height="1dp"/>
+            <ImageView android:id="@+id/identity_face_id_scan_frame_right" android:layout_width="@dimen/identity_face_page_logo_width" android:layout_height="@dimen/identity_face_page_logo_height" android:src="@mipmap/identity_face_img_scan_frame_right" android:scaleType="fitXY"/>
+            <View android:id="@+id/identity_face_gap_view_right" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.github.lzyzsd.jsbridge.BridgeWebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ProgressBar android:id="@+id/loading" android:visibility="visible" android:layout_width="match_parent" android:layout_height="2dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/progress_bar_black" style="?android:attr/progressBarStyleHorizontal"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/menu_p" android:paddingLeft="@dimen/dimen_sw_8dp" android:paddingRight="@dimen/dimen_sw_8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_48dp" android:layout_marginTop="@dimen/dimen_sw_30dp">
+        <FrameLayout android:id="@+id/close" android:background="@drawable/shape_black_alpha50" android:layout_width="@dimen/dimen_sw_35dp" android:layout_height="@dimen/dimen_sw_24dp">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_down" android:contentDescription="@string/app_name"/>
+        </FrameLayout>
+        <TextView android:textSize="22sp" android:textColor="@color/white" android:id="@+id/current_page" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_sw_14dp"/>
+        <TextView android:textSize="20sp" android:textColor="#47ffffff" android:id="@+id/page_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_3dp" android:layout_marginRight="@dimen/dimen_sw_3dp" android:text="/"/>
+        <TextView android:textSize="23sp" android:textColor="#47ffffff" android:id="@+id/total_page" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dimen_sw_14dp"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView android:textSize="13sp" android:textColor="@color/white" android:id="@+id/share_sp" android:background="@drawable/crow_buy_button" android:paddingLeft="@dimen/dimen_sw_16dp" android:paddingTop="@dimen/dimen_sw_3dp" android:paddingRight="@dimen/dimen_sw_16dp" android:paddingBottom="@dimen/dimen_sw_3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分享特刊"/>
+    </LinearLayout>
+    <com.showstartfans.activity.view.VideoFullView android:id="@+id/full_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+</RelativeLayout>

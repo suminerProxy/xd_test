@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android" xmlns:motion="http://schemas.android.com/apk/res-auto"> https://s4.showstart.comhttps//s4.showstart.com/img/2022/0524/15/30/0f62b90a6ec9471db9431011ca21a795_750_750_762596.0x0.jpg\10    https://s4.showstart.com/img/2022/0524/15/30/633087a677b14f9080efe1295c97829e_750_750_170297.0x0.jpg 
+    <Transition motion:constraintSetEnd="@+id/end" motion:constraintSetStart="@+id/start" motion:duration="1000">
+        <KeyFrameSet/>
+    </Transition>
+    <ConstraintSet android:id="@+id/start"/>
+    <ConstraintSet android:id="@+id/end">
+        <Constraint android:id="@+id/constraintLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="1" android:scaleY="1"/>
+    </ConstraintSet>
+</MotionScene>

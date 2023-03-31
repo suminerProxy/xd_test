@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:id="@+id/item_p" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_30dp">
+    <com.opensource.svgaplayer.SVGAImageView android:id="@+id/svg_load" android:layout_width="@dimen/dimen_sw_100dp" android:layout_height="@dimen/dimen_sw_18dp"/>
+</LinearLayout>

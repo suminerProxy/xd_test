@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/parent" android:background="@color/bg_1c" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/parents" android:paddingLeft="16dp" android:paddingTop="7.5dp" android:paddingRight="20dp" android:paddingBottom="15.5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/top_logo" android:layout_width="18dp" android:layout_height="18.5dp" android:src="@drawable/top_one" android:contentDescription="@string/app_name"/>
+        <TextView android:textSize="20sp" android:textColor="@color/color_white" android:gravity="center" android:id="@+id/top_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1"/>
+        <com.taihebase.activity.view.LoadImageView android:id="@+id/top_user" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginLeft="19dp" app:actualImageScaleType="-1" app:roundAsCircle="true"/>
+        <TextView android:textSize="15sp" android:textColor="@color/white" android:id="@+id/topUser_name" android:layout_width="0dp" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+        <TextView android:textSize="12sp" android:textColor="#fbd676" android:gravity="center" android:id="@+id/topPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1"/>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/other_cla" android:background="@drawable/shape_4dp_12" android:paddingLeft="4dp" android:paddingTop="3dp" android:paddingRight="4dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="22dp">
+            <com.taihebase.activity.view.LoadImageView android:id="@+id/cla_icon" android:layout_width="16dp" android:layout_height="16dp" app:liv_corner_radiu_bottomLeft="2dp" app:liv_corner_radiu_bottomRight="2dp" app:liv_corner_radiu_topLeft="2dp" app:liv_corner_radiu_topRight="2dp"/>
+            <TextView android:textSize="10sp" android:textColor="#fbd676" android:gravity="center" android:id="@+id/topPrice_p" android:layout_width="wrap_content" android:layout_height="16dp" android:lines="1" android:paddingStart="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.taihebase.activity.widget.ExpandLayout android:id="@+id/exp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="right" android:id="@+id/user_goods" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_48dp"/>
+    </com.taihebase.activity.widget.ExpandLayout>
+</LinearLayout>

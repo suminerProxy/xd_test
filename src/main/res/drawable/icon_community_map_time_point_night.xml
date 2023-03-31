@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center" android:height="@dimen/dimen_sw_19dp" android:width="@dimen/dimen_sw_19dp">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/dimen_sw_1dp" android:color="@color/color_line_night" android:dashGap="@dimen/dimen_sw_1dp"/>
+            <corners android:topLeftRadius="60dp" android:topRightRadius="0dp" android:bottomLeftRadius="60dp" android:bottomRightRadius="0dp"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="@dimen/dimen_sw_19dp" android:width="@dimen/dimen_sw_9dp">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/dimen_sw_1dp" android:color="@color/color_white_mine_bg_night"/>
+            <corners android:topLeftRadius="0dp" android:topRightRadius="0dp" android:bottomLeftRadius="0dp" android:bottomRightRadius="0dp"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="@dimen/dimen_sw_12dp" android:width="@dimen/dimen_sw_12dp">
+        <shape android:shape="oval">
+            <size android:height="@dimen/dimen_sw_19dp" android:width="@dimen/dimen_sw_19dp"/>
+            <gradient android:startColor="#fffd5f26" android:endColor="#ffeb484a" android:angle="0" android:type="radial" android:gradientRadius="10dp"/>
+        </shape>
+    </item>
+</layer-list>

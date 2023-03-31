@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tencent.txlive.zhibo.widget.TCControllerFloat xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/float_window" android:layout_width="@dimen/dimen_sw_169dp" android:layout_height="@dimen/dimen_sw_95dp"/>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.showstartfans.activity.view.SearchEditText android:textSize="12sp" android:textColor="@color/abc_ic_star_black_48dp" android:textColorHint="@color/abc_list_divider_mtrl_alpha" android:gravity="center_vertical" android:id="@+id/search" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_40dp" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp" android:hint="输入对方的昵称" android:cursorVisible="false" android:drawableLeft="@drawable/search_icon_gray" android:drawablePadding="10dp" android:inputType="text" android:imeOptions="actionDone"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.showstartfans.activity.view.TopTitleListview android:id="@+id/ttlv_TopTitleListview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.showstartfans.activity.view.pin.Sidebar android:id="@+id/sidebar" android:background="@android:color/transparent" android:clickable="true" android:layout_width="@dimen/dimen_sw_20dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_15dp" android:layout_marginBottom="@dimen/dimen_sw_15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="40sp" android:textColor="@color/abc_ic_star_black_48dp" android:gravity="center" android:id="@+id/floating_header" android:background="@drawable/shape_list_slider" android:visibility="invisible" android:layout_width="@dimen/dimen_sw_80dp" android:layout_height="@dimen/dimen_sw_80dp" android:layout_centerInParent="true"/>
+        <include android:id="@+id/emp_p" android:visibility="gone" layout="@layout/layout_empty"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/sobot_common_gray6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/sobot_layout_titlebar1"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <ProgressBar android:id="@+id/sobot_loadProgress" android:paddingLeft="1dp" android:paddingRight="1dp" android:layout_width="match_parent" android:layout_height="5dp" android:max="100" android:progress="0" android:paddingStart="1dp" android:paddingEnd="1dp" style="?android:attr/progressBarStyleHorizontal"/>
+        <com.sobot.chat.widget.SobotWebview android:id="@+id/sobot_mWebView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/sobot_webview_toolsbar" android:layout_width="match_parent" android:layout_height="40dp">
+        <View android:background="#b5b5b5" android:layout_width="match_parent" android:layout_height="0.1dp"/>
+        <LinearLayout android:orientation="horizontal" android:background="@color/sobot_white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="43dp" android:paddingStart="15dp" android:paddingEnd="15dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/sobot_webview_goback" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/sobot_webview_btn_back_selector" android:layout_weight="1"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/sobot_webview_forward" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/sobot_webview_btn_forward_selector" android:layout_weight="1"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/sobot_webview_reload" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/sobot_webview_btn_reload_selector" android:layout_weight="1"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/sobot_webview_copy" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/sobot_webview_btn_copy_selector" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@+id/sobot_rl_net_error" layout="@layout/sobot_layout_net_error"/>
+</LinearLayout>

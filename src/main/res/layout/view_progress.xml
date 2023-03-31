@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.pnikosis.materialishprogress.ProgressWheel android:layout_gravity="center" android:id="@+id/progress_wheel" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" app:matProg_barColor="#33333333" app:matProg_fillRadius="true" app:matProg_progressIndeterminate="true"/>
+    <ViewFlipper android:gravity="center" android:layout_gravity="center" android:id="@+id/vf" android:visibility="visible" android:addStatesFromChildren="true" android:layout_width="45dp" android:layout_height="45dp">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/imageView1" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_progress1" android:scaleType="centerCrop"/>
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/imageView2" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_progress2" android:scaleType="centerCrop"/>
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/imageView3" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_progress3" android:scaleType="centerCrop"/>
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/imageView4" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_progress4" android:scaleType="centerCrop"/>
+    </ViewFlipper>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/parent_img" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/photo_item" android:layout_width="match_parent" android:layout_height="match_parent" app:actualImageScaleType="2" app:progressBarAutoRotateInterval="1000" app:progressBarImage="@mipmap/loading"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/layoutTagParent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

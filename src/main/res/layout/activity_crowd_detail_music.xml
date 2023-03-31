@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/layout_music" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingTop="@dimen/dimen_sw_30dp" android:paddingRight="@dimen/dimen_sw_20dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18sp" android:textColor="@color/abc_ic_star_black_48dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="音乐作品"/>
+    <View android:layout_marginTop="@dimen/dimen_sw_15dp" style="@style/lineHorizontalEB"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/musiclist" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:divider="@null" android:dividerHeight="0dp"/>
+    <View style="@style/lineHorizontalEB"/>
+    <TextView android:textSize="12sp" android:textColor="@color/abc_list_longpressed_holo" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/moreMusicBtn" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zhankai"/>
+</merge>

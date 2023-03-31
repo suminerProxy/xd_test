@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.widget.Toolbar android:id="@+id/topView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/rl_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topView"/>
+</RelativeLayout>

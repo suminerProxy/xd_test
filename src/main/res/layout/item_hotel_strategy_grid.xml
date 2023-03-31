@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/dimen_sw_11sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:id="@+id/tvText" android:paddingTop="@dimen/dimen_sw_2_5dp" android:paddingBottom="@dimen/dimen_sw_2_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="洗浴设施" android:maxLines="1"/>
+</LinearLayout>

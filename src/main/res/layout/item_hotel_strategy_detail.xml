@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.showstartfans.activity.view.ItemHotelStrategy_01 android:id="@+id/item_01" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.showstartfans.activity.view.ItemHotelStrategy_02 android:id="@+id/item_02" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.showstartfans.activity.view.ItemHotelStrategy_03 android:id="@+id/item_03" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

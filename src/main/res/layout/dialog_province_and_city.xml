@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom|center_horizontal" android:orientation="vertical" android:background="#80000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/ll_pop" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="16sp" android:textColor="@color/actionbar_color" android:id="@+id/btn_select_city_cancel" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" style="@style/btnBorderlessStyle"/>
+            <Button android:textSize="16sp" android:textColor="@color/actionbar_color" android:id="@+id/btn_select_city_ok" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" android:layout_alignParentRight="true" style="@style/btnBorderlessStyle"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.showstartfans.activity.view.wheel.WheelView android:layout_gravity="center_vertical" android:id="@+id/wheelView_province" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <com.showstartfans.activity.view.wheel.WheelView android:layout_gravity="center_vertical" android:id="@+id/wheelView_city" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

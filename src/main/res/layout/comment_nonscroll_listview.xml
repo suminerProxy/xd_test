@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.widget.NonScrollListView android:id="@+id/nonScrollListView" android:background="@color/color_white" android:paddingLeft="0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@drawable/item_selector" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0dp" android:choiceMode="singleChoice"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/dataEmptyLly" android:paddingBottom="25dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cm_def_empty"/>
+        <TextView android:textColor="@color/color_gray" android:layout_gravity="center_horizontal" android:id="@+id/tvHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text=""/>
+    </LinearLayout>
+</RelativeLayout>

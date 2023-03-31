@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/ticket_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.viewpager.widget.ViewPager android:id="@+id/vp_bg_viewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_90dp">
+        <com.taihebase.activity.view.TopBarEmptyView android:id="@+id/v_top_empty" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/v_top_empty">
+            <FrameLayout android:background="@drawable/shape_80dp_white" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_18dp">
+                <com.flyco.tablayout.SlidingTabLayout android:id="@+id/tab_Top" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_32dp" app:tl_indicator_color="@color/red_base" app:tl_indicator_corner_radius="2dp" app:tl_indicator_height="2dp" app:tl_indicator_width="@dimen/dimen_sw_20dp" app:tl_indicator_width_equal_title="true" app:tl_tab_padding="@dimen/dimen_sw_5dp" app:tl_textBold="1" app:tl_textSelectColor="@color/abc_vector_test" app:tl_textUnselectColor="@color/notification_bg" app:tl_textsize="@dimen/dimen_sw_12sp" app:tl_unselecttextsize="@dimen/dimen_sw_12sp"/>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.taihebase.activity.view.LoadMoreRecyclerView android:id="@+id/rv_site" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_sw_320dp" app:behavior_hideable="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_behavior="@string/bottom_sheet_behavior"/>
+    <skin.support.svg.SkinSvgImageView android:layout_gravity="end|bottom" android:id="@+id/record" android:background="@drawable/shap_40dp_c1" android:padding="@dimen/dimen_sw_15dp" android:visibility="gone" android:layout_width="@dimen/dimen_sw_50dp" android:layout_height="@dimen/dimen_sw_50dp" android:layout_marginBottom="@dimen/dimen_sw_49dp" android:layout_marginEnd="@dimen/dimen_sw_15dp" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:srcCompat="@drawable/add_group_member" app:svg_color="@color/color_white"/>
+    <RelativeLayout android:id="@+id/parent_top" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_90dp">
+        <View android:id="@+id/top_bg_view" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0"/>
+        <com.taihebase.activity.view.TopBarEmptyView android:id="@+id/top_empty" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top_empty">
+            <com.taihebase.activity.view.LoadImageView android:id="@+id/circleImage_head_small" android:layout_width="@dimen/dimen_sw_30dp" android:layout_height="@dimen/dimen_sw_30dp" android:src="@drawable/icon_avatar_default" android:scaleType="centerCrop" android:alpha="0" app:liv_failure_image="@drawable/circular_load_img_bg" app:roundAsCircle="true"/>
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:id="@+id/txt_name_small" android:layout_width="0dp" android:layout_height="wrap_content" android:lines="1" android:drawablePadding="2dp" android:layout_weight="1" android:alpha="0" android:layout_marginStart="@dimen/dimen_sw_8dp"/>
+            <FrameLayout android:id="@+id/setting_menu" android:background="@drawable/circular_white_bg" android:layout_width="@dimen/dimen_sw_32dp" android:layout_height="@dimen/dimen_sw_32dp" android:layout_marginStart="@dimen/dimen_sw_12dp" android:layout_marginEnd="@dimen/dimen_sw_20dp" android:elevation="12dp" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_mine_shezhis" android:contentDescription="@string/app_name"/>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/play_music" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

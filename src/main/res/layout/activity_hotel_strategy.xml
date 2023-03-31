@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.viewpager.widget.ViewPager android:id="@+id/vpInvisible" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RadioGroup android:orientation="horizontal" android:id="@+id/radioGroup" android:background="@color/color_white" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="50dp" android:paddingHorizontal="@dimen/dimen_sw_20dp">
+            <RadioButton android:textSize="@dimen/dimen_sw_18sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:id="@+id/tab_0" android:layout_width="0dp" android:layout_height="match_parent" android:checked="true" android:button="@null" android:text="酒店亮点" android:layout_weight="1"/>
+            <RadioButton android:textSize="@dimen/dimen_sw_18sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:id="@+id/tab_1" android:layout_width="0dp" android:layout_height="match_parent" android:checked="true" android:button="@null" android:text="入住指南" android:layout_weight="1"/>
+            <RadioButton android:textSize="@dimen/dimen_sw_18sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:id="@+id/tab_2" android:layout_width="0dp" android:layout_height="match_parent" android:checked="true" android:button="@null" android:text="酒店设施" android:layout_weight="1"/>
+        </RadioGroup>
+        <com.viewpagerindicator.UnderlinePageIndicator android:id="@+id/indicator" android:background="@color/transparent" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="2dp" android:paddingHorizontal="@dimen/dimen_sw_20dp" app:fades="false" app:selectedColor="@color/red_base"/>
+        <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvList" android:background="@color/bg_color" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:background="@color/color_white" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_60dp" android:elevation="12dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/layoutPrice" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dimen_sw_14sp" android:textStyle="bold" android:textColor="@color/red_base" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥"/>
+                <TextView android:textSize="@dimen/dimen_sw_20sp" android:textStyle="bold" android:textColor="@color/red_base" android:id="@+id/tv_Price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="998"/>
+                <TextView android:textSize="@dimen/dimen_sw_12sp" android:textColor="@color/abc_ic_ab_back_material" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_1dp" android:text="/晚"/>
+            </LinearLayout>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/dimen_sw_16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tvShowRoom" android:background="@drawable/crow_buy_button" android:paddingLeft="@dimen/dimen_sw_40dp" android:paddingRight="@dimen/dimen_sw_40dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_1dp" android:minHeight="@dimen/dimen_sw_45dp" android:text="查看房型"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

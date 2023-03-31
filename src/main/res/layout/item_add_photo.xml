@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/add_btn" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="@dimen/dimen_sw_130dp" android:layout_height="@dimen/dimen_sw_130dp">
+        <com.taihebase.activity.view.svg.SvgImageView android:layout_gravity="center" android:layout_width="@dimen/dimen_sw_25dp" android:layout_height="@dimen/dimen_sw_25dp" app:srcCompat="@drawable/ic_icon_add_photo" app:svg_color="@color/abc_ic_ab_back_material"/>
+    </FrameLayout>
+</FrameLayout>

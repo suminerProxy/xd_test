@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="#ff000000" android:id="@+id/info" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="购票信息" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="15sp" android:textColor="#ffbbbbbb" android:id="@+id/changeWay" android:background="@drawable/item_selector" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更换取票方式" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/div" app:layout_constraintTop_toBottomOf="@+id/info" style="@style/lineHorizontalEB"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/contentDis" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:id="@+id/div2" style="@style/lineHorizontalEB"/>
+    <TextView android:textSize="12sp" android:textColor="#ffaaaaaa" android:id="@+id/desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:lineSpacingExtra="5dp"/>
+</LinearLayout>

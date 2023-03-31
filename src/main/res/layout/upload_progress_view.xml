@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/MoveView" android:layout_width="@dimen/dimen_sw_65dp" android:layout_height="@dimen/dimen_sw_65dp">
+        <com.taihebase.activity.view.LoadImageView android:id="@+id/upload_img_post" android:layout_width="match_parent" android:layout_height="match_parent" app:liv_corner_radius="@dimen/dimen_sw_12dp" app:roundAsCircle="true"/>
+        <View android:id="@+id/tasks_bg" android:background="@drawable/icon_mine_upload_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.taihebase.activity.view.UploadProgressBar android:layout_gravity="center" android:id="@+id/tasks_view" android:layout_width="@dimen/dimen_sw_65dp" android:layout_height="@dimen/dimen_sw_65dp" app:circleColor="#00000000" app:radius="20dp" app:ringBgColor="@color/white" app:ringColor="@color/red_base" app:strokeWidth="5dp"/>
+    </FrameLayout>
+</RelativeLayout>

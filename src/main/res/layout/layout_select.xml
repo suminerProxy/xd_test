@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:id="@+id/menu_one" android:layout_width="match_parent" android:layout_height="50dp" android:text="删除"/>
+    <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.3dp"/>
+    <TextView android:textSize="16sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:id="@+id/menu_two" android:layout_width="match_parent" android:layout_height="50dp" android:text="取消"/>
+</LinearLayout>

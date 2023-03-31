@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@drawable/play_music_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_40dp"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_40dp" android:layout_centerVertical="true">
+        <TextView android:textSize="13sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:layout_marginEnd="@dimen/dimen_sw_20dp"/>
+        <FrameLayout android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="@dimen/dimen_sw_26dp" android:layout_height="@dimen/dimen_sw_26dp">
+            <ImageView android:layout_gravity="center" android:id="@+id/iv_play" android:layout_width="@dimen/dimen_sw_25dp" android:layout_height="@dimen/dimen_sw_25dp" android:src="@drawable/mine_icon_stop" android:contentDescription="@string/app_name"/>
+            <com.pnikosis.materialishprogress.ProgressWheel android:layout_gravity="center" android:id="@+id/pw_media" android:layout_width="@dimen/dimen_sw_26dp" android:layout_height="@dimen/dimen_sw_26dp" app:matProg_barColor="@color/red_base" app:matProg_barWidth="2.5dp" app:matProg_linearProgress="true"/>
+        </FrameLayout>
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_stop" android:layout_width="@dimen/dimen_sw_25dp" android:layout_height="@dimen/dimen_sw_25dp" android:src="@drawable/personal_bt_delete" android:contentDescription="@string/app_name" android:layout_marginStart="@dimen/dimen_sw_28dp"/>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_200dp_white" android:paddingLeft="@dimen/dimen_sw_13dp" android:paddingRight="@dimen/dimen_sw_13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_sw_32dp">
+        <com.taihebase.activity.view.svg.SvgImageView android:layout_width="@dimen/dimen_sw_14dp" android:layout_height="wrap_content" app:srcCompat="@drawable/icon_group_notice" app:svg_color="@color/abc_ic_ab_back_material"/>
+        <TextView android:textSize="@dimen/dimen_sw_13sp" android:textColor="@color/abc_ic_ab_back_material" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:text="群公告："/>
+        <TextView android:textSize="@dimen/dimen_sw_13sp" android:textColor="@color/abc_ic_star_half_black_36dp" android:ellipsize="end" android:id="@+id/tvContent" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_sw_15dp" android:text="公告内容公告内容公告内" android:maxLines="1" android:layout_weight="1"/>
+        <com.taihebase.activity.view.svg.SvgImageView android:layout_width="@dimen/dimen_sw_6dp" android:layout_height="wrap_content" app:srcCompat="@drawable/svg_icon_arrow_right" app:svg_color="@color/abc_ic_star_half_black_36dp"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="58.48dp">
+    <CheckBox android:gravity="center" android:layout_gravity="center" android:id="@+id/group_member_check_box" android:background="@drawable/group_checkbox_selector" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:button="@null"/>
+    <com.tencent.qcloud.tuicore.component.gatherimage.ShadeImageView android:layout_gravity="center_vertical" android:id="@+id/group_member_icon" android:layout_width="38.4dp" android:layout_height="38.4dp" android:layout_marginLeft="15.36dp" android:layout_marginRight="11.52dp" android:scaleType="centerCrop"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="17.28sp" android:textColor="#ff111111" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/group_member_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1"/>
+        <View android:id="@+id/view_line" android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="0.55dp"/>
+    </LinearLayout>
+</LinearLayout>

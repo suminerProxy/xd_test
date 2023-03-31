@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/default_system_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="12sp" android:textColor="@color/abc_item_background_holo_light" android:gravity="center_vertical" android:background="@color/default_system_background" android:paddingLeft="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_50dp" android:text="@string/setting_private"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_6dp_whilte" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_sw_15dp" android:layout_marginEnd="@dimen/dimen_sw_15dp">
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_65dp">
+            <TextView android:textSize="14sp" android:textColor="@color/abc_ic_star_black_48dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="允许别人看我的现场经历" android:layout_weight="1"/>
+            <com.taihebase.activity.view.switchButton.SwitchButton android:id="@+id/switch_experience" android:layout_width="@dimen/dimen_sw_65dp" android:layout_height="@dimen/dimen_sw_40dp" app:sb_show_indicator="false"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_65dp">
+            <TextView android:textSize="14sp" android:textColor="@color/abc_ic_star_black_48dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="允许别人看到与我的距离" android:layout_weight="1" android:layout_marginEnd="@dimen/dimen_sw_20dp"/>
+            <com.taihebase.activity.view.switchButton.SwitchButton android:id="@+id/switch_distance" android:layout_width="@dimen/dimen_sw_65dp" android:layout_height="@dimen/dimen_sw_40dp" app:sb_checked_color="@color/abc_ic_star_black_48dp" app:sb_show_indicator="false"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_65dp">
+            <TextView android:textSize="14sp" android:textColor="@color/abc_ic_star_black_48dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="允许别人看到我的关注和粉丝" android:layout_weight="1" android:layout_marginEnd="@dimen/dimen_sw_20dp"/>
+            <com.taihebase.activity.view.switchButton.SwitchButton android:id="@+id/switch_attention_fans" android:layout_width="@dimen/dimen_sw_65dp" android:layout_height="@dimen/dimen_sw_40dp" app:sb_checked_color="@color/abc_ic_star_black_48dp" app:sb_show_indicator="false"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_65dp">
+            <TextView android:textSize="14sp" android:textColor="@color/abc_ic_star_black_48dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="允许别人给我私信" android:layout_weight="1" android:layout_marginEnd="@dimen/dimen_sw_20dp"/>
+            <com.taihebase.activity.view.switchButton.SwitchButton android:id="@+id/switch_private_chat" android:layout_width="@dimen/dimen_sw_65dp" android:layout_height="@dimen/dimen_sw_40dp" app:sb_checked_color="@color/abc_ic_star_black_48dp" app:sb_show_indicator="false"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:visibility="gone" android:layout_marginStart="@dimen/dimen_sw_15dp" style="@style/lineHorizontalEB"/>
+</LinearLayout>

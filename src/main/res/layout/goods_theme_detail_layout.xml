@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.showstartfans.activity.view.CoordinatorLayoutDown xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/detectDown" android:background="@color/default_system_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+        <com.showstartfans.activity.view.MyCollapsingToolbarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="0x3">
+            <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/topImage" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_380dp" android:adjustViewBounds="true" app:liv_failure_image="@drawable/profile_header_bg"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/detailContainer" android:background="@drawable/show_artist_bg" android:paddingBottom="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topImage">
+                    <TextView android:textSize="@dimen/dimen_sw_14sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/detailTitle" android:paddingLeft="@dimen/dimen_sw_20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_30dp" android:text="小馆馆文小小" android:maxLines="2"/>
+                    <com.showstartfans.activity.activitys.goods.goodsStore.GoodThemeWebView android:textSize="13sp" android:textColor="@color/abc_ic_star_half_black_36dp" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/detailContent" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_12dp" android:layout_below="@+id/detailTitle"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <com.taihebase.activity.widget.Toolbar android:layout_gravity="top" android:id="@+id/toolbar" android:background="@color/abc_ic_ab_back_material" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="1"/>
+        </com.showstartfans.activity.view.MyCollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout android:id="@+id/content_view" android:background="@drawable/shape_10dp_white_top" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_anchor="@+id/app_bar" app:layout_anchorGravity="0x50" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/emp_v" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_120dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/none_goods_bg" android:contentDescription="@string/app_name"/>
+            <TextView android:textSize="13sp" android:textColor="@color/abc_list_divider_mtrl_alpha" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_20dp" android:text="时间的灰已将这里尘封许久"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dimen_sw_18sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/goodTitle" android:paddingLeft="@dimen/dimen_sw_20dp" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_60dp" android:text="商品"/>
+        <com.taihebase.activity.widget.RecycleEmptyView android:id="@+id/grid_view" android:paddingTop="@dimen/dimen_sw_60dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</com.showstartfans.activity.view.CoordinatorLayoutDown>

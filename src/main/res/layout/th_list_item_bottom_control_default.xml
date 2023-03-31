@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:id="@+id/time_p" android:background="@drawable/play_time_bg" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_24dp" android:layout_marginBottom="@dimen/dimen_sw_2dp">
+        <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00"/>
+        <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/line" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/"/>
+        <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/total" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/fullscreen" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginBottom="4dp" android:src="@drawable/live_icon_screenturn" android:scaleType="centerInside" android:layout_above="@+id/bottom_seek_progress" android:layout_centerVertical="true" android:contentDescription="@string/app_name" android:layout_marginEnd="8dp" android:layout_alignParentEnd="true"/>
+    <SeekBar android:id="@+id/bottom_seek_progress" android:background="@null" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="4dp" android:max="100" android:progressDrawable="@drawable/seek_progres_video" android:minHeight="4dp" android:thumb="@drawable/bottom_seek_thumb" android:layout_below="@+id/time_p" android:paddingStart="0dp" android:paddingEnd="0dp"/>
+</merge>

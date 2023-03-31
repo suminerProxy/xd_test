@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/img_coupon_bg" android:layout_width="@dimen/dimen_sw_280dp" android:layout_height="@dimen/dimen_sw_385dp" android:scaleType="fitXY" android:layout_alignParentBottom="true" app:fadeDuration="0" app:liv_corner_radius="@dimen/normal_radius"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/close_btn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_m_20dp" android:layout_above="@+id/img_coupon_bg" android:layout_alignRight="@+id/img_coupon_bg">
+        <ImageView android:id="@+id/img_close_coupon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_close_pay_scs" android:contentDescription="@string/app_name"/>
+        <View android:background="@color/color_white" android:layout_width="1dp" android:layout_height="@dimen/dimen_sw_20dp" android:layout_marginTop="-1dp"/>
+    </LinearLayout>
+</RelativeLayout>

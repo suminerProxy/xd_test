@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/layout_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/sdv_photo" android:layout_width="match_parent" android:layout_height="match_parent" app:placeholderImageScaleType="6"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/layout_slider" android:background="@color/bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.taihebase.activity.view.svg.SvgImageView android:layout_width="@dimen/dimen_sw_8dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_12dp" app:srcCompat="@drawable/ic_icon_left_twoarrow" app:svg_color="@color/abc_ic_ab_back_material"/>
+        <TextView android:textSize="@dimen/dimen_sw_13sp" android:textColor="@color/abc_ic_ab_back_material" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_13dp" android:text="查\10看\10更\10多" android:lineSpacingExtra="@dimen/dimen_sw_2dp"/>
+    </LinearLayout>
+</FrameLayout>

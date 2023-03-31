@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/abc_textfield_default_mtrl_alpha" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.soli.pullupdownrefresh.PullRefreshLayout android:id="@+id/pullRefreshLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/detectDown" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:background="@color/abc_textfield_default_mtrl_alpha" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp" app:layout_behavior=".widget.FlingBehavior">
+                <View android:layout_width="match_parent" android:layout_height="2dp" app:layout_scrollFlags="0x1"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/listTab" android:paddingLeft="@dimen/dimen_sw_10dp" android:paddingRight="@dimen/dimen_sw_10dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="0x0"/>
+            </com.google.android.material.appbar.AppBarLayout>
+            <com.taihebase.activity.view.LoadMoreRecyclerView android:id="@+id/listContent" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.soli.pullupdownrefresh.PullRefreshLayout>
+</LinearLayout>

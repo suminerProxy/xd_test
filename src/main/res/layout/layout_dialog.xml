@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/popu_dialog_bg" android:layout_width="320dp" android:layout_height="wrap_content">
+        <TextView android:textSize="20dp" android:textColor="#000" android:id="@+id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp"/>
+        <EditText android:gravity="top|left" android:id="@+id/dialog_editor" android:background="@drawable/editor_border_gray" android:padding="10dp" android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:textCursorDrawable="@drawable/my_cursor"/>
+        <View android:background="#dcdcdc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="20dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="53.33dp">
+            <TextView android:textColor="#000" android:gravity="center" android:id="@+id/dialog_cancel_btn" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:alpha="0.9"/>
+            <View android:background="#dcdcdc" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <TextView android:textColor="#2979ff" android:gravity="center" android:id="@+id/dialog_sure_btn" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:alpha="0.9"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

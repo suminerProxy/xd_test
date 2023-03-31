@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/default_system_background" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/chat_fly" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/tips_p" android:background="@drawable/cm_ripple_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_50dp">
+        <TextView android:textSize="13sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center_vertical" android:id="@+id/tips" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/chat_tips" android:paddingStart="@dimen/dimen_sw_23dp" android:paddingEnd="@dimen/dimen_sw_23dp"/>
+        <ImageView android:id="@+id/close_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/im_notice_close" android:contentDescription="@string/comment"/>
+    </FrameLayout>
+</FrameLayout>

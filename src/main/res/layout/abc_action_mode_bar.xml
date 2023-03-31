@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.ActionBarContextView xmlns:android="http://schemas.android.com/apk/res/android" android:theme="?attr/abc_search_url_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/bright_foreground_disabled_material_dark"/>

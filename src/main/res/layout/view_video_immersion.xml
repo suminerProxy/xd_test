@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingBottom="@dimen/dimen_sw_81dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.view.TopBarEmptyView android:id="@+id/top_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0"/>
+    <FrameLayout android:id="@+id/layout_video_parent" android:layout_width="match_parent" android:layout_height="0dp" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/top_bar">
+        <com.showstartfans.activity.view.DyVideoView android:id="@+id/player" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <View android:background="@drawable/gradient_black_down" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_233dp" app:layout_constraintTop_toBottomOf="@+id/top_bar"/>
+    <View android:background="@drawable/gradient_black_up" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_233dp" android:layout_alignParentBottom="true" app:layout_constraintBottom_toBottomOf="0"/>
+    <View android:id="@+id/v_full_black" android:background="#33000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/iv_center" android:background="@drawable/play_button" android:layout_width="@dimen/dimen_sw_54dp" android:layout_height="@dimen/dimen_sw_54dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/top_bar"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

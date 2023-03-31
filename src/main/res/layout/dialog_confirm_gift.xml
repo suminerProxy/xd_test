@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_10dp_white" android:padding="@dimen/dimen_sw_20dp" android:layout_width="@dimen/dimen_sw_335dp" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_sw_20dp">
+        <TextView android:id="@+id/close_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/b_close"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_18dp" android:text="您选择将票赠予"/>
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_16dp">
+            <LinearLayout android:gravity="center_vertical" android:background="@drawable/shape_12dp_f8" android:paddingLeft="@dimen/dimen_sw_18dp" android:paddingTop="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_18dp" android:paddingBottom="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="@dimen/dimen_sw_46dp" android:layout_height="@dimen/dimen_sw_45dp">
+                    <com.taihebase.activity.view.LoadImageView android:id="@+id/gift_user_logo" android:visibility="gone" android:layout_width="@dimen/dimen_sw_45dp" android:layout_height="@dimen/dimen_sw_45dp" app:liv_failure_image="@drawable/fail_bg" app:roundAsCircle="true"/>
+                    <ImageView android:layout_gravity="bottom|right" android:id="@+id/user_TypeLogo" android:visibility="gone" android:layout_width="@dimen/dimen_sw_17dp" android:layout_height="@dimen/dimen_sw_17dp" android:src="@drawable/icon_avatar_default" android:scaleType="centerCrop" android:contentDescription="@string/app_name"/>
+                </FrameLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_10dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/abc_ic_star_half_black_36dp" android:ellipsize="end" android:id="@+id/gift_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dimen_sw_100dp" android:lines="1"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/gift_user_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_6dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/un_user" android:background="@drawable/pay_tips_top" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingTop="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_20dp" android:paddingBottom="@dimen/dimen_sw_15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bind_s_user" android:drawableLeft="@drawable/icon_wraning" android:drawablePadding="@dimen/dimen_sw_20dp"/>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/sure_t_gift_t" android:background="@drawable/crow_buy_button" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_45dp" android:layout_marginTop="@dimen/dimen_sw_20dp" android:text="确定赠予" android:layout_below="@+id/ticket_xy_g"/>
+    </LinearLayout>
+</FrameLayout>

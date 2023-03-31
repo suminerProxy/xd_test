@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_sw_8dp">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/layout_item" android:background="@drawable/shape_10dp_f8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.5dp">
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/one_p" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_22dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_sw_5dp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/dimen_sw_14sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/ticket_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_sw_20dp" android:layout_weight="1"/>
+                <include android:id="@+id/coupon_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_sw_4dp" layout="@layout/v_coupon_label"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:layout_gravity="bottom" android:id="@+id/ticket_old_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_sw_4dp" android:layout_marginBottom="@dimen/dimen_sw_2dp"/>
+                <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/red_base" android:id="@+id/ticket_money_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥"/>
+                <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/red_base" android:id="@+id/ticket_price" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:paddingBottom="@dimen/dimen_sw_22dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/one_p">
+            <TextView android:textSize="11sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center_vertical" android:id="@+id/ticket_other_type" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:drawablePadding="4dp"/>
+            <View android:layout_width="match_parent" android:layout_height="15dp"/>
+            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/ticket_time" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="2dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:id="@+id/ticket_type_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_2dp" android:lineSpacingExtra="3dp"/>
+            <View android:id="@+id/des_line" android:background="@color/abc_ic_voice_search_api_material" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_marginTop="@dimen/dimen_sw_15dp"/>
+            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/ticket_qp_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_15dp" android:text="开售前10分钟可提前进入下单页" android:lineSpacingExtra="3dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

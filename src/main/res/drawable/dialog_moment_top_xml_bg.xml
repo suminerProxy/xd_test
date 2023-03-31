@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="@color/color_white" android:endColor="#ffffe1e1" android:angle="90"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/dialog_moment_top_bg"/>
+</layer-list>

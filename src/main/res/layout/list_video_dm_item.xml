@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="right" android:layout_width="@dimen/dimen_sw_200dp" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:background="@drawable/list_video_dm_bg" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp">
+        <com.taihebase.activity.view.LoadImageView android:id="@+id/avater" android:layout_width="20dp" android:layout_height="20dp" app:roundAsCircle="true"/>
+        <TextView android:textSize="12sp" android:textColor="@color/color_white" android:ellipsize="end" android:id="@+id/user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="秀动" android:lines="1"/>
+    </LinearLayout>
+</FrameLayout>

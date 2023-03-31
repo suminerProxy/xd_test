@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#1c1c1c" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.view.TopBarEmptyView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_44dp">
+        <ImageView android:id="@+id/iv_back" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/b_back_white"/>
+        <TextView android:textSize="@dimen/dimen_sw_18sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/tv_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="头像"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.taihe.photoselector.ui.PhotoFullscreenPreview android:id="@+id/preview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/layout_bottom" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_65dp">
+        <TextView android:textSize="@dimen/dimen_sw_14sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvChangeHead" android:background="@drawable/shape_40dp_red" android:paddingLeft="@dimen/dimen_sw_36dp" android:paddingRight="@dimen/dimen_sw_36dp" android:layout_width="@dimen/dimen_sw_159dp" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_sw_45dp" android:text="更换头像"/>
+    </FrameLayout>
+</LinearLayout>

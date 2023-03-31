@@ -1,0 +1,274 @@
+[
+  {
+    "type": 1,
+    "login": false,
+    "path": "/event/list",
+    "parameterMapping": {
+      "tag": "tag",
+      "type": "type"
+    }
+  },
+  {
+    "type": 1,
+    "login": false,
+    "path": "/pages/activity/list/list",
+    "parameterMapping": {
+      "tag": "tag",
+      "type": "type"
+    }
+  },
+  {
+    "type": 2,
+    "login": false,
+    "path": "/event/{activityId}",
+    "parameterMapping": {}
+  },
+  {
+    "type": 2,
+    "login": false,
+    "path": "/pages/activity/detail/detail",
+    "parameterMapping": {
+      "shareId": "shareId",
+      "id": "activityId",
+      "getcoupon": "getcoupon"
+    }
+  },
+  {
+    "type": 3,
+    "login": false,
+    "path": "/goods/{goodsId}",
+    "parameterMapping": {}
+  },
+  {
+    "type": 3,
+    "login": false,
+    "path": "/pages/goods/detail/detail",
+    "parameterMapping": {
+      "id": "goodsId"
+    }
+  },
+  {
+    "type": 4,
+    "login": false,
+    "path": "/raise/{raiseId}",
+    "parameterMapping": {}
+  },
+  {
+    "type": 4,
+    "login": false,
+    "path": "/pages/raise/detail/detail",
+    "parameterMapping": {
+      "id": "raiseId"
+    }
+  },
+  {
+    "type": 5,
+    "login": false,
+    "path": "/theme/{themeId}",
+    "parameterMapping": {
+      "type": "type"
+    }
+  },
+  {
+    "type": 5,
+    "login": false,
+    "path": "/pages/goods/theme/theme",
+    "parameterMapping": {
+      "id": "themeId",
+      "type": "type"
+    }
+  },
+  {
+    "type": 6,
+    "login": false,
+    "path": "/venue/{siteId}",
+    "parameterMapping": {}
+  },
+  {
+    "type": 6,
+    "login": false,
+    "path": "/pages/site/site/site",
+    "parameterMapping": {
+      "id": "siteId"
+    }
+  },
+  {
+    "type": 7,
+    "login": false,
+    "path": "/artist/{artistId}",
+    "parameterMapping": {}
+  },
+  {
+    "type": 7,
+    "login": false,
+    "path": "/pages/site/artist/artist",
+    "parameterMapping": {
+      "id": "artistId"
+    }
+  },
+  {
+    "type": 8,
+    "login": false,
+    "path": "/host/{hostId}",
+    "parameterMapping": {}
+  },
+  {
+    "type": 8,
+    "login": false,
+    "path": "/pages/site/brand/brand",
+    "parameterMapping": {
+      "id": "hostId"
+    }
+  },
+  {
+    "type": 9,
+    "login": false,
+    "path": "/fan/{fansId}",
+    "parameterMapping": {}
+  },
+  {
+    "type": 10,
+    "login": true,
+    "path": "/coupon/mylist",
+    "parameterMapping": {}
+  },
+  {
+    "type": 10,
+    "login": true,
+    "path": "/pages/coupon/list/list",
+    "parameterMapping": {}
+  },
+  {
+    "type": 11,
+    "login": true,
+    "path": "/user/opinion",
+    "parameterMapping": {}
+  },
+  {
+    "type": 12,
+    "login": false,
+    "path": "/pages/raise/list/list",
+    "parameterMapping": {
+      "promoter": "promoter"
+    }
+  },
+  {
+    "type": 13,
+    "login": false,
+    "path": "/pages/goods/list/list",
+    "parameterMapping": {
+      "id": "targetId",
+      "type": "targetType"
+    }
+  },
+  {
+    "type": 13,
+    "login": false,
+    "path": "/goods/list",
+    "parameterMapping": {
+      "id": "targetId",
+      "type": "targetType"
+    }
+  },
+  {
+    "type": 14,
+    "login": true,
+    "path": "/pages/special/share/list/list",
+    "parameterMapping": {
+      "tap": "tap"
+    }
+  },
+  {
+    "type": 15,
+    "login": false,
+    "path": "/pages/community/list/list",
+    "parameterMapping": {}
+  },
+  {
+    "type": 16,
+    "login": true,
+    "path": "/chat",
+    "parameterMapping": {
+      "id": "targetId"
+    }
+  },
+  {
+    "type": 17,
+    "login": false,
+    "path": "/pages/video/channel/channel",
+    "parameterMapping": {
+      "id": "channelId"
+    }
+  },
+  {
+    "type": 18,
+    "login": true,
+    "path": "/pages/live/room/room",
+    "parameterMapping": {
+      "id": "roomId"
+    }
+  },
+  {
+    "type": 19,
+    "login": false,
+    "path": "/pages/tool/videodetails/videodetails",
+    "parameterMapping": {
+      "mainletterId": "mainletterId",
+      "id": "videoId"
+    }
+  },
+  {
+    "type": 20,
+    "login": false,
+    "path": "/pages/videoissue/videoissue",
+    "parameterMapping": {
+      "mainletterId": "mainletterId",
+      "id": "issueId"
+    }
+  },
+  {
+    "type": 21,
+    "login": true,
+    "path": "/pages/user/identity/identapp/index",
+    "parameterMapping": {}
+  },
+  {
+    "type": 22,
+    "login": false,
+    "path": "/pages/tool/bbs/bbs",
+    "parameterMapping": {
+      "id": "postId"
+    }
+  },
+  {
+    "type": 23,
+    "login": true,
+    "path": "/pages/special/share/detail/detail",
+    "params": {}
+  },
+  {
+    "type": 24,
+    "login": false,
+    "path": "/pages/tool/visitcard/visitcard",
+    "parameterMapping": {
+      "id": "userId",
+      "type": "userType"
+    }
+  },
+  {
+    "type": 25,
+    "login": false,
+    "path": "/pages/index/index",
+    "parameterMapping": {
+      "id": "targetId",
+      "type": "targetType"
+    }
+  },
+  {
+    "type": 28,
+    "login": true,
+    "parameterMapping": {},
+    "params": {},
+    "path": "/pages/order/goods/detail/detail"
+  }
+]

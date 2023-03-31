@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/selectable_contact_item" android:background="@color/abc_btn_check_to_on_mtrl_015" android:focusable="true" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_75dp">
+    <LinearLayout android:paddingLeft="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@+id/layoutHeader" android:layout_width="@dimen/dimen_sw_45dp" android:layout_height="@dimen/dimen_sw_45dp">
+            <com.tencent.qcloud.tuicore.component.gatherimage.ShadeImageView android:id="@+id/ivAvatar" android:focusable="false" android:clickable="false" android:layout_width="@dimen/dimen_sw_45dp" android:layout_height="@dimen/dimen_sw_45dp"/>
+            <View android:id="@+id/user_status" android:background="?attr/user_status_offline" android:visibility="gone" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginBottom="1dp" android:layout_alignParentBottom="true" android:layout_marginEnd="0dp" android:elevation="4dp"/>
+            <ImageView android:layout_gravity="bottom|right" android:id="@+id/image_type" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/icon_artist_tag" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_sw_20dp">
+            <TextView android:textSize="@dimen/dimen_sw_14sp" android:textColor="@color/abc_ic_star_black_48dp" android:ellipsize="end" android:id="@+id/tvName" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dimen_sw_150dp" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerInParent="true"/>
+            <com.showstartfans.activity.view.GroupMemberTagView android:id="@+id/viewTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_3dp" android:layout_toRightOf="@+id/tvName" android:layout_centerVertical="true"/>
+            <com.tencent.qcloud.tuicore.component.UnreadCountTextView android:textSize="10sp" android:textColor="#fff" android:gravity="center" android:id="@+id/conversation_unread" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_3dp" android:layout_marginRight="24dp" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/view_line" android:background="@color/abc_switch_thumb_material" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

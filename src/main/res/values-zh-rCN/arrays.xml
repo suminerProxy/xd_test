@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="addBlack">
+        <item>选择操作功能</item>
+        <item>加入黑名单</item>
+        <item>举报</item>
+    </array>
+    <array name="addPhoto">
+        <item>拍照</item>
+        <item>相册</item>
+        <item>取消</item>
+    </array>
+    <array name="abc_config_actionMenuItemAllCaps">
+        <item>选择操作功能</item>
+        <item>编辑</item>
+        <item>删除</item>
+    </array>
+    <array name="call_self">
+        <item>查看用户</item>
+    </array>
+    <array name="card_menu_check">
+        <item>选择证件类型</item>
+        <item>身份证</item>
+        <item>港澳通行证</item>
+        <item>台胞证</item>
+        <item>护照</item>
+    </array>
+    <array name="daohang">
+        <item>请选择导航方式</item>
+        <item>高德</item>
+        <item>百度</item>
+    </array>
+    <array name="deleteBlack">
+        <item>选择操作功能</item>
+        <item>解除黑名单</item>
+        <item>举报</item>
+    </array>
+    <array name="manager_call">
+        <item>查看用户</item>
+        <item>举报用户</item>
+        <item>禁止发言</item>
+    </array>
+    <array name="manager_call_no">
+        <item>查看用户</item>
+        <item>举报用户</item>
+    </array>
+    <array name="report">
+        <item>举报</item>
+        <item>欺诈</item>
+        <item>色情</item>
+        <item>广告</item>
+        <item>骚扰</item>
+        <item>其他</item>
+    </array>
+    <array name="report_comm">
+        <item>选择操作功能</item>
+        <item>举报</item>
+    </array>
+    <array name="report_two">
+        <item>举报</item>
+        <item>欺诈</item>
+        <item>色情</item>
+        <item>广告</item>
+        <item>骚扰</item>
+        <item>其他</item>
+    </array>
+    <array name="scene_me_menu">
+        <item>选择操作功能</item>
+        <item>删除</item>
+        <item>公开</item>
+        <item>主页可见</item>
+        <item>自己可见</item>
+    </array>
+    <array name="see_real_picture">
+        <item>选择操作功能</item>
+        <item>保存图片</item>
+    </array>
+    <array name="see_real_picture_me">
+        <item>选择操作功能</item>
+        <item>保存图片</item>
+        <item>删除图片</item>
+    </array>
+    <array name="select_ticket_type">
+        <item>选择取票方式</item>
+        <item>实体票寄送</item>
+        <item>实体票自取</item>
+    </array>
+    <array name="take_goods_type">
+        <item>选择操作功能</item>
+        <item>现场自取</item>
+        <item>快递发货</item>
+    </array>
+</resources>

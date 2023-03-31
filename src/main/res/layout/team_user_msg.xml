@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.taihebase.activity.view.LoadImageView android:id="@+id/user_icon" android:layout_width="@dimen/dimen_sw_40dp" android:layout_height="@dimen/dimen_sw_40dp" android:adjustViewBounds="true" app:liv_corner_radius="@dimen/normal_radius" app:roundedCornerRadius="4dp"/>
+    <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:ellipsize="end" android:gravity="center" android:id="@+id/user_name" android:layout_width="@dimen/dimen_sw_40dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_9dp" android:maxLines="1"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/video_conver_recyclerView" android:layout_width="match_parent" android:layout_height="90dp"/>
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="90dp" android:src="@mipmap/ic_video_thumb_handle_big"/>
+    </FrameLayout>
+</RelativeLayout>

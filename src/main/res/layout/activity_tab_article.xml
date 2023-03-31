@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/abc_btn_check_to_on_mtrl_015" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.view.TopBarEmptyView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_45dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.soli.pullupdownrefresh.PullRefreshLayout android:id="@+id/layout_pull" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/layout_coord" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.google.android.material.appbar.AppBarLayout android:id="@+id/layout_abl" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+                    <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/layout_top_topic" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_50dp" android:minHeight="@dimen/dimen_sw_48dp" app:layout_scrollFlags="0x1d">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/layout_top_slider" android:background="@color/abc_btn_check_to_on_mtrl_015" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <com.taihebase.activity.view.AutoScrollRecyclerView android:id="@+id/rv_top_list" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </com.google.android.material.appbar.CollapsingToolbarLayout>
+                    <LinearLayout android:orientation="vertical" android:background="@color/abc_textfield_default_mtrl_alpha" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_collapseMode="1">
+                        <com.flyco.tablayout.SlidingTabLayout android:id="@+id/tab_Top" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_40dp" android:layout_marginLeft="@dimen/dimen_sw_15dp" app:tl_indicator_corner_radius="2dp" app:tl_indicator_height="0dp" app:tl_indicator_width="@dimen/dimen_sw_20dp" app:tl_indicator_width_equal_title="true" app:tl_tab_padding="@dimen/dimen_sw_7dp" app:tl_textBold="1" app:tl_textSelectColor="@color/abc_vector_test" app:tl_textUnselectColor="@color/N5" app:tl_textsize="@dimen/dimen_sw_16sp" app:tl_unselecttextsize="@dimen/dimen_sw_15sp"/>
+                    </LinearLayout>
+                </com.google.android.material.appbar.AppBarLayout>
+                <androidx.viewpager.widget.ViewPager android:id="@+id/vp_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </com.soli.pullupdownrefresh.PullRefreshLayout>
+        <ImageView android:layout_gravity="bottom|right" android:id="@+id/iv_publish" android:layout_width="@dimen/dimen_sw_50dp" android:layout_height="@dimen/dimen_sw_50dp" android:layout_marginRight="@dimen/dimen_sw_10dp" android:layout_marginBottom="@dimen/dimen_sw_20dp" android:src="@mipmap/icon_publish"/>
+    </FrameLayout>
+</LinearLayout>

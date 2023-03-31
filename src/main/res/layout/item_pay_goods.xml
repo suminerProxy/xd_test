@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.taihebase.activity.view.LoadImageView android:id="@+id/imageLoading" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginRight="15dp" app:liv_corner_radius="@dimen/normal_radius"/>
+    <ImageView android:id="@+id/vip_icon" android:visibility="gone" android:layout_width="40dp" android:layout_height="13dp" android:layout_marginLeft="30dp" android:layout_marginTop="57dp" android:src="@drawable/cm_icon_vip" android:contentDescription="@string/app_name"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="70dp" android:layout_toRightOf="@+id/imageLoading">
+        <TextView android:textSize="14sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:id="@+id/txt_googs_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textSize="13sp" android:textColor="@color/abc_ic_voice_search_api_material" android:ellipsize="end" android:id="@+id/txt_googs_attr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:singleLine="true"/>
+        <TextView android:textSize="13sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:id="@+id/txt_googs_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:singleLine="true"/>
+    </LinearLayout>
+</RelativeLayout>

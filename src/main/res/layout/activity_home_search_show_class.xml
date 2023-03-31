@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_250dp">
+    <FrameLayout android:background="@drawable/shape_10dp_white_bottom" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_210dp" android:elevation="12dp">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@+id/home_class_type" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingTop="@dimen/dimen_sw_10dp" android:paddingRight="@dimen/dimen_sw_20dp" android:paddingBottom="@dimen/dimen_sw_22dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_210dp"/>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:TitleBarAttr="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/wbcf_contain" android:background="?attr/wbcfFaceVerifyBgColor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.tencent.cloud.huiyansdkface.facelight.ui.widget.TitleBar android:id="@+id/wbcf_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" TitleBarAttr:wbcf_left_image_visible="true"/>
+</LinearLayout>

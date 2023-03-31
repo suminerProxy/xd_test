@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/shape_tag_immersion" android:paddingLeft="@dimen/dimen_sw_10dp" android:paddingTop="@dimen/dimen_sw_5dp" android:paddingRight="@dimen/dimen_sw_10dp" android:paddingBottom="@dimen/dimen_sw_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_5dp" android:layout_marginTop="@dimen/dimen_sw_5dp">
+        <TextView android:textSize="@dimen/dimen_sw_11sp" android:textColor="#ffffff" android:id="@+id/tag_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textSize="@dimen/dimen_sw_11sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/tag_name" android:paddingLeft="@dimen/dimen_sw_1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:paddingEnd="@dimen/dimen_sw_4dp" app:layout_constraintStart_toEndOf="@+id/tag_start" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

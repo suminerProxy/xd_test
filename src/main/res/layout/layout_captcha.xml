@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ver="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_bg" android:paddingLeft="30dp" android:paddingTop="30dp" android:paddingRight="30dp" android:paddingBottom="30dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_captcha"/>
+        <RelativeLayout android:layout_width="190dp" android:layout_height="45dp" android:layout_marginTop="20dp">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/captcha_bg" android:scaleType="fitXY"/>
+            <com.taihebase.activity.view.LoadImageView android:id="@+id/image_captcha" android:layout_width="115dp" android:layout_height="30dp" android:layout_marginLeft="7dp" android:layout_marginTop="7dp"/>
+            <TextView android:textSize="11sp" android:id="@+id/txt_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/pay_refresh" android:layout_toRightOf="@+id/image_captcha" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/imageLoading" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="25dp" android:src="@drawable/captcha_loadong" android:layout_toRightOf="@+id/image_captcha" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <com.showstartfans.activity.view.PinEntryEditText android:textSize="18sp" android:id="@+id/codeInputView" android:background="@null" android:visibility="visible" android:layout_width="190dp" android:layout_height="42dp" android:layout_marginTop="13dp" android:singleLine="true" android:maxLength="4" ver:pinBackgroundDrawable="@drawable/verification_edit_bg_normal" ver:pinCharacterSpacing="10dp" ver:pinTextBottomPadding="11dp"/>
+        <Button android:textColor="@color/color_white" android:id="@+id/btn_confirm" android:background="@drawable/gray_btn_corners2_selecter" android:layout_width="190dp" android:layout_height="40dp" android:layout_marginTop="15dp" android:text="@string/Confirm"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/dimen_sw_20dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="环境切换:"/>
+            <TextView android:textSize="@dimen/dimen_sw_13dp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_10dp" android:text="切换成功后会自动重启APP，如需还原环境必须再次到此页面设置"/>
+            <RadioGroup android:id="@+id/radioGroupEnv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_40dp">
+                <RadioButton android:textSize="@dimen/dimen_sw_15sp" android:id="@+id/rbEnv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dev环境"/>
+                <RadioButton android:textSize="@dimen/dimen_sw_15sp" android:id="@+id/rbEnv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pre环境"/>
+                <RadioButton android:textSize="@dimen/dimen_sw_15sp" android:id="@+id/rbEnv3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OnlineTest环境"/>
+            </RadioGroup>
+            <Button android:id="@+id/btnGetTest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="接口加密 getTest测试"/>
+            <Button android:id="@+id/btnPostTest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="接口加密 postTest测试"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

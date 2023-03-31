@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.taihebase.activity.view.LoadImageView android:layout_gravity="center_vertical" android:id="@+id/user_logo" android:layout_width="25dp" android:layout_height="25dp" app:liv_failure_image="@drawable/circular_load_img_bg" app:roundAsCircle="true"/>
+    <ImageView android:id="@+id/artistType" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginTop="14.5dp" android:scaleType="centerCrop" android:contentDescription="@string/app_name" android:layout_marginStart="-13dp"/>
+    <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dimen_sw_135dp" android:lines="1" android:layout_marginStart="8dp"/>
+    <com.showstartfans.activity.widget.FollowTextView android:textSize="11sp" android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/follow_user" android:background="@drawable/follow_button_new" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注" android:layout_marginStart="9dp"/>
+</merge>

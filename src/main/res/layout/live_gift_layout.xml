@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/gift_p" android:paddingLeft="6dp" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_173dp">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/parent" android:background="@drawable/shape_8dp_22" android:paddingLeft="15dp" android:paddingTop="20dp" android:paddingRight="15dp" android:paddingBottom="9dp" android:layout_width="@dimen/dimen_sw_110dp" android:layout_height="match_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/gift_icon" android:layout_width="@dimen/dimen_sw_80dp" android:layout_height="@dimen/dimen_sw_80dp" app:roundBottomLeft="true" app:roundBottomRight="true" app:roundTopLeft="true" app:roundTopRight="true" app:roundedCornerRadius="6dp"/>
+        <TextView android:textSize="11sp" android:textColor="@color/color_white" android:gravity="center" android:id="@+id/sale_off" android:background="@drawable/shape_6dp_1c_topleft_bottomright" android:layout_width="35dp" android:layout_height="15dp" android:text="售罄"/>
+        <TextView android:textSize="11sp" android:textColor="@color/abc_list_pressed_holo_light" android:ellipsize="end" android:id="@+id/pro_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:maxLines="2" android:layout_below="@+id/gift_icon"/>
+        <TextView android:textSize="11sp" android:textColor="@color/red_base" android:id="@+id/pro_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

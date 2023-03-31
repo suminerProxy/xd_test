@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:id="@+id/parent" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_48dp">
+    <RelativeLayout android:background="@drawable/shape_6dp_26272d" android:paddingLeft="8dp" android:paddingTop="5dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.taihebase.activity.view.LoadImageView android:id="@+id/top_goods" android:layout_width="@dimen/dimen_sw_32dp" android:layout_height="@dimen/dimen_sw_32dp" android:layout_centerVertical="true" app:actualImageScaleType="-1" app:liv_corner_radiu_bottomLeft="6dp" app:liv_corner_radiu_bottomRight="6dp" app:liv_corner_radiu_topLeft="6dp" app:liv_corner_radiu_topRight="6dp"/>
+        <TextView android:textSize="13sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/goods_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="165dp" android:lines="1" android:layout_toRightOf="@+id/top_goods" android:layout_marginStart="8dp"/>
+        <TextView android:textSize="9sp" android:textStyle="bold" android:textColor="#523114" android:gravity="center" android:id="@+id/top_num" android:background="@drawable/top_user_goods_num_bg" android:paddingLeft="4dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="12dp" android:layout_marginTop="2dp" android:lines="1" android:layout_below="@+id/goods_name" android:layout_marginStart="8dp" android:layout_toEndOf="@+id/top_goods"/>
+    </RelativeLayout>
+</LinearLayout>

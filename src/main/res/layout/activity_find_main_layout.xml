@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.viewpager.widget.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <skin.support.widget.SkinCompatFrameLayout android:id="@+id/tab_f_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.taihebase.activity.view.TopBarEmptyView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <FrameLayout android:paddingTop="@dimen/dimen_sw_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.showstartfans.activity.view.PointTHMagicTab android:layout_gravity="center_vertical" android:id="@+id/tabLayout" android:background="@color/transparent" android:paddingRight="@dimen/dimen_sw_50dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_50dp" android:paddingStart="@dimen/dimen_sw_14dp"/>
+                <ImageView android:layout_gravity="right" android:id="@+id/icon_video_search" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="@dimen/dimen_sw_5dp" android:layout_marginRight="20dp" android:src="@drawable/icon_search" android:contentDescription="@string/app_name"/>
+            </FrameLayout>
+        </LinearLayout>
+    </skin.support.widget.SkinCompatFrameLayout>
+</RelativeLayout>

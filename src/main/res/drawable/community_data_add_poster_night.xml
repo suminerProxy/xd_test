@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dimen_sw_4dp"/>
+            <solid android:color="@color/color_white_night"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="@dimen/dimen_sw_20dp" android:width="@dimen/dimen_sw_20dp" android:drawable="@drawable/icon_add_pic_night"/>
+</layer-list>

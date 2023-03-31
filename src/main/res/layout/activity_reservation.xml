@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:layout_gravity="center_vertical" android:id="@+id/btnReservation" android:layout_width="match_parent" android:layout_height="50dp" android:text="立即预约" android:layout_alignParentBottom="true" style="@style/txtRedGgShort"/>
+    <ScrollView android:id="@+id/scro" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btnReservation" app:layout_constraintBottom_toTopOf="@+id/btnReservation" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/activityName" android:background="@drawable/grad_bg" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="48dp" android:layout_marginRight="20dp" android:minHeight="75dp" android:lineSpacingExtra="5dp"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/icon_back_shadow" android:paddingLeft="20dp" android:paddingTop="16dp" android:paddingRight="20dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="-8dp">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/piao_paybg_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="场地"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center_vertical" android:id="@+id/activityAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="开演时间"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/activityTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/piao_paybg_btm" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                        <TextView android:textSize="34sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/ticketUnitPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥??" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="20dp" android:text="/张" android:layout_toRightOf="@+id/ticketUnitPrice"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/ticket_user_p" android:background="@drawable/border_white_12dp_yoff" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="-10dp">
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/ticket_p_r" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp">
+                    <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:id="@+id/ticket_user_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="观影人"/>
+                    <com.showstartfans.activity.view.ScrollListView android:id="@+id/ticket_user_rlist" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:divider="@null" android:layout_weight="1"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mine_icon_next" android:contentDescription="@string/app_name"/>
+                </LinearLayout>
+                <View android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <RelativeLayout android:id="@+id/addressSelect" android:background="@drawable/item_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp">
+                    <ImageView android:id="@+id/image_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/mine_icon_next" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="12sp" android:textColor="#ff999999" android:id="@+id/huowu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收货信息" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="15sp" android:textColor="#ffbbbbbb" android:id="@+id/attentionSelect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请选择" android:layout_toLeftOf="@+id/image_arrow" android:layout_centerVertical="true"/>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/selectAddressView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:layout_toLeftOf="@+id/image_arrow" android:layout_toRightOf="@+id/huowu" android:layout_centerVertical="true">
+                        <TextView android:textSize="15sp" android:textColor="#ff000000" android:id="@+id/namePhone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <TextView android:textSize="12sp" android:textColor="#3f3f3f" android:ellipsize="end" android:id="@+id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:textColor="#ffbbbbbb" android:id="@+id/reversInfo" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:lineSpacingExtra="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.taihebase.activity.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</RelativeLayout>

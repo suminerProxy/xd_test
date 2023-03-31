@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.view.TopBarEmptyView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:id="@+id/layout_toast_main" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_10dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_12dp_whilte" android:paddingLeft="@dimen/dimen_sw_18dp" android:paddingRight="@dimen/dimen_sw_18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_sw_12dp" android:minHeight="@dimen/dimen_sw_80dp" android:elevation="@dimen/dimen_sw_11dp">
+            <ImageView android:layout_width="@dimen/dimen_sw_36dp" android:layout_height="@dimen/dimen_sw_36dp" android:src="@drawable/icon_notice_ticket"/>
+            <TextView android:textSize="@dimen/dimen_sw_13sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/tv_content" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_8dp" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/dimen_sw_13sp" android:textColor="#eb484a" android:background="@drawable/shape_20dp_pink" android:paddingLeft="@dimen/dimen_sw_26dp" android:paddingTop="@dimen/dimen_sw_6dp" android:paddingRight="@dimen/dimen_sw_26dp" android:paddingBottom="@dimen/dimen_sw_6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_10dp" android:text="查看"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

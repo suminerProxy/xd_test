@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_10dp_black_30" android:paddingLeft="10dp" android:paddingTop="3dp" android:paddingRight="10dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp">
+    <TextView android:textSize="13sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/sendcontext" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.taihebase.activity.view.RatioLayout android:layout_width="@dimen/dimen_sw_150dp" android:layout_height="wrap_content" app:ratio="1.466">
+        <ImageView android:id="@+id/iv_conver" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.taihebase.activity.view.RatioLayout>
+    <TextView android:textSize="@dimen/dimen_sw_13sp" android:textColor="@color/abc_vector_test" android:id="@+id/tv_mould_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_13dp" android:text="Name"/>
+</LinearLayout>

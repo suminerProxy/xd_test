@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.view.TopBarEmptyView android:id="@+id/top_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0"/>
+    <RelativeLayout android:id="@+id/cv_p" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/dimen_sw_81dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/top_bar">
+        <androidx.viewpager.widget.ViewPager android:id="@+id/vp_viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:background="@drawable/gradient_black_down" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_233dp"/>
+        <View android:background="@drawable/gradient_black_up" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_233dp" android:layout_alignParentBottom="true"/>
+        <com.taihebase.activity.widget.indicator.AutoHideInkPageIndicator2 android:id="@+id/indicator" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_68dp" android:layout_centerHorizontal="true" app:animationDuration="300" app:currentPageIndicatorColor="#ffffff" app:dotDiameter="@dimen/dimen_sw_4dp" app:dotGap="@dimen/dimen_sw_4dp" app:pageIndicatorColor="#bbbbbb"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

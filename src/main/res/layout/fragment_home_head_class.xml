@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/shape_10dp_white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_51dp">
+        <TextView android:textSize="13sp" android:textColor="@color/abc_dialog_material_background" android:gravity="center" android:id="@+id/all_style" android:paddingRight="@dimen/dimen_sw_24dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/home_search_allstyle" android:drawableRight="@drawable/cm_icon_aroow_down" android:drawablePadding="5dp"/>
+        <TextView android:textSize="13sp" android:textColor="@color/abc_dialog_material_background" android:gravity="center" android:id="@+id/other_search" android:paddingRight="@dimen/dimen_sw_24dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="综合排序" android:drawableRight="@drawable/cm_icon_aroow_down" android:drawablePadding="5dp"/>
+        <FrameLayout android:id="@+id/other_p" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="13sp" android:textColor="@color/abc_dialog_material_background" android:gravity="center" android:id="@+id/time_search" android:paddingRight="@dimen/dimen_sw_24dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="时间" android:drawableRight="@drawable/cm_icon_aroow_down" android:drawablePadding="5dp"/>
+        <TextView android:textSize="13sp" android:textColor="@color/abc_dialog_material_background" android:gravity="center" android:id="@+id/more_search" android:paddingRight="@dimen/dimen_sw_24dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="更多" android:drawableRight="@drawable/cm_icon_aroow_down" android:drawablePadding="5dp"/>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="#c91e1b18" android:layout_width="match_parent" android:layout_height="10dp"/>
+        <RelativeLayout android:id="@+id/tick_p" android:background="@drawable/border_line_team_red" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_sw_280dp">
+            <View android:id="@+id/team_head_bg_one" android:background="@drawable/team_head_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_100dp" android:layout_margin="1dp"/>
+            <ImageView android:id="@+id/team_show_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_tag_beginsale" android:layout_alignParentRight="true" android:contentDescription="@string/app_name"/>
+            <View android:id="@+id/lines" android:background="@color/team_line" android:layout_width="0.5dp" android:layout_height="@dimen/dimen_sw_80dp" android:layout_marginLeft="@dimen/dimen_sw_5dp" android:layout_marginTop="@dimen/dimen_sw_10dp" android:layout_marginBottom="@dimen/dimen_sw_5dp" android:layout_toRightOf="@+id/p_p"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/p_p" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_100dp" android:minWidth="@dimen/dimen_sw_100dp">
+                <TextView android:textSize="12sp" android:textColor="@color/color_white_tr_70" android:id="@+id/old_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:layout_marginTop="@dimen/dimen_sw_5dp"/>
+                <LinearLayout android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:layout_marginTop="-7dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/color_white" android:id="@+id/p_c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥"/>
+                    <TextView android:textSize="30sp" android:textColor="@color/white" android:id="@+id/team_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_2dp" android:layout_toEndOf="@+id/p_c"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_30dp" android:layout_marginTop="@dimen/dimen_sw_30dp" android:layout_toRightOf="@+id/lines">
+                <TextView android:textSize="15sp" android:textColor="@color/color_white" android:ellipsize="end" android:id="@+id/team_price_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1"/>
+                <TextView android:textSize="12sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/team_price_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_5dp" android:lines="1" android:alpha="0.8"/>
+            </LinearLayout>
+            <View android:id="@+id/line_x" android:background="@drawable/line_red" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="-1dp" android:layout_below="@+id/team_head_bg_one"/>
+            <TextView android:textSize="12sp" android:textColor="#aaaaaa" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/team_price_detail" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingTop="@dimen/dimen_sw_10dp" android:paddingRight="@dimen/dimen_sw_15dp" android:paddingBottom="@dimen/dimen_sw_10dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_80dp" android:lines="2" android:layout_below="@+id/line_x" android:lineSpacingExtra="@dimen/dimen_sw_3dp"/>
+            <RelativeLayout android:gravity="top" android:id="@+id/pay_button_bg" android:layout_width="match_parent" android:layout_height="59dp" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:layout_marginRight="@dimen/dimen_sw_15dp" android:layout_marginBottom="@dimen/dimen_sw_5dp" android:layout_below="@+id/team_price_detail" android:layout_centerHorizontal="true">
+                <TextView android:textSize="16sp" android:textColor="@color/color_white" android:gravity="center" android:id="@+id/price_create" android:background="@drawable/shape_6dp_red_select" android:layout_width="match_parent" android:layout_height="47dp" android:text="创建队伍" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:id="@+id/team_num_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginTop="@dimen/dimen_sw_20dp" android:layout_marginRight="@dimen/dimen_sw_20dp">
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:layout_width="0dp" android:layout_height="wrap_content" android:text="我的队伍" android:layout_weight="1"/>
+        <TextView android:textSize="12sp" android:textColor="#aaaaaa" android:id="@+id/team_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/team_num"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/no_data" android:paddingBottom="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_25dp">
+        <TextView android:textSize="13sp" android:textColor="@color/abc_ic_voice_search_api_material" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_15dp" android:text="暂无已加入或创建的队伍"/>
+        <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:layout_marginTop="@dimen/dimen_sw_25dp" android:layout_marginRight="@dimen/dimen_sw_15dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/team_op" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_15dp" android:layout_marginBottom="@dimen/dimen_sw_25dp"/>
+    <TextView android:textSize="12sp" android:textColor="#bbbbbb" android:id="@+id/team_price_des" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_sw_40dp" android:lineSpacingExtra="@dimen/dimen_sw_7dp"/>
+</LinearLayout>

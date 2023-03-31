@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/item_selector" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.taihebase.activity.view.LoadImageView android:id="@+id/groupImageView" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="15dp" android:layout_marginRight="16dp" app:liv_corner_radius="@dimen/normal_radius"/>
+    <ImageView android:id="@+id/image_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/mine_icon_next" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="60dp" android:layout_toLeftOf="@+id/image_icon" android:layout_toRightOf="@+id/groupImageView">
+        <TextView android:textSize="14sp" android:textColor="@color/black1" android:id="@+id/txt_group_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="11sp" android:textColor="@color/black3" android:id="@+id/txt_group_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp"/>
+    </LinearLayout>
+    <View android:id="@+id/line" android:layout_marginTop="20dp" android:layout_below="@+id/groupImageView" style="@style/lineHorizontalEB"/>
+</RelativeLayout>

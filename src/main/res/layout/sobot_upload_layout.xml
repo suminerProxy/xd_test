@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/sobot_color_bottom_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sobot.chat.widget.kpswitch.view.emoticon.EmoticonsFuncView android:orientation="vertical" android:id="@+id/view_epv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/view_eiv"/>
+    <com.sobot.chat.widget.kpswitch.view.emoticon.EmoticonsIndicatorView android:gravity="center" android:orientation="horizontal" android:id="@+id/view_eiv" android:paddingBottom="@dimen/sobot_emoticon_view_indicator_padding_b" android:layout_width="match_parent" android:layout_height="20dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

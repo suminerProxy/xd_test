@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#222222" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.view.TopBarEmptyView android:background="#000000" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:background="#000000" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_44dp">
+        <ImageView android:id="@+id/iv_back" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/b_back_white"/>
+        <TextView android:textSize="@dimen/dimen_sw_13sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/tv_center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/dimen_sw_13sp" android:textColor="@color/black" android:layout_gravity="center" android:id="@+id/tv_delete" android:background="@drawable/shape_80dp_white_ng" android:paddingLeft="@dimen/dimen_sw_12dp" android:paddingTop="@dimen/dimen_sw_5dp" android:paddingRight="@dimen/dimen_sw_12dp" android:paddingBottom="@dimen/dimen_sw_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_sw_15dp" android:text="删除"/>
+        <FrameLayout android:layout_gravity="top|right" android:id="@+id/layout_check" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <FrameLayout android:layout_gravity="center" android:paddingBottom="@dimen/dimen_sw_2dp" android:clipToPadding="false" android:layout_width="@dimen/dimen_sw_20dp" android:layout_height="@dimen/dimen_sw_20dp">
+                <CheckBox android:id="@+id/cb_photo_lpsi" android:background="@drawable/selector_check" android:clickable="false" android:duplicateParentState="true" android:layout_width="@dimen/dimen_sw_20dp" android:layout_height="@dimen/dimen_sw_20dp" android:button="@null"/>
+                <TextView android:textSize="@dimen/dimen_sw_13sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_check_index" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_20dp" android:text="0"/>
+                <ImageView android:id="@+id/iv_gougoou" android:layout_width="@dimen/dimen_sw_20dp" android:layout_height="@dimen/dimen_sw_20dp" android:src="@mipmap/default_red"/>
+            </FrameLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <com.taihe.photoselector.ui.photodrawee.MultiTouchViewPager android:id="@+id/vp_viewpager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/layout_bottom" android:background="#000000" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_65dp">
+        <TextView android:textSize="@dimen/dimen_sw_14sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_Next" android:background="@drawable/shape_40dp_red" android:paddingLeft="@dimen/dimen_sw_36dp" android:paddingRight="@dimen/dimen_sw_36dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_sw_23dp" android:minHeight="@dimen/dimen_sw_45dp" android:text="下一步"/>
+    </FrameLayout>
+</LinearLayout>

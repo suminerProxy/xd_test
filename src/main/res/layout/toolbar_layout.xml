@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" android:minHeight="@dimen/toolbar_height">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/barBackIcon" android:paddingLeft="@dimen/dimen_sw_10dp" android:paddingRight="@dimen/dimen_sw_10dp" android:layout_width="wrap_content" android:layout_height="@dimen/head_view_height" android:src="@drawable/b_back_black" android:scaleType="centerInside" android:contentDescription="@string/app_name"/>
+    <TextView android:textSize="18sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/barTitle" android:layout_width="wrap_content" android:layout_height="@dimen/toolbar_height" android:singleLine="true" android:layout_marginStart="@dimen/dimen_sw_96dp" android:layout_marginEnd="@dimen/dimen_sw_96dp"/>
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/parent_p" android:background="@color/color_white" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:paddingBottom="@dimen/dimen_sw_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_emoji_parent" android:paddingTop="@dimen/dimen_sw_10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_10dp">
+        <EditText android:textSize="12sp" android:textColor="@color/abc_ic_ab_back_material" android:textColorHint="@color/abc_list_divider_mtrl_alpha" android:gravity="center_vertical" android:id="@+id/input_dm" android:background="@drawable/shape_40dp_f8" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/dimen_sw_15dp" android:hint="随乐而起,有感而发" android:lines="1" android:maxLength="150" android:layout_weight="1" android:imeOptions="flagNoExtractUi|flagNoFullscreen" android:paddingStart="@dimen/dimen_sw_20dp"/>
+        <TextView android:textSize="15sp" android:textColor="@color/color_white" android:gravity="center" android:id="@+id/send_input" android:background="@drawable/crow_buy_gray_button" android:layout_width="@dimen/dimen_sw_80dp" android:layout_height="@dimen/dimen_sw_35dp" android:text="发送"/>
+    </LinearLayout>
+</LinearLayout>

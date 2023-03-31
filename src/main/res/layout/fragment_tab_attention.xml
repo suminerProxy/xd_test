@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.view.TopBarEmptyView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_45dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.soli.pullupdownrefresh.PullRefreshLayout android:id="@+id/refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.taihebase.activity.view.LoadMoreRecyclerView android:orientation="vertical" android:id="@+id/list" android:paddingBottom="@dimen/dimen_sw_30dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            </FrameLayout>
+        </com.soli.pullupdownrefresh.PullRefreshLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_UnLogin" android:background="@mipmap/bg_tiaowen" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/mine_def_article"/>
+            <TextView android:textSize="@dimen/dimen_sw_15sp" android:textColor="@color/abc_ic_voice_search_api_material" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_10dp" android:text="登录秀动发现更多精彩"/>
+            <TextView android:textSize="@dimen/dimen_sw_16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tvLogin" android:background="@drawable/crow_buy_button" android:layout_width="@dimen/dimen_sw_180dp" android:layout_height="@dimen/dimen_sw_45dp" android:layout_marginTop="@dimen/dimen_sw_10dp" android:text="登录"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

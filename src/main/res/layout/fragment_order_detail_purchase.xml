@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18sp" android:textColor="@color/color_black" android:gravity="center_vertical" android:id="@+id/txt_ticket_title" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginLeft="15dp" android:text="@string/buy_ticket_info"/>
+    <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+    <LinearLayout android:orientation="vertical" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+            <TextView android:textSize="13sp" android:textColor="@color/abc_item_background_holo_light" android:id="@+id/t_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="门票类型"/>
+            <TextView android:textSize="13sp" android:textColor="@color/black1" android:id="@+id/t_name_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="6dp" android:layout_marginRight="15dp">
+            <TextView android:textSize="13sp" android:textColor="@color/abc_item_background_holo_light" android:id="@+id/t_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系电话"/>
+            <TextView android:textSize="13sp" android:textColor="@color/black1" android:id="@+id/t_phone_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/t_man_p" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="6dp" android:layout_marginRight="15dp">
+            <TextView android:textSize="13sp" android:textColor="@color/abc_item_background_holo_light" android:id="@+id/t_man" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="观演人"/>
+            <com.showstartfans.activity.view.ScrollListView android:id="@+id/ticket_user_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/des_p" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:gravity="center_vertical" android:id="@+id/des" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:lineSpacingExtra="3dp"/>
+    </LinearLayout>
+</LinearLayout>

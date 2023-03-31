@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:id="@+id/tips_p" android:background="@drawable/pay_tips_top" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingTop="@dimen/dimen_sw_8dp" android:paddingRight="@dimen/dimen_sw_15dp" android:paddingBottom="@dimen/dimen_sw_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_25dp" android:layout_marginRight="@dimen/dimen_sw_25dp" android:layout_below="@+id/title">
+    <ImageView android:layout_width="@dimen/dimen_sw_12dp" android:layout_height="@dimen/dimen_sw_12dp" android:src="@drawable/icon_wraning" android:contentDescription="@string/user_real_name"/>
+    <TextView android:textSize="11sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:id="@+id/real_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_8dp" android:minHeight="@dimen/dimen_sw_40dp" android:text="@string/real_name_tips"/>
+</LinearLayout>

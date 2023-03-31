@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main_parent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/homeContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_view" android:layout_alignParentTop="true"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/bottom_view" android:background="@color/color_white" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_alignParentBottom="true" android:elevation="12dp">
+        <TextView android:id="@+id/tabHome" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/tab_home_hint" android:drawableTop="@drawable/ic_home_selector" android:drawablePadding="2.5dp" android:layout_weight="1" style="@style/BottomTab"/>
+        <FrameLayout android:id="@+id/tabFound" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:id="@+id/tabFound_p" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/tab_near_hint" android:drawableTop="@drawable/icon_near_selector" android:drawablePadding="2.5dp" style="@style/BottomTab"/>
+            <TextView android:textSize="10sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="top|center_horizontal" android:id="@+id/tabFoundNum" android:background="@drawable/msg_unread_count_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginRight="-15dp"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/ticket_holder" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.5dp">
+                <ImageView android:layout_gravity="top|center_horizontal" android:id="@+id/tab_ticket_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tickets_selector" android:contentDescription="@string/app_name"/>
+                <TextView android:textSize="@dimen/text_super_litte" android:textColor="@color/bottom_tab_text_color_selector" android:id="@+id/ticket_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dp" android:text="@string/tab_ticket_holder"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_ticket_redpoint" android:layout_width="@dimen/dimen_sw_6dp" android:layout_height="@dimen/dimen_sw_6dp" android:layout_marginLeft="@dimen/dimen_sw_13dp" android:layout_marginTop="@dimen/dimen_sw_6dp" android:src="@drawable/msg_unread_count_bg" android:contentDescription="@string/app_name"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/tabMessage" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/tab_message_hint" android:drawableTop="@drawable/icon_message_selector" android:drawablePadding="2.5dp" style="@style/BottomTab"/>
+            <TextView android:textSize="10sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="top|center_horizontal" android:id="@+id/msgNum" android:background="@drawable/msg_unread_count_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginRight="-15dp"/>
+        </FrameLayout>
+        <TextView android:layout_gravity="center" android:id="@+id/tabUserTV" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/tab_user_hint" android:drawableTop="@drawable/icon_user_selector" android:drawablePadding="2.5dp" android:layout_weight="1" style="@style/BottomTab"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="abc_font_family_subhead_material">0</integer>
+    <integer name="mtrl_calendar_selection_text_lines">6</integer>
+    <integer name="abc_menu_shift_shortcut_label">2</integer>
+    <integer name="abc_menu_space_shortcut_label">9</integer>
+    <integer name="abc_menu_sym_shortcut_label">1</integer>
+    <integer name="abc_prepend_shortcut_label">6</integer>
+</resources>

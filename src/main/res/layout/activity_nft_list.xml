@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#121212" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/bg_nft" android:scaleType="fitXY" app:layout_constraintTop_toTopOf="0"/>
+    <com.taihebase.activity.view.TopBarEmptyView android:id="@+id/topEmpty" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0"/>
+    <com.soli.pullupdownrefresh.PullRefreshLayout android:id="@+id/refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.taihebase.activity.view.LoadMoreRecyclerView android:orientation="vertical" android:id="@+id/list" android:paddingBottom="@dimen/dimen_sw_30dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </com.soli.pullupdownrefresh.PullRefreshLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layoutTitleBG" android:background="#000000" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0">
+        <com.taihebase.activity.view.TopBarEmptyView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_45dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/ivBack" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingTop="@dimen/dimen_sw_12dp" android:paddingRight="@dimen/dimen_sw_20dp" android:paddingBottom="@dimen/dimen_sw_12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_black_w" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@+id/topEmpty"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

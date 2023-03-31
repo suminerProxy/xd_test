@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/theme_name" android:paddingLeft="20dp" android:paddingTop="36dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/souvenir_title_hot" android:contentDescription="@string/app_name"/>

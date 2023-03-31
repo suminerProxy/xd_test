@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:insetLeft="1px" android:insetRight="1px" android:insetTop="1px" android:insetBottom="1px">
+    <selector>
+        <item>
+            <shape>
+                <gradient android:startColor="#ffffff" android:endColor="#ffffff" android:angle="270"/>
+                <stroke android:width="0.5dp" android:color="#d4d4d4"/>
+            </shape>
+        </item>
+    </selector>
+</inset>

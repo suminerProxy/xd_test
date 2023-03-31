@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/pop_layout" android:background="@color/sobot_common_gray6" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/sobot_text_font_normal" android:textColor="@color/sobot_common_wenzi_white" android:id="@+id/btn_take_photo" android:background="@drawable/sobot_item_setting_selector" android:layout_width="match_parent" android:layout_height="50dp"/>
+        <View android:background="@color/sobot_line_1dp" android:layout_width="match_parent" android:layout_height="0.1dp"/>
+        <Button android:textSize="@dimen/sobot_text_font_normal" android:textColor="@color/sobot_common_wenzi_white" android:id="@+id/btn_pick_photo" android:background="@drawable/sobot_item_setting_selector" android:layout_width="match_parent" android:layout_height="50dp"/>
+        <View android:background="@color/sobot_line_1dp" android:layout_width="match_parent" android:layout_height="0.1dp"/>
+        <Button android:textSize="@dimen/sobot_text_font_normal" android:textColor="@color/sobot_common_wenzi_white" android:id="@+id/btn_pick_vedio" android:background="@drawable/sobot_item_setting_selector" android:layout_width="match_parent" android:layout_height="50dp"/>
+        <View android:background="@color/sobot_common_gray6" android:layout_width="match_parent" android:layout_height="5dp"/>
+        <Button android:textSize="@dimen/sobot_text_font_normal" android:textColor="@color/sobot_common_wenzi_white" android:id="@+id/btn_cancel" android:background="@drawable/sobot_item_setting_selector" android:layout_width="match_parent" android:layout_height="50dp"/>
+    </LinearLayout>
+</RelativeLayout>

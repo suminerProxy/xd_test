@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.taihebase.activity.view.RatioLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:ratio="1">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/sdv_photo" android:layout_width="match_parent" android:layout_height="match_parent" app:placeholderImageScaleType="6"/>
+        <com.showstartfans.activity.view.DyVideoView android:id="@+id/player" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.taihebase.activity.view.RatioLayout>
+</FrameLayout>

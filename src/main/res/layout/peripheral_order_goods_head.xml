@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/head_order" android:paddingBottom="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/im_ripple_line" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="45dp">
+        <TextView android:textSize="13sp" android:textColor="@color/abc_ic_ab_back_material" android:layout_width="0dp" android:layout_height="wrap_content" android:text="周边赠品" android:layout_weight="1"/>
+        <TextView android:textSize="12sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:id="@+id/see_goods_p" android:background="@drawable/shap_100dp_c2" android:layout_width="70dp" android:layout_height="25dp" android:text="查看"/>
+    </LinearLayout>
+</LinearLayout>

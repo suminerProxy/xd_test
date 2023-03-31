@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/default_system_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:id="@+id/search_tab_head" android:paddingTop="@dimen/dimen_sw_5dp" android:paddingBottom="@dimen/dimen_sw_5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_sw_20dp" android:paddingEnd="@dimen/dimen_sw_15dp">
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/shape_100dp_f1" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_icon_gray" android:contentDescription="@string/app_name"/>
+            <EditText android:textSize="15sp" android:textColor="@color/abc_ic_star_black_48dp" android:textColorHint="#bbbbbb" android:gravity="center_vertical" android:id="@+id/search_edit" android:background="@null" android:layout_width="0dp" android:layout_height="35dp" android:layout_marginLeft="10dp" android:hint="想要找什么" android:singleLine="true" android:maxLength="30" android:layout_weight="1" android:imeOptions="actionSearch"/>
+            <ImageView android:id="@+id/clear_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_icon_delete" android:contentDescription="@string/app_name"/>
+        </LinearLayout>
+        <TextView android:textSize="15sp" android:textColor="@color/abc_ic_star_black_48dp" android:id="@+id/back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_10dp" android:text="@string/cancel_btn"/>
+    </LinearLayout>
+    <com.taihebase.activity.widget.magicTab.THMagicSearchTab android:layout_gravity="center" android:id="@+id/tabLayout" android:background="@color/default_system_background" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_40dp" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:layout_marginTop="@dimen/dimen_sw_8dp" android:layout_marginRight="@dimen/dimen_sw_15dp" android:layout_marginBottom="@dimen/dimen_sw_8dp"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

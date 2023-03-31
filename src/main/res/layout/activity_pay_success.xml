@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/default_system_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <LinearLayout android:orientation="vertical" android:id="@+id/gift_p" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="15dp" android:layout_marginRight="14dp">
+                <RelativeLayout android:background="@drawable/border_radiu_top_white_yoff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:layout_marginBottom="30dp">
+                        <ImageView android:id="@+id/f_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_paysucceed" android:contentDescription="@string/app_name"/>
+                        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/pay_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:text="购票成功" android:drawableRight="@drawable/pay_s_small" android:drawablePadding="12dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-2dp" android:layout_marginTop="-8dp" android:layout_marginRight="-2dp" android:src="@drawable/order_top_bg_line" android:contentDescription="@string/app_name"/>
+                <LinearLayout android:gravity="top" android:orientation="vertical" android:background="@drawable/border_radiu_bottom_white_yoff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-8dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/pay_known_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="22dp" android:layout_marginRight="20dp" android:text="入场须知"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/abc_ic_voice_search_api_material" android:id="@+id/pay_known_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:text="1.演出当天请提前30分钟到场\102.注意保密订单信息，避免兑票或入场前泄露给他人" android:lineSpacingExtra="@dimen/dimen_sw_4dp"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="32dp" android:layout_marginRight="15dp" android:layout_marginBottom="32dp">
+                        <Button android:textSize="16sp" android:textColor="@color/red_base" android:id="@+id/otherBtn" android:background="@drawable/border_line_100dp_red" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginRight="15dp" android:text="回到首页" android:layout_weight="1" android:onClick="onClickXml" style="@style/btnBorderlessStyle"/>
+                        <Button android:textSize="16sp" android:textColor="@color/white" android:id="@+id/checkOrderBtn" android:background="@drawable/crow_buy_button" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginLeft="15dp" android:text="查看订单" android:layout_weight="1" android:onClick="onClickXml" style="@style/btnBorderlessStyle"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@+id/share_ac" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_64dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:src="@drawable/show_bg_huodong" android:scaleType="fitXY" android:onClick="onClickXml" android:contentDescription="@string/app_name"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/follow_users" android:background="@drawable/border_white_yoff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginRight="14dp">
+                <TextView android:textSize="15sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center_vertical" android:id="@+id/titles" android:layout_width="wrap_content" android:layout_height="22dp" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:text="关注一下，第一时间get最新演出"/>
+                <com.showstartfans.activity.view.ScrollListView android:id="@+id/noScrollListView" android:paddingLeft="15dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="20dp" android:divider="@null"/>
+            </LinearLayout>
+            <LinearLayout android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="39dp">
+                <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/txt_share" android:background="@drawable/crow_buy_button" android:layout_width="match_parent" android:layout_height="45dp" android:layout_margin="10dp" android:text="分享演出" android:onClick="onClickXml"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

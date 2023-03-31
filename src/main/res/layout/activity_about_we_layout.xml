@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/logo" android:layout_width="@dimen/dimen_sw_75dp" android:layout_height="@dimen/dimen_sw_75dp" android:layout_marginTop="@dimen/dimen_sw_50dp" android:src="@drawable/logo_black" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/line_str" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_20dp" android:layout_below="@+id/logo" android:layout_centerHorizontal="true">
+        <View android:background="@color/abc_list_longpressed_holo" android:layout_width="25dp" android:layout_height="0.5dp"/>
+        <TextView android:textSize="14sp" android:textColor="@color/abc_list_longpressed_holo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_13dp" android:layout_marginRight="@dimen/dimen_sw_13dp" android:text="感受音乐就在现场"/>
+        <View android:background="@color/abc_list_longpressed_holo" android:layout_width="25dp" android:layout_height="0.5dp"/>
+    </LinearLayout>
+    <TextView android:textColor="@color/abc_list_longpressed_holo" android:gravity="center" android:id="@+id/version_app" android:background="@drawable/shap_version_bg" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_24dp" android:layout_marginTop="@dimen/dimen_sw_20dp" android:minWidth="@dimen/dimen_sw_65dp" android:text="v.3.3.3" android:layout_below="@+id/line_str" android:layout_centerHorizontal="true"/>
+    <TextView android:textColor="@color/abc_list_longpressed_holo" android:gravity="center" android:id="@+id/tv_test_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_20dp" android:minWidth="@dimen/dimen_sw_65dp" android:layout_below="@+id/version_app" android:layout_centerHorizontal="true"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_sw_40dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:id="@+id/rule" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textColor="@color/red_base" android:id="@+id/server_rule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户服务协议" android:onClick="onVersion"/>
+            <View android:id="@+id/c_line" android:background="@color/red_base" android:layout_width="0.5dp" android:layout_height="@dimen/dimen_sw_12dp" android:layout_marginLeft="@dimen/dimen_sw_7dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/red_base" android:id="@+id/area_rule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_7dp" android:text="隐私政策" android:onClick="onVersion"/>
+            <View android:id="@+id/c_line_two" android:background="@color/red_base" android:layout_width="0.5dp" android:layout_height="@dimen/dimen_sw_12dp" android:layout_marginLeft="@dimen/dimen_sw_7dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/red_base" android:id="@+id/zz_rule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_7dp" android:text="资质许可" android:onClick="onVersion"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/abc_list_longpressed_holo" android:id="@+id/copy_rights" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="2018 Showstart.com. All Rights Reserver" android:layout_below="@+id/rule" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

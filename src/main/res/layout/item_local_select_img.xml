@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/img_p" android:layout_width="@dimen/dimen_sw_80dp" android:layout_height="@dimen/dimen_sw_80dp">
+        <com.taihebase.activity.view.LoadImageView android:id="@+id/iv" android:layout_width="80dp" android:layout_height="80dp" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_delete" android:layout_alignParentTop="true" android:contentDescription="@string/app_name" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.widget.magicTab.THSceneTab android:id="@+id/tabLayout" android:background="@color/abc_btn_check_to_on_mtrl_015" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingTop="@dimen/dimen_sw_12dp" android:paddingBottom="@dimen/dimen_sw_12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/dimen_sw_20dp" android:paddingVertical="@dimen/dimen_sw_12dp" app:th_textsize="@dimen/dimen_sw_13sp"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.view.LoadImageView android:id="@+id/user_header" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icon_avatar_default" android:scaleType="centerCrop" app:fadeDuration="0" app:liv_failure_image="@drawable/circular_load_img_bg" app:roundAsCircle="true"/>
+    <ImageView android:layout_gravity="bottom|right" android:id="@+id/image_type" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/icon_artist_tag" android:contentDescription="@string/app_name" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/parent" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:id="@+id/fp" android:background="@drawable/shape_40dp_c0" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_32dp">
+        <com.taihebase.activity.view.LoadImageView android:id="@+id/top_cla_icon" android:layout_width="@dimen/dimen_sw_16dp" android:layout_height="@dimen/dimen_sw_16dp" android:layout_marginEnd="8dp" app:actualImageScaleType="-1" app:liv_corner_radiu_bottomLeft="2dp" app:liv_corner_radiu_bottomRight="2dp" app:liv_corner_radiu_topLeft="2dp" app:liv_corner_radiu_topRight="2dp"/>
+        <TextView android:textSize="13sp" android:textColor="@color/white" android:id="@+id/top_cla_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

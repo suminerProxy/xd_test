@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/menu_content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recent_faces" android:layout_width="wrap_content" android:layout_height="42.24dp" android:layout_marginLeft="20.16dp" android:layout_marginTop="9.13dp" android:layout_marginRight="20.16dp"/>
+    <View android:id="@+id/divide_line" android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="0.96dp" android:layout_marginLeft="20.16dp" android:layout_marginRight="20.16dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/face_grid_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.16dp" android:layout_marginTop="7.44dp" android:layout_marginRight="20.16dp" android:layout_marginBottom="7.44dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/face_grid" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.tencent.qcloud.tuikit.tuichat.component.face.EmojiIndicatorView android:gravity="center" android:id="@+id/face_indicator" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7.44dp"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/chat_pop_menu_content_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_sw_4dp"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/welcome_bg"/>
+    </item>
+    <item android:gravity="center" android:height="@dimen/dimen_sw_100dp" android:width="@dimen/dimen_sw_210dp" android:top="@dimen/dimen_sw_m_130dp">
+        <bitmap android:src="@drawable/welcome_slogan"/>
+    </item>
+    <item android:gravity="bottom|center_horizontal" android:height="@dimen/dimen_sw_58dp" android:width="@dimen/dimen_sw_166dp" android:bottom="@dimen/dimen_sw_43dp">
+        <bitmap android:src="@drawable/welcome_logo"/>
+    </item>
+</layer-list>

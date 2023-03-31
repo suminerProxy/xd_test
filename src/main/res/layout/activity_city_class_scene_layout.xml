@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/color_white_mine_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.soli.pullupdownrefresh.PullRefreshLayout android:id="@+id/pull_re" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/detectDown" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+                <com.showstartfans.activity.view.MyCollapsingToolbarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="0x3">
+                    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_270dp">
+                        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/topImage" android:background="@drawable/profile_header_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:adjustViewBounds="true" app:actualImageScaleType="6" app:fadeDuration="0" app:failureImage="@drawable/profile_header_bg" app:failureImageScaleType="6" app:placeholderImageScaleType="6"/>
+                        <View android:id="@+id/bgView" android:background="#66000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                        <RelativeLayout android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/layout_top_bottom">
+                            <TextView android:textSize="24sp" android:textColor="@color/red_base" android:id="@+id/city_sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#"/>
+                            <TextView android:textSize="24sp" android:textColor="@color/white" android:id="@+id/city_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/city_sp"/>
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/layout_top_bottom" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_sw_28dp" app:layout_constraintBottom_toBottomOf="0">
+                            <TextView android:textSize="12sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/city_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_8dp" android:maxLines="3"/>
+                            <com.taihebase.activity.view.AutoGoneTextView android:textSize="@dimen/dimen_sw_12sp" android:textColor="@color/white" android:id="@+id/tv_num_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_8dp"/>
+                            <com.showstartfans.activity.view.HeadListView android:id="@+id/view_list_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_29dp"/>
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <com.taihebase.activity.widget.Toolbar android:layout_gravity="top" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="1"/>
+                </com.showstartfans.activity.view.MyCollapsingToolbarLayout>
+                <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/abc_btn_check_to_on_mtrl_015" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="1">
+                    <com.flyco.tablayout.SlidingTabLayout android:id="@+id/tab_Top" android:paddingLeft="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_40dp" app:tl_indicator_corner_radius="2dp" app:tl_indicator_height="0dp" app:tl_indicator_width="@dimen/dimen_sw_20dp" app:tl_indicator_width_equal_title="true" app:tl_tab_padding="@dimen/dimen_sw_5dp" app:tl_textBold="1" app:tl_textSelectColor="@color/abc_vector_test" app:tl_textUnselectColor="@color/N5" app:tl_textsize="@dimen/dimen_sw_16sp" app:tl_unselecttextsize="@dimen/dimen_sw_15sp"/>
+                </LinearLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.viewpager.widget.ViewPager android:id="@+id/vp_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            <skin.support.svg.SkinSvgImageView android:layout_gravity="end|bottom" android:id="@+id/record" android:background="@drawable/shap_40dp_c1" android:padding="@dimen/dimen_sw_15dp" android:visibility="gone" android:layout_width="@dimen/dimen_sw_50dp" android:layout_height="@dimen/dimen_sw_50dp" android:layout_marginBottom="@dimen/dimen_sw_49dp" android:layout_marginEnd="@dimen/dimen_sw_15dp" app:srcCompat="@drawable/add_group_member" app:svg_color="@color/color_white"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.soli.pullupdownrefresh.PullRefreshLayout>
+</FrameLayout>

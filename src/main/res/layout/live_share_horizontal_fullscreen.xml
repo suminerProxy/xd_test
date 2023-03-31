@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/share_p" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/share_vi" android:background="#1c1c1c" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="15sp" android:textColor="#eeeeee" android:gravity="center_horizontal" android:id="@+id/share_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="44dp" android:text="@string/share_title"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:gravity="center" android:id="@+id/share_weixin" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/wechat_friend" android:drawableTop="@drawable/share_wechat_night" android:drawablePadding="4dp" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:gravity="center" android:id="@+id/share_penyou_quan" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/third_wechatmoments" android:drawableTop="@drawable/share_friends_night" android:drawablePadding="4dp" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:gravity="center" android:id="@+id/share_qq" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/third_qq" android:drawableTop="@drawable/share_qq_night" android:drawablePadding="4dp" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:gravity="center" android:id="@+id/share_sina" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/third_sina_weibo" android:drawableTop="@drawable/share_xinlang_night" android:drawablePadding="4dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/txt_cancel" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Cancel"/>
+    </LinearLayout>
+</LinearLayout>

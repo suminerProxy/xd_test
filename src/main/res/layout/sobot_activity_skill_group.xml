@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/sobot_container" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.sobot.chat.widget.SobotMHLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:sobot_mhv_HeightRatio="0.7">
+        <RelativeLayout android:gravity="center_vertical" android:background="@color/sobot_common_gray6" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginRight="40dp" android:layout_centerInParent="true" android:layout_marginStart="40dp" android:layout_marginEnd="40dp">
+                <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/sobot_common_gray1" android:gravity="center" android:id="@+id/sobot_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/sobot_btn_cancle" android:layout_width="60dp" android:layout_height="40dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+                <TextView android:layout_gravity="center_vertical" android:background="@drawable/sobot_icon_evaluation_cancel" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="25dp" android:layout_marginStart="25dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/sobot_line_1dp" android:layout_width="match_parent" android:layout_height="@dimen/sobot_line_height_0_4_dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:scrollbarSize="10dp" android:scrollbarThumbVertical="@drawable/sobot_custom_scroll_style" android:id="@+id/sobot_rcy_skill" android:padding="20dp" android:layout_height="wrap_content" android:horizontalSpacing="6dp" android:verticalSpacing="20dp" style="@style/sobot_grid_view"/>
+    </com.sobot.chat.widget.SobotMHLinearLayout>
+</LinearLayout>

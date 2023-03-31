@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_goods" android:layout_width="162.5dp" android:layout_height="wrap_content">
+        <com.taihebase.activity.view.LoadImageView android:id="@+id/liv_conver" android:layout_width="162.5dp" android:layout_height="162.5dp" app:liv_corner_radius="@dimen/normal_radius" app:placeholderImage="@color/color_red"/>
+        <TextView android:textSize="14sp" android:textColor="@color/black2" android:ellipsize="end" android:gravity="left" android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:maxLines="1"/>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+            <TextView android:textSize="16sp" android:textColor="@color/red_base" android:ellipsize="end" android:id="@+id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <TextView android:textSize="10sp" android:textColor="#bbbbbb" android:ellipsize="end" android:gravity="right" android:id="@+id/tv_bindName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxLines="1" android:layout_toRightOf="@+id/tv_price" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

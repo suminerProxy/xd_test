@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#222222" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.showstartfans.activity.view.DyVideoView android:id="@+id/dy_video_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <com.taihebase.activity.view.TopBarEmptyView android:id="@+id/topBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/iv_back" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_20dp" android:src="@drawable/b_back_white" android:layout_below="@+id/topBar"/>
+    <SeekBar android:layout_gravity="center_vertical" android:id="@+id/seekbar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginRight="@dimen/dimen_sw_20dp" android:layout_marginBottom="@dimen/dimen_sw_50dp" android:maxHeight="2dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/seekbar_style" android:minHeight="2dp" android:thumb="@drawable/sobot_icon_play_seek_point" android:layout_alignParentBottom="true" android:layout_marginHorizontal="@dimen/dimen_sw_20dp"/>
+</RelativeLayout>

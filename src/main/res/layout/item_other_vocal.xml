@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/p_c" android:background="@drawable/other_show_none_bg" android:layout_width="86dp" android:layout_height="wrap_content">
+        <TextView android:textSize="13sp" android:textColor="@color/abc_ic_star_black_48dp" android:gravity="left" android:id="@+id/city" android:paddingLeft="12dp" android:paddingTop="11dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="哈尔滨"/>
+        <TextView android:textSize="12sp" android:textColor="@color/abc_ic_star_black_48dp" android:gravity="left" android:id="@+id/time" android:paddingLeft="12dp" android:paddingRight="12dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="7月7日" android:layout_below="@+id/city"/>
+        <TextView android:textSize="9sp" android:textColor="@color/abc_item_background_holo_light" android:gravity="center" android:id="@+id/tag_end" android:background="@drawable/tour_show_end" android:paddingLeft="10dp" android:paddingTop="2dp" android:paddingRight="10dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已结束" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

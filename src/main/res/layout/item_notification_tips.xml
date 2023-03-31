@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/im_ripple_line" android:layout_width="match_parent" android:layout_height="70dp">
+    <ImageButton android:id="@+id/ibtn_close_notifly" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/im_notice_close"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_toRightOf="@+id/ibtn_close_notifly">
+        <TextView android:textSize="16sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/tips_p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开启消息通知"/>
+        <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:id="@+id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="开启消息通知"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btnOpenNotify" android:background="@drawable/follow_button_new" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:layout_width="80dp" android:layout_height="30dp" android:layout_marginRight="20dp" android:text="@string/open" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

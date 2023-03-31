@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/dan_p" android:background="@drawable/danmu_jb_select" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+        <RelativeLayout android:id="@+id/user_msg" android:background="@drawable/shape_100dp_bb" android:layout_width="wrap_content" android:layout_height="22dp">
+            <com.taihebase.activity.view.LoadImageView android:id="@+id/user_logo" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/icon_avatar_default" android:scaleType="centerCrop" app:roundAsCircle="true"/>
+            <ImageView android:id="@+id/user_logo_type" android:visibility="gone" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="-12dp" android:layout_marginTop="10dp" android:src="@drawable/icon_artist_tag" android:layout_toRightOf="@+id/user_logo" android:contentDescription="@string/app_name"/>
+            <TextView android:textSize="13sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/user_name" android:paddingRight="@dimen/dimen_sw_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_8dp" android:maxWidth="66dp" android:lines="1" android:layout_toRightOf="@+id/user_logo" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="15sp" android:textColor="@color/color_white" android:ellipsize="end" android:id="@+id/comm_input_str" android:paddingLeft="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1"/>
+        <View android:id="@+id/line" android:background="#666666" android:layout_width="0.5dp" android:layout_height="15dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+        <ImageView android:id="@+id/jb_icon" android:visibility="visible" android:layout_width="22dp" android:layout_height="18dp" android:layout_marginRight="8dp" android:src="@drawable/dan_jb" android:contentDescription="@string/app_name"/>
+        <TextView android:textSize="13sp" android:textColor="#ffffff" android:layout_gravity="center_vertical" android:id="@+id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="举报" android:lines="1"/>
+    </LinearLayout>
+</LinearLayout>

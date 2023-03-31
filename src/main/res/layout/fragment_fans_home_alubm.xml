@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="15sp" android:textColor="@color/black1" android:gravity="center_vertical" android:id="@+id/txt_fans_album" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="60dp" android:text="相册"/>
+    <ImageView android:id="@+id/image_album_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/bt_mine_more" android:layout_alignTop="@+id/txt_fans_album" android:layout_alignBottom="@+id/txt_fans_album" android:layout_alignParentRight="true"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rc_album" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginBottom="25dp" android:layout_below="@+id/txt_fans_album" android:overScrollMode="never"/>
+    <ImageView android:id="@+id/image_album_add" android:visibility="gone" android:layout_width="152dp" android:layout_height="100dp" android:layout_marginBottom="25dp" android:src="@drawable/icon_mine_zhanwei_photo" android:layout_below="@+id/txt_fans_album" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/default_system_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/button_order" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_60dp" android:layout_alignParentBottom="true" android:elevation="12dp">
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/txt_buy" android:background="@drawable/crow_buy_button" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_45dp" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:layout_marginRight="@dimen/dimen_sw_15dp" android:text="@string/pay_now_str"/>
+    </FrameLayout>
+    <com.taihebase.activity.view.ScrollChangedView android:id="@+id/scrollView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/button_order">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/ticket_user_p" android:background="@drawable/shape_6dp_whilte" android:paddingLeft="@dimen/dimen_sw_25dp" android:paddingTop="@dimen/dimen_sw_10dp" android:paddingRight="@dimen/dimen_sw_25dp" android:paddingBottom="@dimen/dimen_sw_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:layout_marginTop="@dimen/dimen_sw_85dp" android:layout_marginRight="@dimen/dimen_sw_15dp" android:minHeight="@dimen/dimen_sw_90dp" android:elevation="10dp">
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/take_type_p" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_60dp">
+                    <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:layout_width="0dp" android:layout_height="wrap_content" android:text="取货方式" android:layout_weight="1"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/take_str" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快递发货" android:drawableRight="@drawable/mine_icon_next" android:drawablePadding="5dp"/>
+                </LinearLayout>
+                <View android:id="@+id/take_goods_line" android:visibility="visible" style="@style/lineHorizontalEB"/>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/take_goods_addr" android:paddingBottom="@dimen/dimen_sw_5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收货地址"/>
+                    <com.showstartfans.activity.view.PayAddressView android:gravity="right" android:id="@+id/payAddress" android:paddingLeft="-15dp" android:paddingRight="-15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_25dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/take_phone_p" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_60dp">
+                    <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:layout_width="0dp" android:layout_height="wrap_content" android:text="联系电话" android:layout_weight="1"/>
+                    <TextView android:textSize="16sp" android:textColor="#eb484a" android:id="@+id/phone_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+86"/>
+                    <View android:background="@color/color_line" android:layout_width="0.5dp" android:layout_height="@dimen/dimen_sw_15dp" android:layout_marginLeft="@dimen/dimen_sw_12dp" android:layout_marginRight="@dimen/dimen_sw_12dp"/>
+                    <EditText android:textSize="16sp" android:textColor="@color/abc_ic_ab_back_material" android:textColorHint="@color/abc_ic_voice_search_api_material" android:id="@+id/take_phone_num" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="填写手机号" android:digits="0123456789" android:inputType="number"/>
+                </LinearLayout>
+                <View android:id="@+id/take_goods_line_two" android:visibility="gone" style="@style/lineHorizontalEB"/>
+                <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_60dp">
+                    <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单备注"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:gravity="end|center_vertical" android:id="@+id/remark" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:maxLines="1" android:drawableRight="@drawable/mine_icon_next" android:drawablePadding="5dp" android:layout_weight="1"/>
+                </LinearLayout>
+                <View android:visibility="gone" style="@style/lineHorizontalEB"/>
+                <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:gravity="center_vertical" android:id="@+id/take_phone_des" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_60dp" android:text="适用于参演乐迷,购买后凭订单二维码现场取货"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/ticket_user_ps" android:background="@drawable/shape_6dp_whilte" android:padding="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:layout_marginTop="@dimen/dimen_sw_13dp" android:layout_marginRight="@dimen/dimen_sw_15dp" android:minHeight="@dimen/dimen_sw_90dp" android:elevation="10dp">
+                <com.taihebase.activity.widget.NonScrollListView android:id="@+id/goodsListView" android:paddingLeft="-10dp" android:paddingRight="-10dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_sw_10dp" android:divider="@color/transparent" android:dividerHeight="0dp"/>
+                <View style="@style/lineHorizontalEB"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_5dp" android:layout_marginTop="@dimen/dimen_sw_20dp" android:layout_marginRight="@dimen/dimen_sw_5dp">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="12sp" android:textColor="@color/abc_item_background_holo_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/goods_all_money"/>
+                        <TextView android:textSize="13sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="right" android:id="@+id/txt_all_price" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:id="@+id/use_up" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_12dp">
+                        <TextView android:textSize="12sp" android:textColor="@color/abc_item_background_holo_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠券"/>
+                        <TextView android:textSize="13sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="right" android:id="@+id/tick_user_p" android:layout_width="0dp" android:layout_height="wrap_content" android:text="无可用优惠券" android:drawableRight="@drawable/mine_icon_next" android:drawablePadding="10dp" android:layout_weight="1"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_12dp">
+                        <TextView android:textSize="12sp" android:textColor="@color/abc_item_background_holo_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/goods_freight"/>
+                        <TextView android:textSize="13sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="right" android:id="@+id/txt_freight" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_alignParentRight="true"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:layout_marginTop="@dimen/dimen_sw_20dp" style="@style/lineHorizontalEB"/>
+                <RelativeLayout android:paddingTop="@dimen/dimen_sw_15dp" android:paddingBottom="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_5dp" android:layout_marginTop="@dimen/dimen_sw_8dp" android:layout_marginRight="@dimen/dimen_sw_5dp">
+                    <TextView android:textSize="18sp" android:textColor="@color/abc_ic_ab_back_material" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/goods_actually_paid" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="18sp" android:textColor="@color/red_base" android:id="@+id/txt_actually_paid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/pay_p" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.taihebase.activity.view.ScrollChangedView>
+    <com.taihebase.activity.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</RelativeLayout>

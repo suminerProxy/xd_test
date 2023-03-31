@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="13sp" android:textColor="@color/abc_ic_star_black_48dp" android:gravity="center_vertical" android:id="@+id/alpha" android:background="@color/default_system_background" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingTop="@dimen/dimen_sw_6dp" android:paddingBottom="@dimen/dimen_sw_6dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.taihebase.activity.widget.autowraplistview.AutoWrapListView android:id="@+id/nsgv" android:padding="@dimen/dimen_sw_15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/fl_city" android:background="@drawable/item_selector" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_50dp" android:layout_marginTop="0.3dp">
+        <TextView android:textSize="15sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/tv_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <TextView android:textSize="13sp" android:textColor="@color/abc_ic_star_black_48dp" android:id="@+id/txt_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_10dp" android:text="@string/location_city" android:layout_toRightOf="@+id/tv_city" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/line" style="@style/lineHorizontalEB"/>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="and">and</string>
+    <string name="app_name">ShowStart</string>
+    <string name="appbar_fling_fix_behavior">android.support.design.widget.AppBarFlingFixBehavior</string>
+    <string name="appbar_spring_behavior">android.support.design.widget.AppBarLayoutSpringBehavior</string>
+    <string name="choose_country_place">Select country and region</string>
+    <string name="completed">Done</string>
+    <string name="inval_msg">My Profile</string>
+    <string name="loagin_paw">Login with password</string>
+    <string name="login_nick">Nickname</string>
+    <string name="login_suceess">Login Success</string>
+    <string name="login_tips">Phone will be registered for first time use</string>
+    <string name="login_use_paw">Login with password</string>
+    <string name="phone_error">Invalid phone number format</string>
+    <string name="phone_login">Welcome</string>
+    <string name="please_nick">Invaild nickname</string>
+    <string name="sm">By continuing you agree to our Terms of Service and Privacy Policy Terms of service and Privacy policy</string>
+    <string name="tk">Terms of service</string>
+    <string name="toast_empty_psw">Please enter the password</string>
+    <string name="user_name_hint">Phone Number</string>
+    <string name="user_pwd_hint">Password</string>
+    <string name="user_verification_hint">Verification Code</string>
+    <string name="verification_btn_hint">Verify Phone</string>
+    <string name="view_behavior_merchant_page">com.showstartfans.activity.view.MerchantPageBehavior</string>
+    <string name="xd_login">Get Started</string>
+    <string name="zc">Privacy policy</string>
+</resources>

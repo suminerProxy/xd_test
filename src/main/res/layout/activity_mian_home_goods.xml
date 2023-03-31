@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/default_system_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.soli.pullupdownrefresh.PullRefreshLayout android:id="@+id/pullRefreshLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/detectDown" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp" app:layout_behavior=".widget.FlingBehavior">
+                <LinearLayout android:orientation="vertical" android:background="@color/default_system_background" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="0x1">
+                    <LinearLayout android:id="@+id/goods_head_web" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_48dp" android:layout_marginBottom="@dimen/dimen_sw_20dp" android:layout_marginStart="@dimen/dimen_sw_20dp" android:layout_marginEnd="@dimen/dimen_sw_20dp">
+                        <ImageView android:id="@+id/home_goods_top_one" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/souvenir_toplogo_left" android:layout_weight="0.6" android:contentDescription="@string/app_name" app:actualImageScaleType="0" app:fadeDuration="0"/>
+                        <ImageView android:id="@+id/home_goods_top_two" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/souvenir_toplogo_right" android:scaleType="fitXY" android:layout_weight="0.4" android:contentDescription="@string/app_name" app:actualImageScaleType="0" app:fadeDuration="0"/>
+                    </LinearLayout>
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <androidx.viewpager2.widget.ViewPager2 android:id="@+id/home_goods_theme" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_380dp"/>
+                        <com.taihebase.activity.widget.indicator.AutoHideInkPageIndicator android:layout_gravity="bottom|center_horizontal" android:id="@+id/indicator" android:paddingLeft="@dimen/dimen_sw_10dp" android:paddingRight="@dimen/dimen_sw_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dimen_sw_10dp" app:animationDuration="300" app:currentPageIndicatorColor="@color/red_base" app:dotDiameter="@dimen/dimen_sw_16dp" app:dotGap="@dimen/dimen_sw_4dp" app:dotRadius="@dimen/dimen_sw_2dp" app:pageIndicatorColor="@color/color_white"/>
+                    </FrameLayout>
+                    <ImageView android:id="@+id/theme_name" android:paddingTop="@dimen/dimen_sw_30dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/souvenir_title_hot" android:contentDescription="@string/app_name" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+                </LinearLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <com.taihebase.activity.view.LoadMoreRecyclerView android:id="@+id/recycleList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="20dp" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.soli.pullupdownrefresh.PullRefreshLayout>
+</FrameLayout>

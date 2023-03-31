@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/bg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/im_bg_view" android:background="@drawable/im_ripple_line" android:layout_width="match_parent" android:layout_height="45dp"/>
+    <TextView android:textSize="13sp" android:textColor="@color/notice_color" android:gravity="center" android:id="@+id/notice_content" android:layout_width="match_parent" android:layout_height="45dp"/>
+    <ImageView android:id="@+id/im_close_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/im_notice_close"/>
+</FrameLayout>

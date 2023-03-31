@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="@dimen/dimen_sw_55dp" android:layout_height="@dimen/dimen_sw_55dp">
+    <com.taihebase.activity.view.LoadImageView android:id="@+id/imageView" android:layout_width="@dimen/dimen_sw_55dp" android:layout_height="@dimen/dimen_sw_55dp" app:liv_border_color="@color/color_white" app:liv_border_width="@dimen/dimen_sw_2dp" app:liv_corner_radiu_bottomLeft="@dimen/dimen_sw_4dp" app:liv_corner_radiu_bottomRight="@dimen/dimen_sw_4dp" app:liv_corner_radiu_topLeft="@dimen/dimen_sw_4dp" app:liv_corner_radiu_topRight="@dimen/dimen_sw_4dp"/>
+    <ImageView android:id="@+id/ok" android:padding="@dimen/dimen_sw_17dp" android:layout_width="@dimen/dimen_sw_20dp" android:layout_height="@dimen/dimen_sw_20dp" android:src="@drawable/moment_cover_selected" android:layout_alignLeft="@+id/imageView" android:layout_alignTop="@+id/imageView" android:layout_alignRight="@+id/imageView" android:layout_alignBottom="@+id/imageView" android:layout_centerInParent="true"/>
+    <RelativeLayout android:id="@+id/image_close" android:visibility="gone" android:layout_width="match_parent" android:layout_height="25dp">
+        <ImageView android:layout_width="@dimen/dimen_sw_12dp" android:layout_height="@dimen/dimen_sw_12dp" android:src="@drawable/comm_clear_all" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/app_name"/>
+    </RelativeLayout>
+</RelativeLayout>

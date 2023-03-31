@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_content" android:background="@drawable/shap_6dp_f8" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_100dp" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginTop="@dimen/dimen_sw_15dp" android:layout_marginRight="@dimen/dimen_sw_15dp" android:layout_marginBottom="@dimen/dimen_sw_14dp">
+        <com.taihebase.activity.view.LoadImageView android:id="@+id/goodsImg" android:layout_width="@dimen/dimen_sw_52dp" android:layout_height="@dimen/dimen_sw_69dp" app:actualImageScaleType="6" app:liv_corner_radius="6dp" app:placeholderImage="@color/color_image_bg"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:id="@+id/show_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:ellipsize="end" android:id="@+id/show_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:lines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/layout_comm_publish"/>
+</merge>

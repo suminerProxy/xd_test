@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.soli.pullupdownrefresh.PullRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/pullRefreshLayout" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/listView" android:background="@color/color_white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:divider="@null" android:dividerHeight="0dp" android:layout_above="@+id/btn_bottom"/>
+        <Button android:textSize="17sp" android:textColor="@color/color_white" android:id="@+id/btn_bottom" android:background="@drawable/red_btn_no_corners_selecter" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginBottom="0dp" android:text="@string/sure_pay" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</com.soli.pullupdownrefresh.PullRefreshLayout>

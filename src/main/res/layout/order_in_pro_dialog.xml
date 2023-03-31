@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/order_in_pro" android:layout_width="@dimen/dimen_sw_270dp" android:layout_height="@dimen/dimen_sw_279dp" android:layout_margin="@dimen/dimen_sw_32dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/loading_img" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_32dp" android:layout_marginLeft="@dimen/dimen_sw_58dp" android:layout_marginRight="@dimen/dimen_sw_58dp" android:layout_marginBottom="@dimen/dimen_sw_75dp" android:layout_alignParentBottom="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/off_btn" android:background="@drawable/order_in_button" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_40dp" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginTop="@dimen/dimen_sw_15dp" android:layout_marginRight="@dimen/dimen_sw_20dp" android:layout_marginBottom="@dimen/dimen_sw_20dp" android:text="离 开" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

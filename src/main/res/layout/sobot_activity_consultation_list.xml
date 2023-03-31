@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/sobot_layout_titlebar1"/>
+    <ListView android:scrollbarThumbVertical="@drawable/sobot_custom_scroll_style" android:id="@+id/sobot_ll_msg_center" android:background="@color/sobot_lv_message_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:transcriptMode="normal" android:divider="@null"/>
+</LinearLayout>

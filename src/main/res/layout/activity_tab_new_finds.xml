@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/default_system_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/head_one_bg" android:layout_width="match_parent" android:layout_height="420dp" android:src="@drawable/tab_found_bg_top" android:scaleType="fitXY" android:contentDescription="@string/app_name"/>
+    <View android:id="@+id/top_bg" android:background="@drawable/tab_find_top_bg" android:layout_width="match_parent" android:layout_height="420dp"/>
+    <View android:id="@+id/topEmpty" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_75dp"/>
+    <com.soli.pullupdownrefresh.PullRefreshLayout android:id="@+id/refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topEmpty">
+        <com.taihebase.activity.view.NestedScrollChangedView android:id="@+id/scroll_find" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.showstartfans.activity.activitys.maintab.HomeFindHeadView android:id="@+id/head_find" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.taihebase.activity.view.NestedScrollChangedView>
+    </com.soli.pullupdownrefresh.PullRefreshLayout>
+</RelativeLayout>

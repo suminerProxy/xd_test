@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="@color/red_base" android:gravity="center_vertical" android:id="@+id/one_search" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_55dp" android:text="待使用" android:drawableRight="@drawable/icon_gougou_red"/>
+    <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.3dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center_vertical" android:id="@+id/two_search" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_55dp" android:text="已使用"/>
+    <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.3dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center_vertical" android:id="@+id/three_search" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_55dp" android:text="已过期"/>
+</LinearLayout>

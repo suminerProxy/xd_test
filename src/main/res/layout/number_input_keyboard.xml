@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/top_down" android:background="@color/default_system_background" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_40dp">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_cm_arrowdown" android:contentDescription="@string/app_name"/>
+    </FrameLayout>
+    <LinearLayout android:background="@color/color_white_mine_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="20sp" android:textColor="@color/abc_ic_ab_back_material" android:textColorHint="@color/abc_ic_voice_search_api_material" android:id="@+id/num_input_edit" android:background="@null" android:paddingLeft="@dimen/dimen_sw_20dp" android:layout_width="0dp" android:layout_height="@dimen/dimen_sw_60dp" android:hint="请输入购票数" android:layout_weight="1"/>
+        <TextView android:textSize="12sp" android:textColor="@color/red_base" android:id="@+id/num_input_max" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.3dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_235dp">
+        <com.showstartfans.activity.widget.THKeyboardView android:id="@+id/ky_keyboard" android:background="@color/color_line" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <LinearLayout android:orientation="vertical" android:background="@color/color_white_mine_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1dp">
+            <FrameLayout android:id="@+id/clear_btn" android:layout_width="@dimen/dimen_sw_95dp" android:layout_height="@dimen/dimen_sw_60dp">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_cm_keybord_delete" android:contentDescription="@string/app_name"/>
+            </FrameLayout>
+            <TextView android:textSize="20sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/sure_btn" android:background="@color/abc_list_longpressed_holo" android:layout_width="@dimen/dimen_sw_95dp" android:layout_height="@dimen/dimen_sw_178dp" android:text="确定"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

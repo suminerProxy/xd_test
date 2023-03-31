@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout_Week" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.taihebase.activity.widget.NonScrollListView android:id="@+id/list_c" android:background="@drawable/shap_6dp_f8" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingTop="@dimen/dimen_sw_13dp" android:paddingRight="@dimen/dimen_sw_15dp" android:paddingBottom="@dimen/dimen_sw_13dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/transparent" android:dividerHeight="8dp" android:layout_toRightOf="@+id/studio_logo" android:layout_below="@+id/title"/>
+</FrameLayout>

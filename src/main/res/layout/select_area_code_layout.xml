@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_330dp">
+    <TextView android:textSize="13sp" android:textColor="@color/abc_ic_star_half_black_36dp" android:gravity="center" android:id="@+id/txt_title" android:layout_width="match_parent" android:layout_height="55dp" android:text="@string/choose_country_place"/>
+    <View android:id="@+id/line" android:layout_below="@+id/txt_title" style="@style/lineHorizontalEE"/>
+    <ListView android:id="@+id/common_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="330dp" android:listSelector="@color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0dp" android:layout_below="@+id/line"/>
+</RelativeLayout>

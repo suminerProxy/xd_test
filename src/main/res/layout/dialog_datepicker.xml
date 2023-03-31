@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:orientation="vertical" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:id="@+id/ll_pop" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/color_white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="16sp" android:textColor="@color/actionbar_color" android:id="@+id/datepicker_btcancel" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" style="@style/btnBorderlessStyle"/>
+            <Button android:textSize="16sp" android:textColor="@color/actionbar_color" android:id="@+id/datepicker_btsure" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" android:layout_alignParentRight="true" style="@style/btnBorderlessStyle"/>
+        </RelativeLayout>
+        <com.showstartfans.activity.view.wheel.DateWheelPicker android:orientation="horizontal" android:id="@+id/datepicker_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

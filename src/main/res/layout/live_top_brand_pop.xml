@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/parent_p" android:background="@drawable/shape_1c_12dp_top" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_340dp">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/top_cla" android:layout_width="match_parent" android:layout_height="34dp" android:layout_marginTop="20dp"/>
+    <FrameLayout android:id="@+id/top_b_p" android:paddingBottom="83dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp" android:layout_below="@+id/top_cla">
+        <com.taihebase.activity.widget.RecycleEmptyView android:id="@+id/top_b" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:id="@+id/bottom_p" android:background="@color/abc_ic_star_black_16dp" android:paddingLeft="20dp" android:paddingTop="15dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="83dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="13sp" android:textColor="@color/abc_ic_voice_search_api_material" android:ellipsize="end" android:id="@+id/bottom_msg" android:paddingRight="20dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/live_top_all_msg" android:lines="1" android:layout_weight="1"/>
+        <ImageView android:id="@+id/gift_i" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/live_icon_present" android:contentDescription="@string/app_name"/>
+    </LinearLayout>
+</RelativeLayout>

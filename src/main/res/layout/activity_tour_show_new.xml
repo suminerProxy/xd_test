@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="11sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tour_year" android:background="@color/black1" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10dp" android:layout_marginTop="9dp" android:layout_marginRight="-12.5dp" android:rotation="-90"/>
+    <LinearLayout android:id="@+id/tour_p" android:background="@drawable/border_tour_show" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="70dp" android:layout_height="match_parent">
+            <TextView android:textSize="12sp" android:textColor="@color/black1" android:gravity="center" android:id="@+id/tour_m" android:background="@drawable/tour_bg_line" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="1dp" android:text="一月"/>
+            <View android:id="@+id/line_one" android:background="@color/black1" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <TextView android:textSize="20sp" android:textColor="@color/black1" android:gravity="center" android:id="@+id/tour_day" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="23"/>
+        </LinearLayout>
+        <View android:id="@+id/line_two" android:background="@color/black1" android:layout_width="1dp" android:layout_height="90dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@color/black1" android:gravity="center" android:id="@+id/tour_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="北京"/>
+                <TextView android:textSize="15sp" android:textColor="@color/black1" android:gravity="right" android:id="@+id/tour_money" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="$120"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="12sp" android:textColor="@color/black3" android:ellipsize="end" android:gravity="left" android:id="@+id/tour_area" android:layout_width="0dp" android:layout_height="wrap_content" android:text="小酒馆. 成都演绎中心" android:maxLines="1" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:textColor="@color/black3" android:gravity="right" android:id="@+id/tour_msg" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

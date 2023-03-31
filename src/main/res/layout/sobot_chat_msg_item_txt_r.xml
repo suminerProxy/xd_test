@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/sobot_real_ll_content" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/sobot_msg_top_bottom_style">
+    <TextView android:id="@+id/sobot_reminde_time_Text" style="@style/sobot_center_remind_time"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="end" android:orientation="horizontal" android:id="@+id/sobot_my_msg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/sobot_frame_layout" style="@style/sobot_msg_left_empty_bg_style">
+            <ImageView android:id="@+id/sobot_msgStatus" android:visibility="gone" style="@style/sobot_msg_send_status_style"/>
+            <ProgressBar android:id="@+id/sobot_msgProgressBar" android:visibility="gone" android:indeterminateDrawable="@drawable/sobot_progressbar_circle_loading" style="@style/sobot_msg_send_loading_style"/>
+        </FrameLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/sobot_post_msg_template_text_color" android:layout_gravity="center_vertical" android:id="@+id/sobot_tv_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:layout_marginEnd="6dp"/>
+        <LinearLayout android:id="@+id/sobot_ll_content" style="@style/sobot_msg_right_content_ll_bg_style">
+            <TextView android:textSize="@dimen/sobot_msg_text_size" android:textColor="@color/sobot_right_msg_text_color" android:id="@+id/sobot_msg" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/sobot_ll_yinsi" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="5dp" style="@style/sobot_msg_file_right_content_ll_bg_style">
+            <LinearLayout android:orientation="vertical" android:id="@+id/sobot_msg_temp_ll" android:background="@drawable/sobot_chat_fillet_gray_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sobot_msg_text_size" android:textColor="@color/sobot_common_gray2" android:ellipsize="end" android:id="@+id/sobot_msg_temp" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                <TextView android:textSize="@dimen/sobot_msg_text_size" android:textColor="@color/sobot_color" android:layout_gravity="center_horizontal" android:id="@+id/sobot_msg_temp_see_all" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingBottom="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sobot_msg_open_see_all" android:paddingStart="20dp" android:paddingEnd="20dp"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sobot_msg_text_size" android:textColor="@color/sobot_common_gray1" android:id="@+id/sobot_sentisiveExplain" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="11dp" android:layout_below="@+id/sobot_msg_temp_ll"/>
+            <LinearLayout android:gravity="end|center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/sobot_sentisiveExplain">
+                <TextView android:textSize="@dimen/sobot_msg_text_size" android:textColor="@color/sobot_common_red" android:gravity="start|center_vertical" android:id="@+id/sobot_sentisive_cancle_tip" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/sobot_refuse_send_this_msg" android:layout_weight="1"/>
+                <Button android:textSize="14sp" android:textColor="@color/sobot_common_wenzi_white" android:id="@+id/sobot_sentisive_cancle_send" android:background="@drawable/sobot_chat_hollow_bg" android:layout_width="60dp" android:layout_height="30dp" android:text="@string/sobot_refuse_send"/>
+                <Button android:textSize="14sp" android:textColor="@color/sobot_common_white" android:id="@+id/sobot_sentisive_ok_send" android:background="@drawable/sobot_evaluate_commit_selector" android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="10dp" android:text="@string/sobot_agree_sentisive_send" android:paddingStart="17dp" android:paddingEnd="17dp" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/sobot_name" android:visibility="gone" android:layout_toLeftOf="@+id/sobot_imgHead" android:layout_toStartOf="@+id/sobot_imgHead" style="@style/sobot_chatting_nickname"/>
+    <com.sobot.chat.widget.SobotImageView android:id="@+id/sobot_imgHead" android:visibility="gone" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/sobot_chatting_imghead"/>
+</LinearLayout>

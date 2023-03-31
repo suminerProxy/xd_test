@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_zan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_zan" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textSize="@dimen/dimen_sw_11sp" android:textColor="#80ffffff" android:id="@+id/tv_zan_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" app:layout_constraintBottom_toTopOf="@+id/iv_zan" app:layout_constraintLeft_toRightOf="@+id/iv_zan" app:layout_constraintTop_toTopOf="@+id/iv_zan"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

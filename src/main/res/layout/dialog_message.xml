@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root" android:background="@drawable/dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="35dp">
+    <TextView android:textSize="@dimen/text_title" android:textColor="@color/color_black" android:gravity="center_horizontal" android:id="@+id/dailogTitle" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_content_dialog" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/dailogTitle" android:fadeScrollbars="true">
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/black2" android:gravity="center" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="30dp" android:layout_marginRight="40dp" android:layout_marginBottom="30dp" android:lineSpacingMultiplier="1.2"/>
+    </LinearLayout>
+    <View android:id="@+id/content_sep" android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@+id/ll_content_dialog"/>
+    <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_blue" android:gravity="center" android:id="@+id/btn_ok" android:background="@drawable/dialog_button_left_selector" android:layout_width="match_parent" android:layout_height="45dp" android:text="@string/Cancel" android:layout_weight="1" android:layout_below="@+id/content_sep"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.view.TopBarEmptyView android:id="@+id/v_top" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/iv_back_mould_dialog" android:padding="@dimen/dimen_sw_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/b_back_black" android:layout_below="@+id/v_top"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layout_bottom" android:background="@drawable/shape_n12_12dp_top" android:paddingBottom="@dimen/dimen_sw_40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/dimen_sw_16sp" android:textColor="@color/abc_vector_test" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_20dp" android:text="口令已复制"/>
+        <TextView android:textSize="@dimen/dimen_sw_13sp" android:textColor="@color/abc_ic_voice_search_api_material" android:id="@+id/tv_content" android:background="@drawable/shape_10dp_f8" android:padding="@dimen/dimen_sw_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginTop="@dimen/dimen_sw_20dp" android:layout_marginRight="@dimen/dimen_sw_20dp" android:text="【秀动】链接链接链接【演出短标题】点击链【秀动】链接链接链接【演出短标题】点击链接可直接查看，或复制整段后打开秀动app查看"/>
+        <com.showstartfans.activity.view.ShareView android:id="@+id/v_share_mould_dialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_28dp"/>
+    </LinearLayout>
+</RelativeLayout>

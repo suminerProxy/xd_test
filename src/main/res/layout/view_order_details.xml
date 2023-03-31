@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="13sp" android:textColor="@color/abc_ic_voice_search_api_material" android:id="@+id/tv_left_text" android:paddingTop="@dimen/dimen_sw_5dp" android:paddingBottom="@dimen/dimen_sw_5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <TextView android:textSize="13sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/tv_right_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</merge>

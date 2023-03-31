@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/core_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.tencent.qcloud.tuicore.component.TitleBarLayout android:id="@+id/create_group_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/create_group_bar"/>
+    <TextView android:textSize="@dimen/group_profile_group_id_size" android:textColor="@color/font_blue" android:id="@+id/group_type_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/view_margin_bottom" android:text="@string/group_type_content_button" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

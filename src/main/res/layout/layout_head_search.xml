@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:id="@+id/parentSearch" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/shape_100dp_f1" android:paddingLeft="@dimen/dimen_sw_15dp" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_icon_gray" android:contentDescription="@string/app_name"/>
+        <EditText android:textSize="15sp" android:textColor="@color/abc_ic_star_black_48dp" android:textColorHint="@color/abc_list_divider_mtrl_alpha" android:gravity="center_vertical" android:id="@+id/et_search" android:background="@null" android:layout_width="0dp" android:layout_height="@dimen/dimen_sw_35dp" android:hint="想要找什么" android:singleLine="true" android:maxLength="30" android:layout_weight="1" android:imeOptions="actionSearch" android:layout_marginStart="@dimen/dimen_sw_10dp"/>
+        <ImageView android:id="@+id/image_clean" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_icon_delete" android:contentDescription="@string/app_name"/>
+    </LinearLayout>
+    <TextView android:textSize="15sp" android:textColor="@color/abc_ic_star_black_48dp" android:id="@+id/btnAction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_btn" android:layout_marginStart="@dimen/dimen_sw_10dp"/>
+</merge>

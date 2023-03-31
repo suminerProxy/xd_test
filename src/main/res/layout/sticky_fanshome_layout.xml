@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="100dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="63dp">
+                <ImageView android:id="@+id/image_icon_xinxi" android:layout_width="13dp" android:layout_height="10dp" android:layout_marginLeft="15dp" android:layout_marginBottom="2dp" android:src="@drawable/icon_mine_xinxi" android:layout_alignParentBottom="true"/>
+                <TextView android:textSize="11sp" android:textColor="@color/color_white" android:id="@+id/txt_fans_place" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/image_icon_xinxi" android:layout_alignParentBottom="true"/>
+                <TextView android:textSize="11sp" android:textColor="@color/color_white" android:id="@+id/txt_fans_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/txt_fans_place" android:layout_alignParentBottom="true"/>
+                <TextView android:textSize="11sp" android:textColor="@color/color_white" android:id="@+id/txt_fans_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                <ImageView android:id="@+id/image_attestation" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_marginBottom="25dp" android:src="@drawable/bt_mine_renzheng" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="37dp"/>
+        </LinearLayout>
+        <com.taihebase.activity.view.LoadImageView android:id="@+id/userlogo" android:clickable="true" android:layout_width="74dp" android:layout_height="74dp" android:src="@drawable/icon_avatar_default" android:scaleType="centerCrop" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:liv_border_color="@color/color_white" app:liv_border_width="2dp" app:roundAsCircle="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/color_white" android:paddingTop="15dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16sp" android:textColor="@color/black1" android:gravity="center" android:id="@+id/txt_fans_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="5dp"/>
+        <TextView android:textSize="11sp" android:textColor="@color/black3" android:id="@+id/txt_fans_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:maxWidth="200dp" android:drawablePadding="5dp" android:lineSpacingExtra="4dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/black1" android:gravity="center" android:id="@+id/txt_fans_shenfen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:drawableLeft="@drawable/icon_mine_shenfen" android:drawablePadding="5dp"/>
+        <RelativeLayout android:id="@+id/rl_fans_attention" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/line" android:background="@color/black3" android:layout_width="0.5dp" android:layout_height="15dp" android:layout_marginTop="15dp" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="11sp" android:textColor="@color/black3" android:id="@+id/txt_fans_fans_num" android:background="@drawable/item_selector" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginRight="15dp" android:layout_toLeftOf="@+id/line"/>
+            <TextView android:textSize="11sp" android:textColor="@color/black3" android:id="@+id/txt_fans_attention_num" android:background="@drawable/item_selector" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="12dp" android:layout_toRightOf="@+id/line"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="20dp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_fans_attention" android:background="@drawable/shap_bg_gray" android:layout_width="130dp" android:layout_height="32dp">
+                <TextView android:textSize="12sp" android:textColor="@color/black1" android:gravity="center" android:id="@+id/txt_fans_attention" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="关注TA" android:drawableLeft="@drawable/icon_mine_add" android:drawablePadding="12dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_fans_chat" android:background="@drawable/shap_bg_gray" android:layout_width="130dp" android:layout_height="32dp" android:layout_marginLeft="10dp">
+                <TextView android:textSize="12sp" android:textColor="@color/black1" android:gravity="center" android:id="@+id/txt_fans_chat" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="私聊"/>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/rl_album" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:id="@+id/fl_same" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:id="@+id/fl_music_tag" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_experience" android:layout_width="match_parent" android:layout_height="70dp">
+            <View android:id="@+id/line3" android:background="@color/default_system_background" android:layout_width="match_parent" android:layout_height="10dp"/>
+            <TextView android:textSize="15sp" android:textColor="@color/black1" android:gravity="center_vertical" android:id="@+id/experience" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="现场经历" android:layout_below="@+id/line3"/>
+            <ImageView android:id="@+id/image_help" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/bt_mine_help" android:layout_toRightOf="@+id/experience" android:layout_alignTop="@+id/experience" android:layout_alignBottom="@+id/experience"/>
+            <View android:layout_alignParentBottom="true" style="@style/lineHorizontalEB"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

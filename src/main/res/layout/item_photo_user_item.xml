@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.taihebase.activity.view.RatioLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:padding="@dimen/dimen_sw_1dp" android:layout_width="match_parent" android:layout_height="match_parent" app:ratio="1">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/layout_photo" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/sdv_conver" android:layout_width="match_parent" android:layout_height="match_parent" app:placeholderImage="@color/color_image_bg_2" app:progressBarAutoRotateInterval="1000" app:progressBarImage="@mipmap/loading"/>
+            <com.showstartfans.activity.view.UserPhotoPraiseView android:id="@+id/view_praise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_16dp" android:layout_marginRight="@dimen/dimen_sw_8dp" android:layout_marginBottom="@dimen/dimen_sw_8dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0"/>
+            <TextView android:textSize="@dimen/dimen_sw_12sp" android:textColor="@color/white" android:id="@+id/tv_isConver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已设为背景" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_add_photo" android:background="#1c1c1c" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_add"/>
+            <TextView android:textSize="@dimen/dimen_sw_12sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_10dp" android:text="上传相册"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/layout_enemy" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/dimen_sw_12sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/tv_enemy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_70dp" android:text="暂未上传相册"/>
+        </FrameLayout>
+    </FrameLayout>
+</com.taihebase.activity.view.RatioLayout>

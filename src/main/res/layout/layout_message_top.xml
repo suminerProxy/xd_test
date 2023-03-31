@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_15dp">
+        <FrameLayout android:id="@+id/layout_tabComm" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.showstartfans.activity.widget.UnreadNumberTextView android:textSize="@dimen/dimen_sw_13sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:layout_gravity="center" android:id="@+id/tabComm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="互动" android:drawableTop="@drawable/mine_icon_message_comm" android:drawablePadding="@dimen/dimen_sw_10dp"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/layout_tabShow" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.showstartfans.activity.widget.UnreadNumberTextView android:textSize="@dimen/dimen_sw_13sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:layout_gravity="center" android:id="@+id/tabShow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="演出" android:drawableTop="@drawable/mine_icon_message_show" android:drawablePadding="@dimen/dimen_sw_10dp"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/layout_tabOfficial" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.showstartfans.activity.widget.UnreadNumberTextView android:textSize="@dimen/dimen_sw_13sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:layout_gravity="center" android:id="@+id/tabOfficial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="官方" android:drawableTop="@drawable/mine_icon_message_official" android:drawablePadding="@dimen/dimen_sw_10dp"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/layout_tabOrder" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.showstartfans.activity.widget.UnreadNumberTextView android:textSize="@dimen/dimen_sw_13sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:layout_gravity="center" android:id="@+id/tabOrder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单" android:drawableTop="@drawable/mine_icon_message_order" android:drawablePadding="@dimen/dimen_sw_10dp"/>
+        </FrameLayout>
+    </LinearLayout>
+    <View android:id="@+id/Vline" android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginTop="@dimen/dimen_sw_20dp" android:layout_marginRight="@dimen/dimen_sw_20dp" app:layout_constraintTop_toBottomOf="@+id/tabComm"/>
+</LinearLayout>

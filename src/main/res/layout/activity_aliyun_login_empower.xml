@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.widget.scrollBgView.ScrollBgView android:id="@+id/bg_scroll" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="7dp" android:layout_marginRight="7dp"/>
+    <View android:id="@+id/touch_branch" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:background="@drawable/login_ali_bg_m" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_60dp" android:scaleType="fitXY" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name"/>
+    <ImageView android:id="@+id/back_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_17dp" android:layout_marginTop="@dimen/dimen_sw_50dp" android:src="@drawable/icon_head_back_white_yy" android:contentDescription="@string/app_name"/>
+</RelativeLayout>

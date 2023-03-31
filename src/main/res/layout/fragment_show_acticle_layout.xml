@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/default_system_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.view.LoadMoreRecyclerView android:id="@+id/rv_site" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="@dimen/dimen_sw_320dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.view.TopBarEmptyView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@+id/layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_sw_10dp">
+        <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center_vertical" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消息" android:layout_marginStart="@dimen/dimen_sw_20dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textSize="@dimen/dimen_sw_11sp" android:textStyle="bold" android:textColor="@color/abc_ic_star_half_black_36dp" android:gravity="center_vertical" android:id="@+id/clear" android:background="@drawable/shap_100dp_c8_border" android:paddingLeft="@dimen/dimen_sw_10dp" android:paddingTop="@dimen/dimen_sw_3dp" android:paddingRight="@dimen/dimen_sw_10dp" android:paddingBottom="@dimen/dimen_sw_3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:layout_marginTop="@dimen/dimen_sw_1dp" android:text="清除未读" android:drawablePadding="@dimen/dimen_sw_2dp" android:drawableStart="@mipmap/icon_msg_clear_all" android:paddingHorizontal="@dimen/dimen_sw_10dp" android:paddingVertical="@dimen/dimen_sw_3dp" app:layout_constraintBottom_toBottomOf="@+id/title" app:layout_constraintLeft_toRightOf="@+id/title" app:layout_constraintTop_toTopOf="@+id/title"/>
+        <ImageView android:id="@+id/setting" android:padding="@dimen/dimen_sw_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_mine_shezhis" android:layout_marginEnd="@dimen/dimen_sw_20dp" app:layout_constraintBottom_toBottomOf="@+id/title" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="@+id/title"/>
+        <com.soli.pullupdownrefresh.PullRefreshLayout android:id="@+id/pullRefreshLayout_chat" android:paddingTop="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/setting">
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar_chat" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+                    <LinearLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="0x1">
+                        <include layout="@layout/layout_message_top"/>
+                        <com.showstartfans.activity.view.ViewNotifTips android:id="@+id/notifTips" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </com.google.android.material.appbar.AppBarLayout>
+                <com.showstartfans.activity.view.custom_im_ui.CustomConversationLayout android:id="@+id/conversation_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </com.soli.pullupdownrefresh.PullRefreshLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

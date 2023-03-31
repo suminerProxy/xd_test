@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/default_system_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/gift_p" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginRight="14dp">
+        <RelativeLayout android:id="@+id/show_msg_p" android:background="@drawable/border_radiu_top_white_yoff" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/goods_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <com.taihebase.activity.view.LoadImageView android:id="@+id/goodsImg" android:background="@color/color_image_bg" android:layout_width="@dimen/dimen_sw_75dp" android:layout_height="@dimen/dimen_sw_100dp" android:layout_marginLeft="20dp" android:src="@null" android:scaleType="centerCrop" app:liv_border_color="@color/color_red" app:liv_border_width="0dp" app:liv_corner_radius="6dp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="20dp" android:maxLines="2" android:lineSpacingExtra="2dp"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/abc_item_background_holo_light" android:ellipsize="end" android:id="@+id/txt_order_addr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="20dp" android:singleLine="true"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/abc_item_background_holo_light" android:ellipsize="end" android:id="@+id/txt_order_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="4dp" android:layout_marginRight="20dp" android:layout_marginBottom="2dp" android:singleLine="true"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@+id/top_lines" android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:layout_below="@+id/goods_msg"/>
+            <LinearLayout android:gravity="center_vertical" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="19dp" android:layout_marginRight="20dp" android:layout_below="@+id/top_lines">
+                <TextView android:textSize="14sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:id="@+id/ticket_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:maxLines="2"/>
+                <TextView android:textSize="12sp" android:textColor="@color/abc_item_background_holo_light" android:ellipsize="end" android:gravity="right" android:id="@+id/ticket_content" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:maxLines="2" android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-2dp" android:layout_marginTop="-8dp" android:layout_marginRight="-2dp" android:src="@drawable/order_top_bg_line" android:contentDescription="@string/app_name"/>
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:background="@drawable/border_radiu_bottom_white_yoff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-8dp">
+            <com.taihebase.activity.widget.NonScrollListView android:id="@+id/qr_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/transparent" android:dividerHeight="0dp"/>
+            <LinearLayout android:gravity="center" android:id="@+id/open_ALl" android:layout_width="match_parent" android:layout_height="44dp">
+                <TextView android:textSize="13sp" android:textColor="@color/abc_ic_star_half_black_36dp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="20dp" android:text="展开全部赠票" android:drawableRight="@drawable/cm_icon_more_gray" android:drawablePadding="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

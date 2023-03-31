@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android">
+    <selector>
+        <item android:state_pressed="true">
+            <shape>
+                <gradient android:startColor="@color/black1" android:endColor="@color/black1" android:angle="270"/>
+                <corners android:radius="@dimen/normal_btn_radius"/>
+            </shape>
+        </item>
+        <item>
+            <shape>
+                <gradient android:startColor="@color/color_black" android:endColor="@color/color_black" android:angle="270"/>
+                <corners android:radius="@dimen/normal_btn_radius"/>
+            </shape>
+        </item>
+    </selector>
+</inset>

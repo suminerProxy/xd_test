@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/theme_p" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.taihebase.activity.view.LoadImageView android:id="@+id/image_item_style" android:layout_width="match_parent" android:layout_height="match_parent" app:actualImageScaleType="6" app:progressBarImage="@drawable/def_zhuanti_showfun_logo" app:progressBarImageScaleType="5"/>
+</RelativeLayout>

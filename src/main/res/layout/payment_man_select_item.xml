@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/shap_4dp_f8" android:paddingLeft="@dimen/dimen_sw_16dp" android:paddingTop="@dimen/dimen_sw_13dp" android:paddingRight="@dimen/dimen_sw_16dp" android:paddingBottom="@dimen/dimen_sw_13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_4dp">
+    <TextView android:textSize="12sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center_vertical" android:id="@+id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name"/>
+    <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:gravity="center_vertical" android:id="@+id/user_car" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_12dp" android:layout_marginRight="@dimen/dimen_sw_20dp" android:text="@string/app_name" android:layout_weight="1"/>
+    <ImageView android:id="@+id/select_icon" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/icon_gougou_red" android:contentDescription="@string/app_name"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingBottom="@dimen/dimen_sw_18dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_sw_20dp" android:paddingEnd="0dp">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/group_bg" android:background="@drawable/bg_show_group" android:paddingLeft="@dimen/dimen_sw_12dp" android:paddingTop="@dimen/dimen_sw_4dp" android:paddingRight="@dimen/dimen_sw_12dp" android:paddingBottom="@dimen/dimen_sw_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dimen_sw_12dp" android:paddingVertical="@dimen/dimen_sw_4dp">
+        <com.taihebase.activity.view.LoadImageView android:id="@+id/image" android:layout_width="@dimen/dimen_sw_18dp" android:layout_height="@dimen/dimen_sw_18dp" android:layout_marginEnd="@dimen/dimen_sw_6dp" app:layout_constraintStart_toStartOf="@+id/show_activity" app:layout_constraintTop_toTopOf="0" app:roundAsCircle="true"/>
+        <TextView android:textSize="@dimen/dimen_sw_11sp" android:textColor="@color/color_white" android:gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

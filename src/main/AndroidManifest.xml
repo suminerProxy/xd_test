@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="20230327" android:versionName="5.2.2" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" platformBuildVersionName="11" platformBuildVersionCode="30" package="com.showstartfans.activity">
+    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="28"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <meta-data android:name="android.max_aspect" android:value="2.1"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true" android:xlargeScreens="true"/>
+    <permission android:name="com.showstartfans.activity.permission.XGPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.showstartfans.activity.permission.XGPUSH_RECEIVE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <permission android:name="android.permission.READ_LOGS"/>
+    <permission android:name="android.permission.WRITE_SETTINGS"/>
+    <permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <queries>
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.apps.photos.permission.GOOGLE_PHOTOS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="MyWrapperProxyApplication" android:allowBackup="false" android:hardwareAccelerated="true" android:largeHeap="true" android:supportsRtl="true" android:extractNativeLibs="true" android:usesCleartextTraffic="true" android:resizeableActivity="true" android:networkSecurityConfig="@xml/network_security_config" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:requestLegacyExternalStorage="true">
+        <activity android:theme="@style/ThemeSplashWelcome" android:label="@string/app_name" android:name="com.showstartfans.activity.activitys.welcome.WelcomeNewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="showstartapp" android:host="com.showstartfans.activity" android:path="/index"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.showstartfans.activity.activitys.other.MyMobLinkActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="mlink" android:host="com.showstartfans.activity"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http" android:host="4v0q.t4m.cn"/>
+                <data android:scheme="https" android:host="4v0q.t4m.cn"/>
+            </intent-filter>
+        </activity>
+        <provider android:name="com.mob.MobProvider" android:exported="false" android:multiprocess="true" android:authorities="com.mob.moblink.demo.com.mob.MobProvider"/>
+        <activity android:theme="@style/AppThemeNoneTranslucent" android:name="com.showstartfans.activity.activitys.maintab.newmain.MainNewActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.showstartfans.activity.activitys.products.DetailsOfThePerformanceActivity" android:screenOrientation="portrait" android:configChanges="screenSize|screenLayout|orientation|keyboardHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.goods.PeripheralOrderActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.goods.PeripheralGiftsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.goods.ShoppingCartActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.goods.PeripheralOrderDetailsNewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.goods.PeripheralOrderEditAddressActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.goods.PeripheralOrderEditAddressDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.goods.PeripheralOrderApplyAfterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.showstartfans.activity.activitys.goods.PeripheralOrderAfterDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.goods.PeripheralOrderAfterBackAddressActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.group.GroupInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.products.MorePhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.group.MessageJoinGroupActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.group.GroupManngerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.group.GroupMemberActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.group.GroupSpeakPermissionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.group.GroupChatStyleActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.group.GroupNotifyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.group.GroupMemberNewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.group.GroupManagerNewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.group.GroupNoticeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.group.GroupBlackListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.group.GroupSensitiveWordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.group.GroupAddSensitiveWordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.welcome.AdvertActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.welcome.ClauseActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.profile.BaseProfileActivity"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.ReportActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.login.XDLoginActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.login.XDLoginNewActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.login.FindBackPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.login.ThirdLoginBindPhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.login.VerificationCodeActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:theme="@style/Theme.Transparent" android:name="com.showstartfans.activity.activitys.other.WebViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.other.SpecialWebActivity" android:screenOrientation="portrait" android:configChanges="screenSize|screenLayout|orientation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.UserInfoEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.UserSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.UserSettingOldActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.AccountSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.AboutShowstartActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.UserSettingParentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.AboutWeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.APPMaintainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.UserMessagePushSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.UserPrivateSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.UserPrivateSettingOldActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.BlacklistActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.EditUserTagActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.BindingPhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.FeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.TabCouponsSelectNewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.crowd.CrowdOrderActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.crowd.CrowdOrderDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.VideoMainActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.LimitActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.LimitGoodsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.UserCouponsNewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.UserPwdEditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.pay.PaySuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.pay.PayFailActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.pay.PaymentPhotoActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.goods.PhotoOrderDetailsNewActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.pay.PaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wx12b7d44cbee77259"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.AllStyleActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.other.ShowManageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.other.CityListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.other.NavSitListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.other.SearchListActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.showstartfans.activity.activitys.other.SearchTabMainActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.other.SearchResultActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.other.SearchAllUserInfosActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.other.ExclusiveTourActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.profile.site.SiteProfileNewActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.profile.labelbrand.LabelBrandProfileNewActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:theme="@style/TranslucentTheme" android:name="com.showstartfans.activity.activitys.photo.PictureBrowsingActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.profile.artist.ArtistAlbumActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.GroupShowListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.fansspace.FansHomeNewActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.showstartfans.activity.activitys.fansspace.FansHomeOldActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.showstartfans.activity.activitys.message.CommentDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.showstartfans.activity.threepartysupport.baidumap.BaiduLocationMessageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.EditSingatureActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.goods.ShowGoodsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.goods.ShowGoodsDetailActivity" android:screenOrientation="portrait" android:configChanges="screenSize|screenLayout|orientation|keyboardHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.goods.FullVideoPlayActivity" android:screenOrientation="portrait" android:configChanges="screenSize|screenLayout|orientation|keyboardHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.goods.PayGoodsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.TabAttentionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.address.DeliveryAddressActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.address.EditAddressActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.PerformerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.CollectActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.OrderTabListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.UserOrderMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.GiftTicketActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.OrderDetailNewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.RefundOrderActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.RefundResultActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.crowd.PayCrowdActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.showstartfans.activity.activitys.crowd.CrowdListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.crowd.CrowdDetailActivity" android:screenOrientation="portrait" android:configChanges="screenSize|screenLayout|orientation|keyboardHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.crowd.CrowdSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.goods.LogisticsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.RealNameActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.showstartfans.activity.widget.videoNew.VideoPlayActivity" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.showstartfans.activity.widget.video.VideoWebActivity" android:screenOrientation="landscape" android:hardwareAccelerated="true"/>
+        <activity android:name="com.showstartfans.activity.activitys.other.ContactNumberActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.team.OrganizeTeamDetail" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.team.TeamListMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.ShareMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.profile.artist.ArtistProfileNewActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.showstartfans.activity.activitys.goods.goodsStore.GoodsThemeDetailActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.products.ReservationActivity" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.VideoDetailActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.VideoDetailCommActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.RealNameAuthActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.RealNameFaceActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.UserQRCodeActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.FaceErrorActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.profile.CityClassSceneActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.showstartfans.activity.activitys.profile.ShowClassSceneActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.showstartfans.activity.activitys.profile.TagClassSceneActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.showstartfans.activity.activitys.profile.ScenePostDetailsActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.showstartfans.activity.activitys.profile.SceneCommDetailActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.profile.SceneShareActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.chat.ChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="pushscheme" android:host="com.tencent.qcloud" android:path="/detail"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="pushscheme" android:host="com.tencent.qcloud"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.showstartfans.activity.service.UpGPSService"/>
+        <activity android:theme="@style/AppTransparentTheme" android:name="com.showstartfans.activity.wxapi.WXEntryActivity" android:exported="true" android:taskAffinity="net.sourceforge.simcpux" android:launchMode="singleTask" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:theme="@style/AppTransparentTheme" android:name="com.showstartfans.activity.wxapi.WXPayEntryActivity" android:exported="true" android:launchMode="singleTop" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="432a293b6fb6e4d5e5add5e8ad781b86"/>
+        <meta-data android:name="RONG_CLOUD_APP_KEY" android:value="e5t4ouvpt9f8a"/>
+        <meta-data android:name="BaiduMobAd_STAT_ID" android:value="5ad1e46f31"/>
+        <meta-data android:name="client_id" android:value="8bb1abc90c3a3522"/>
+        <meta-data android:name="client_secret" android:value="e3f32d6780928507b3b2d8c145d6804f"/>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="GsGV7G7yBW5qKIHB3IlHw10p"/>
+        <activity android:name="com.showstartfans.activity.threepartysupport.baidumap.BaiduRoutePlanActivity" android:screenOrientation="portrait"/>
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.mob.tools.MobUIShell" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="tencent.txlive.zhibo.audience.TCAudienceActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="com.mobile.auth.gatewayauth.LoginAuthActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="behind" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.mobile.auth.gatewayauth.activity.AuthWebVeiwActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="behind" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/AppTheme" android:name="com.cmic.sso.sdk.activity.LoginAuthActivity" android:launchMode="singleTop" android:screenOrientation="behind" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.TicketHMainDetalActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.article.PublishArticleActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.article.SelectPhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.article.PublishMomentActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.showstartfans.activity.activitys.article.TakePictureForMomentActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <meta-data android:name="XG_SERVICE_PULL_UP_OFF" android:value="true"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.android.tpush.TpnsActivity" android:exported="true" android:launchMode="singleInstance">
+            <intent-filter>
+                <data android:scheme="tpns" android:host="com.showstartfans.activity"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.showstartfans.activity.OPEN_TPNS_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.showstartfans.activity.activitys.community.CommunityMapActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.community.CommunitySiteListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.article.EditVideoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.article.SelectConverActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.photo.PhotoVideoBrowingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.UserPhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.UserFriendActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.ScanQrActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.UserFriendSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.UserPhotoPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.SelectUserConvertPhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.FansCardActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.CouponsUsedActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.ShareMouldEditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.InvitationEditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.ArticleImmersionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.other.UserListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.hotel.HotelOrderCheckInActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.hotel.HotelOrderConfirmActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.hotel.HotelOrderListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.hotel.HotelOrderDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.HotelListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.hotel.HotelDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.hotel.HotelPhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.hotel.HotelRoomPhotoDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.hotel.HotelStrategyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.TabMineActiveActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.MessageCommActivity" android:screenOrientation="portrait" android:configChanges="screenSize|screenLayout|orientation|keyboardHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.MessageShowActivity" android:screenOrientation="portrait" android:configChanges="screenSize|screenLayout|orientation|keyboardHidden"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.ConversationEditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.newmain.NftDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.maintab.newmain.MyNftListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.usercenter.NFTTransactionResultActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.photo.PhotoWallBrowingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.profile.ShopPhotoCartActivit" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.profile.ClipImageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.message.GroupSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.DeBugActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.showstartfans.activity.activitys.photo.UserHeadeBrowingActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="com.tencent.android.tpush.XGPushReceiver" android:exported="false" android:process=":xg_vip_service">
+            <intent-filter android:priority="0x7fffffff">
+                <action android:name="com.tencent.android.xg.vip.action.SDK"/>
+                <action android:name="com.tencent.android.xg.vip.action.INTERNAL_PUSH_MESSAGE"/>
+                <action android:name="com.tencent.android.xg.vip.action.ACTION_SDK_KEEPALIVE"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+            </intent-filter>
+            <intent-filter android:priority="0x7fffffff">
+                <action android:name="com.tencent.android.xg.vip.action.SDK"/>
+                <action android:name="com.tencent.android.xg.vip.action.INTERNAL_PUSH_MESSAGE"/>
+                <action android:name="com.tencent.android.xg.vip.action.ACTION_SDK_KEEPALIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.tencent.android.tpush.service.XGVipPushService" android:persistent="true" android:exported="false" android:process=":xg_vip_service"/>
+        <service android:name="com.tencent.android.tpush.rpc.XGRemoteService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.showstartfans.activity.XGVIP_PUSH_ACTION"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.tencent.android.tpush.XGPushProvider" android:exported="false" android:authorities="com.showstartfans.activity.XGVIP_PUSH_AUTH"/>
+        <provider android:name="com.tencent.android.tpush.SettingsContentProvider" android:exported="false" android:authorities="com.showstartfans.activity.TPUSH_PROVIDER"/>
+        <provider android:name="com.tencent.android.tpush.XGVipPushKAProvider" android:exported="true" android:authorities="com.showstartfans.activity.AUTH_XGPUSH_KEEPALIVE"/>
+        <receiver android:name="com.showstartfans.activity.receiver.TpnsReceiver">
+            <intent-filter>
+                <action android:name="com.tencent.android.xg.vip.action.PUSH_MESSAGE"/>
+                <action android:name="com.tencent.android.xg.vip.action.FEEDBACK"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.tencent.tpns.mqttchannel.services.MqttService" android:exported="false" android:process=":xg_vip_service"/>
+        <provider android:name="com.tencent.tpns.baseapi.base.SettingsContentProvider" android:exported="false" android:authorities="com.showstartfans.activity.XG_SETTINGS_PROVIDER"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.showstartfans.activity.FileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:name="com.sina.weibo.sdk.web.WebActivity" android:exported="false" android:configChanges="screenSize|orientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.sina.weibo.sdk.share.ShareTransActivity" android:exported="true" android:launchMode="singleTask" android:configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:name="com.sina.weibo.sdk.content.FileProvider" android:exported="false" android:authorities="com.showstartfans.activity.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <service android:name="com.mob.MobACService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.mob.service.action.MOB_AC_SERVICE"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.mob.id.MobIDActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="com.mob.id.app_30000"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.mob.id.MobIDSYActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="com.mob.id.app_lk"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.mob.id.MobIDService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.mob.intent.MOB_ID_SERVICE"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="mob_guard_version" android:value="30000"/>
+        <meta-data android:name="mob_id_ver" android:value="30000"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.mob.guard.MobTranPullUpActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="com.mob.open.app_20000"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.mob.guard.MobTranPullLockActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="com.mob.open.app_lk"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.mob.guard.MobGuardPullUpService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.mob.intent.MOB_GUARD_SERVICE"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.tencent.qcloud.tuikit.tuichat.ui.page.MessageReplyDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuichat.ui.page.TUIForwardChatActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuichat.ui.page.TUIC2CChatActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuichat.ui.page.TUIGroupChatActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuichat.ui.page.MessageReceiptDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuichat.component.camera.CameraActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuichat.component.imagevideoscan.ImageVideoScanActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <provider android:name="com.tencent.qcloud.tuikit.tuichat.TUIChatService" android:enabled="true" android:exported="false" android:authorities="com.showstartfans.activity.TUIChat.Init"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.AddMoreActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.FriendProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.NewFriendActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.BlackListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.GroupListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.StartC2CChatActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.StartGroupChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.ForwardSelectGroupActivity" android:launchMode="singleInstance" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.StartGroupMemberSelectActivity" android:launchMode="singleInstance" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.CreateGroupActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.GroupTypeSelectActivity" android:screenOrientation="portrait"/>
+        <provider android:name="com.tencent.qcloud.tuikit.tuicontact.TUIContactService" android:enabled="true" android:exported="false" android:authorities="com.showstartfans.activity.TUIContact.Init"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuiconversation.ui.page.TUIForwardSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuiconversation.ui.page.TUIFoldedConversationActivity" android:screenOrientation="portrait"/>
+        <provider android:name="com.tencent.qcloud.tuikit.tuiconversation.TUIConversationService" android:enabled="true" android:exported="false" android:authorities="com.showstartfans.activity.TUIConversation.Init"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuisearch.ui.page.SearchMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuisearch.ui.page.SearchMoreListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuisearch.ui.page.SearchMoreMsgListActivity" android:screenOrientation="portrait"/>
+        <provider android:name="com.tencent.qcloud.tuikit.tuisearch.TUISearchService" android:enabled="true" android:exported="false" android:authorities="com.showstartfans.activity.TUISearch.Init"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuigroup.ui.page.GroupNoticeActivity"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuigroup.ui.page.SetGroupManagerActivity"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuigroup.ui.page.GroupMemberActivity"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuigroup.ui.page.ManageGroupActivity"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuigroup.ui.page.GroupInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuigroup.ui.page.GroupApplyManagerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+        <provider android:name="com.tencent.qcloud.tuikit.tuigroup.TUIGroupService" android:enabled="true" android:exported="false" android:authorities="com.showstartfans.activity.TUIGroup.Init"/>
+        <activity android:name="com.tencent.qcloud.tuicore.component.activities.SelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuicore.component.activities.ImageSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/CoreActivityTranslucent" android:name="com.tencent.qcloud.tuicore.util.PermissionRequester$PermissionActivity" android:multiprocess="true" android:launchMode="singleTask" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:name="com.tencent.qcloud.tuicore.ServiceInitializer" android:enabled="true" android:exported="false" android:authorities="com.showstartfans.activity.TUICore.Init"/>
+        <provider android:name="com.tencent.qcloud.tuicore.util.TUIFileProvider" android:exported="false" android:authorities="com.showstartfans.activity.tuicore.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths_public"/>
+        </provider>
+        <activity android:name="com.taihe.photoselector.ui.PhotoSelectorActivity" android:process=":picture" android:screenOrientation="portrait"/>
+        <activity android:name="com.taihe.photoselector.ui.PhotoPreviewActivity" android:process=":picture" android:screenOrientation="portrait"/>
+        <activity android:name="com.taihe.photoselector.ui.BasePhotoPreviewActivity" android:process=":picture" android:screenOrientation="portrait"/>
+        <activity android:name="com.tbruyelle.rxpermissions.ShadowActivity" android:excludeFromRecents="true" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.tbruyelle.rxpermissions.ShadowActivity_picture" android:process=":picture" android:excludeFromRecents="true" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.android.tpush.InnerTpnsActivity" android:exported="false" android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="com.showstartfans.activity.OPEN_TPNS_ACTIVITY_V2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="stpns" android:host="com.showstartfans.activity"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.android.tpush.inappmessage.InAppMessageActivity"/>
+        <meta-data android:name="XG_V2_ACCESS_ID" android:value="1500023710"/>
+        <meta-data android:name="XG_V2_ACCESS_KEY" android:value="AKFJQEGVIG14"/>
+        <activity android:theme="@style/sobot_activity_def_theme" android:name="com.sobot.chat.conversation.SobotChatActivity" android:launchMode="singleTask" android:screenOrientation="behind" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/sobot_activity_def_theme" android:name="com.sobot.chat.activity.SobotPhotoActivity" android:screenOrientation="behind" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/sobot_activity_def_theme" android:name="com.sobot.chat.activity.WebViewActivity" android:screenOrientation="behind" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/sobot_AppThemeDialogIsTranslucent" android:name="com.sobot.chat.activity.SobotSkillGroupActivity" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale"/>
+        <activity android:theme="@style/sobot_activity_def_theme" android:name="com.sobot.chat.activity.SobotPostMsgActivity" android:screenOrientation="behind" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/sobot_AppThemeDialogIsTranslucent" android:name="com.sobot.chat.activity.SobotMuItiPostMsgActivty" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale"/>
+        <activity android:theme="@style/sobot_activity_def_theme" android:name="com.sobot.chat.activity.SobotConsultationListActivity" android:screenOrientation="behind" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/sobot_AppThemeDialogIsTranslucent" android:name="com.sobot.chat.activity.SobotCusFieldActivity" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale"/>
+        <activity android:theme="@style/sobot_AppThemeDialogIsTranslucent" android:name="com.sobot.chat.activity.SobotPostCategoryActivity" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale"/>
+        <activity android:theme="@style/sobot_activity_def_theme" android:name="com.sobot.chat.activity.SobotQueryFromActivity" android:screenOrientation="behind" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/sobot_AppThemeDialogIsTranslucent" android:name="com.sobot.chat.activity.SobotChooseCityActivity" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale"/>
+        <activity android:theme="@style/sobot_activity_def_theme" android:name="com.sobot.chat.activity.SobotChooseFileActivity" android:screenOrientation="behind" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/sobot_activity_def_theme" android:name="com.sobot.chat.activity.SobotFileDetailActivity" android:screenOrientation="behind" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale"/>
+        <activity android:theme="@style/sobot_activity_def_theme" android:name="com.sobot.chat.activity.SobotCameraActivity" android:screenOrientation="behind" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale"/>
+        <activity android:theme="@style/sobot_activity_def_theme" android:name="com.sobot.chat.activity.SobotVideoActivity" android:screenOrientation="behind" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale"/>
+        <activity android:theme="@style/sobot_activity_def_theme" android:name="com.sobot.chat.activity.SobotTicketDetailActivity" android:screenOrientation="behind" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale"/>
+        <activity android:theme="@style/sobot_activity_def_theme" android:name="com.sobot.chat.activity.SobotHelpCenterActivity" android:screenOrientation="behind" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale"/>
+        <activity android:theme="@style/sobot_activity_def_theme" android:name="com.sobot.chat.activity.SobotProblemCategoryActivity" android:screenOrientation="behind" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale"/>
+        <activity android:theme="@style/sobot_activity_def_theme" android:name="com.sobot.chat.activity.SobotProblemDetailActivity" android:screenOrientation="behind" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale"/>
+        <activity android:theme="@style/sobot_activity_def_theme" android:name="com.sobot.chat.activity.SobotPostLeaveMsgActivity" android:screenOrientation="behind" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale"/>
+        <activity android:theme="@style/sobot_AppThemeDialogIsTranslucent" android:name="com.sobot.chat.widget.dialog.SobotRobotListActivity" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale"/>
+        <activity android:theme="@style/sobot_AppThemeDialogIsTranslucent" android:name="com.sobot.chat.widget.dialog.SobotReplyActivity" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale"/>
+        <activity android:theme="@style/sobot_AppThemeDialogIsTranslucent" android:name="com.sobot.chat.widget.dialog.SobotTicketEvaluateActivity" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale"/>
+        <activity android:theme="@style/sobot_AppThemeDialogIsTranslucent" android:name="com.sobot.chat.widget.dialog.SobotEvaluateActivity" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale"/>
+        <activity android:theme="@style/sobot_AppThemeDialogIsTranslucent" android:name="com.sobot.chat.widget.dialog.SobotPostMsgTmpListActivity" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|touchscreen|locale"/>
+        <service android:label="SobotChatTCPServer" android:name="com.sobot.chat.core.channel.SobotTCPServer" android:exported="false"/>
+        <service android:name="com.sobot.chat.server.SobotSessionServer"/>
+        <provider android:name="com.sobot.chat.provider.SobotFileProvider" android:exported="false" android:authorities="com.showstartfans.activity.sobot_fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/sobot_provider_paths"/>
+        </provider>
+        <activity android:name="com.alipay.sdk.app.H5PayActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="orientation|navigation|keyboardHidden"/>
+        <activity android:name="com.alipay.sdk.app.H5AuthActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="orientation|navigation|keyboardHidden"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.alipay.sdk.app.PayResultActivity" android:exported="true" android:launchMode="singleInstance" android:configChanges="orientation|navigation|keyboardHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.alipay.sdk.app.AlipayResultActivity" android:exported="true" android:launchMode="singleTask"/>
+        <activity android:theme="@style/TCaptchaPopupDialogActivity" android:name="com.tencent.captchasdk.TCaptchaPopupActivity" android:exported="false" android:configChanges="orientation|navigation|keyboardHidden"/>
+        <meta-data android:name="wb_version_WbCloudFaceLiveSdk" android:value="v4.5.4.0-373fcb31"/>
+        <activity android:theme="@style/wbcfFaceThemeBlack" android:name="com.tencent.cloud.huiyansdkface.facelight.ui.FaceVerifyActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout"/>
+        <activity android:theme="@style/wbcfFaceProtocolThemeBlack" android:name="com.tencent.cloud.huiyansdkface.facelight.ui.FaceGuideActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/wbcfFaceThemeBlack" android:name="com.tencent.cloud.huiyansdkface.facelight.ui.FaceProtocalActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+        <meta-data android:name="wb_version_WbCloudFaceSdk" android:value="v4.5.4.0-373fcb31"/>
+        <meta-data android:name="wb_version_WbCloudNormal" android:value="v5.1.3-0f08e6d"/>
+        <activity android:name="com.aliyun.identity.face.ui.FaceActivity"/>
+        <activity android:theme="@style/ToygerAppTheme" android:name="com.aliyun.identity.face.ui.IdentityFaceActivity" android:exported="false"/>
+        <activity android:theme="@style/ToygerAppTheme" android:name="com.aliyun.identity.face.ui.IdentityFaceLandActivity" android:exported="false" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/ToygerAppTheme" android:name="com.aliyun.identity.face.ui.IdentityFacePortActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ToygerAppTheme" android:name="com.aliyun.identity.face.ui.ToygerActivity" android:exported="false"/>
+        <activity android:theme="@style/ToygerAppTheme" android:name="com.aliyun.identity.face.ui.ToygerLandActivity" android:exported="false" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/ToygerAppTheme" android:name="com.aliyun.identity.face.ui.ToygerPortActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/OCRAppTheme" android:name="com.aliyun.identity.ocr.CardScanActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/OCRAppTheme" android:name="com.aliyun.identity.ocr.IDCardResultActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity"/>
+        <activity android:theme="@style/ToygerAppTheme" android:name="com.aliyun.identity.platform.IdentityLoadingActivity" android:exported="false"/>
+        <activity android:theme="@style/ToygerAppTheme" android:name="com.aliyun.identity.platform.FinalVerifyActivity" android:exported="false"/>
+        <activity android:theme="@style/ToygerAppTheme" android:name="com.aliyun.identity.platform.SystemLoadingActivity" android:exported="false"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.tencent.rtmp.video.TXScreenCapture$TXScreenCaptureAssistantActivity"/>
+        <meta-data android:name="Mob-AppKey" android:value="12de8ed9d7f0e"/>
+        <meta-data android:name="Mob-AppSecret" android:value="0d62954b6f23d44fb250e8ac26bb8b65"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="cn.sharesdk.framework.loopshare.RestoreTempActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="cn.sharesdk.loopshare.LoopShareActivity" android:exported="true" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ssdk12de8ed9d7f0e" android:host="cn.sharesdk.loop"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.mob.moblink.MobLinkActivity" android:exported="true" android:launchMode="singleTask"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="cn.sharesdk.wechat.utils.WechatHandlerActivity" android:exported="false" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="cn.sharesdk.tencent.qq.ReceiveActivity" android:exported="true" android:launchMode="singleTask" android:noHistory="true">
+            <intent-filter>
+                <data android:scheme="tencent101132526"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.tauth.AuthActivity" android:exported="false" android:launchMode="singleTask" android:noHistory="true"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.connect.common.AssistActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <provider android:name="cn.sharesdk.framework.utils.ShareSDKFileProvider" android:exported="false" android:authorities="com.showstartfans.activity.cn.sharesdk.ShareSDKFileProvider" android:grantUriPermissions="true"/>
+    </application>
+    <queries>
+        <package android:name="com.tencent.mm"/>
+    </queries>
+</manifest>

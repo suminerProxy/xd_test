@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_enabled="true" app:state_dragged="true">
+        <set>
+            <objectAnimator android:interpolator="@interpolator/Base_Animation_AppCompat_Dialog" android:duration="@integer/abc_menu_delete_shortcut_label" android:valueTo="@dimen/mtrl_card_dragged_z" android:valueType="floatType" android:propertyName="translationZ" android:startDelay="@integer/abc_menu_ctrl_shortcut_label"/>
+        </set>
+    </item>
+    <item android:state_enabled="true">
+        <set>
+            <objectAnimator android:interpolator="@anim/mtrl_card_lowers_interpolator" android:duration="@integer/abc_menu_delete_shortcut_label" android:valueTo="0dp" android:valueType="floatType" android:propertyName="translationZ"/>
+        </set>
+    </item>
+</selector>

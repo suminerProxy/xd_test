@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/cv_p" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.taihebase.activity.view.LoadImageView android:id="@+id/excell_bg" android:background="@drawable/shap_6dp_load_img_beauty" android:layout_width="@dimen/dimen_sw_105dp" android:layout_height="@dimen/dimen_sw_142dp" app:actualImageScaleType="6" app:fadeDuration="0" app:failureImage="@drawable/shap_6dp_load_img_beauty" app:liv_corner_radius="6dp"/>
+    <TextView android:textSize="12sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:id="@+id/excell_title" android:layout_width="@dimen/dimen_sw_100dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_8dp" android:maxLines="2" android:lineSpacingExtra="1dp"/>
+    <TextView android:textSize="10sp" android:textColor="@color/abc_ic_voice_search_api_material" android:ellipsize="end" android:id="@+id/excell_tag" android:layout_width="@dimen/dimen_sw_100dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_3dp" android:lines="1"/>
+</LinearLayout>

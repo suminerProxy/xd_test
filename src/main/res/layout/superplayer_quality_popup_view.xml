@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/superplayer_super_vod_vtt_bg" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <TextView android:textSize="14dp" android:textColor="@color/superplayer_white" android:gravity="center" android:id="@+id/superplayer_tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/superplayer_sharpness"/>
+    <ListView android:id="@+id/superplayer_lv_quality" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="50dp" android:choiceMode="singleChoice" android:layout_below="@+id/superplayer_tv_title"/>
+</RelativeLayout>

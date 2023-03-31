@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/red_base" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="@color/colorWhite" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/comeing_sal" android:layout_width="0dp" android:layout_height="@dimen/dimen_sw_36dp" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:lines="1" android:layout_weight="1"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/dj_time_p" android:background="@drawable/souvenir_pic_count" android:layout_width="@dimen/dimen_sw_155dp" android:layout_height="@dimen/dimen_sw_36dp">
+        <com.showstartfans.activity.view.textview.CountDownNewView android:textSize="12sp" android:textColor="@color/colorWhite" android:gravity="right" android:id="@+id/dj_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_sw_15dp"/>
+    </LinearLayout>
+</merge>

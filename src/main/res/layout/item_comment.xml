@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:padding="15dp" android:layout_width="250dp" android:layout_height="wrap_content" android:layout_marginRight="10dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.taihebase.activity.view.LoadImageView android:id="@+id/liv_head" android:layout_width="30dp" android:layout_height="30dp" app:liv_corner_radius="@dimen/normal_radius"/>
+            <TextView android:textSize="14sp" android:textColor="#666666" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="12sp" android:textColor="@color/color_red" android:id="@+id/tv_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/image" android:maxLines="1"/>
+            <TextView android:textSize="12sp" android:textColor="#bbbbbb" android:ellipsize="end" android:id="@+id/tv_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/parent" android:background="@drawable/border_white_yoff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="-4dp">
+        <com.taihebase.activity.view.LoadImageView android:id="@+id/activity_img" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_180dp" android:scaleType="centerInside" app:actualImageScaleType="5" app:liv_border_color="@color/color_white" app:liv_corner_radiu_bottomLeft="0dp" app:liv_corner_radiu_bottomRight="0dp" app:liv_corner_radiu_topLeft="6dp" app:liv_corner_radiu_topRight="6dp"/>
+        <TextView android:textSize="14sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/tips" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_below="@+id/activity_img"/>
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_below="@+id/tips">
+            <TextView android:textSize="12sp" android:textColor="@color/abc_ic_voice_search_api_material" android:ellipsize="end" android:id="@+id/msg" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="25dp" android:lines="1" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/status_button" android:background="@drawable/crow_buy_button" android:layout_width="80dp" android:layout_height="25dp" android:text="立即参与"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

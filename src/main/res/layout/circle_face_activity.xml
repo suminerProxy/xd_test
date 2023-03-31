@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/screen_main_frame" android:background="@color/toyger_circle_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/toyger_main_page" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:layout_gravity="end" android:background="@mipmap/ocr_black_close" android:layout_width="20dp" android:layout_height="20dp" android:layout_margin="10dp"/>
+            <FrameLayout android:layout_gravity="center" android:id="@+id/toger_main_scan_frame" android:layout_width="@dimen/toyger_circle_surfaceview_width" android:layout_height="@dimen/toyger_circle_surfaceview_height">
+                <com.aliyun.identity.platform.camera.CameraSurfaceView android:id="@+id/cameraSurfaceView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <TextView android:textSize="17sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/messageCode" android:background="#66000000" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="@dimen/toyger_circle_tips_margin_top" android:text="@string/face_init_text"/>
+                <ImageView android:id="@+id/faceAvatar" android:visibility="gone" android:layout_width="@dimen/toyger_circle_surfaceview_width" android:layout_height="@dimen/toyger_circle_surfaceview_width" android:layout_marginTop="@dimen/toyger_circle_tips_margin_top" android:scaleType="fitXY"/>
+                <com.aliyun.identity.face.ui.widget.CircleHoleView android:id="@+id/toyger_face_circle_hole_view" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/toyger_circle_background" app:holeHeight="@dimen/toyger_circle_surfaceview_width" app:holeLeft="0dp" app:holeTop="@dimen/toyger_circle_tips_margin_top" app:holeWidth="@dimen/toyger_circle_surfaceview_width"/>
+                <com.aliyun.identity.face.ui.widget.RoundProgressBar android:id="@+id/scan_progress" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/toyger_circle_tips_margin_top" app:zface_end_angle="60" app:zface_gradient_color_end="@color/toyger_circle_progress_foreground" app:zface_gradient_color_start="@color/toyger_circle_progress_background" app:zface_max="100" app:zface_progress_shader="true" app:zface_round_color="@color/toyger_circle_progress_background" app:zface_round_progress_color="@color/toyger_circle_progress_foreground" app:zface_round_width="5dp" app:zface_start_angle="-240" app:zface_text_is_displayable="false"/>
+                <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/tv_zhazhayan" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/face_comm_tips_text"/>
+            </FrameLayout>
+        </LinearLayout>
+        <Button android:layout_gravity="end" android:id="@+id/close_toyger_btn" android:background="#00ffffff" android:visibility="invisible" android:layout_width="54dp" android:layout_height="54dp"/>
+        <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_loading"/>
+        <com.aliyun.identity.face.ui.ToygerWebView android:id="@+id/guid_web_page" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.aliyun.identity.face.ui.overlay.CommAlertOverlay android:id="@+id/message_box_overlay" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

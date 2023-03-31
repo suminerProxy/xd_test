@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.qcloud.tuikit.tuichat.ui.view.message.MaxWidthLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/reply_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/reply_message_content_min_width">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/origin_msg_abs_layout" android:background="@drawable/shape_4dp_b1" android:paddingLeft="@dimen/dimen_sw_7_5dp" android:paddingBottom="@dimen/dimen_sw_7_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reply_sender_margin_top">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_sw_50dp">
+                    <TextView android:textSize="@dimen/dimen_sw_13sp" android:textColor="@color/abc_ic_voice_search_api_material" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/tv_sender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dimen_sw_100dp" android:maxLines="1"/>
+                    <TextView android:textSize="@dimen/dimen_sw_13sp" android:textColor="@color/abc_ic_voice_search_api_material" android:layout_gravity="center_vertical" android:id="@+id/tv_time" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_5dp" android:maxLines="1" android:layout_weight="1"/>
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_goto_soure" android:paddingLeft="@dimen/dimen_sw_7_5dp" android:paddingTop="@dimen/dimen_sw_8dp" android:paddingRight="@dimen/dimen_sw_7_5dp" android:paddingBottom="@dimen/dimen_sw_7_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_goto_soure"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/quote_frame_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_sw_7_5dp" android:minWidth="@dimen/dimen_sw_150dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/dimen_sw_14sp" android:textColor="?attr/chat_self_reply_text_color" android:ellipsize="end" android:id="@+id/reply_content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_7dp" android:layout_marginTop="@dimen/chat_item_padding_bottom" android:layout_marginRight="@dimen/dimen_sw_7dp" android:layout_marginBottom="@dimen/dimen_sw_7dp" android:includeFontPadding="false"/>
+</com.tencent.qcloud.tuikit.tuichat.ui.view.message.MaxWidthLinearLayout>

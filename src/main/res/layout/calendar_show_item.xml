@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14sp" android:gravity="center" android:id="@+id/day_item" android:layout_width="35dp" android:layout_height="35dp" android:layout_margin="5dp" android:layout_centerHorizontal="true"/>
+    <View android:id="@+id/day_item_point" android:layout_width="@dimen/dimen_sw_5dp" android:layout_height="@dimen/dimen_sw_5dp" android:layout_below="@+id/day_item" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

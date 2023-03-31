@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:padding="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/momentBg" android:layout_width="match_parent" android:layout_height="0dp" android:src="@drawable/show_live_moment_post" android:scaleType="centerInside" app:layout_constraintDimensionRatio="1380:872" app:layout_constraintTop_toTopOf="0"/>
+    <ImageView android:id="@+id/experienceBg" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/dimen_sw_15dp" android:src="@drawable/show_live_experience_post" android:scaleType="centerInside" app:layout_constraintDimensionRatio="1380:860" app:layout_constraintTop_toBottomOf="@+id/momentBg"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

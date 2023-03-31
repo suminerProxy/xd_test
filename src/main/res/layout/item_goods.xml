@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/parent_g" android:padding="@dimen/dimen_sw_15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.taihebase.activity.view.LoadImageView android:id="@+id/sdv_conver" android:layout_width="@dimen/dimen_sw_75dp" android:layout_height="@dimen/dimen_sw_75dp" android:scaleType="centerCrop" app:liv_corner_radius="6dp" app:placeholderImage="@drawable/shap_load_bg"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/dimen_sw_15dp">
+        <TextView android:textSize="14sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1"/>
+        <TextView android:textSize="13sp" android:textColor="@color/abc_item_background_holo_light" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_skuDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_4dp" android:maxLines="4" android:lineSpacingExtra="1.5dp"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_12dp">
+            <TextView android:textSize="13sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@+id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="1.5dp"/>
+            <TextView android:textSize="@dimen/dimen_sw_12sp" android:textColor="@color/abc_popup_background_mtrl_mult" android:gravity="center_vertical" android:layout_gravity="end|bottom" android:id="@+id/tv_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/image_select_default" android:padding="@dimen/dimen_sw_5dp" android:visibility="gone" android:layout_width="@dimen/dimen_sw_30dp" android:layout_height="@dimen/dimen_sw_30dp" android:layout_marginRight="@dimen/dimen_sw_15dp" android:src="@drawable/icon_gougou_red" android:contentDescription="@string/app_name"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.showstartfans.activity.widget.citylist.HeadSearchView android:id="@+id/headView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.showstartfans.activity.widget.citylist.PinnedSectionListView android:id="@+id/listView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:dividerHeight="0dp"/>
+        <com.showstartfans.activity.widget.citylist.QuickAlphabeticBar android:layout_gravity="top|right" android:id="@+id/indexScrollerBar" android:background="@null" android:layout_width="@dimen/dimen_sw_30dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_sw_50dp" android:layout_marginBottom="@dimen/dimen_sw_50dp" android:scaleType="centerInside"/>
+        <TextView android:textSize="48sp" android:textColor="@color/abc_ic_star_black_48dp" android:gravity="center" android:layout_gravity="center" android:id="@+id/fast_position" android:background="@drawable/shape_6dp_whilte" android:padding="2dp" android:visibility="invisible" android:layout_width="@dimen/dimen_sw_75dp" android:layout_height="@dimen/dimen_sw_75dp"/>
+    </FrameLayout>
+</LinearLayout>

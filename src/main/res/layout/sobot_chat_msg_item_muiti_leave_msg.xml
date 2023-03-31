@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/sobot_real_ll_content" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/sobot_msg_top_bottom_style">
+    <TextView android:id="@+id/sobot_reminde_time_Text" style="@style/sobot_center_remind_time"/>
+    <RelativeLayout android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/sobot_msgStatus" android:background="@drawable/sobot_re_send_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginStart="5dp"/>
+        <ProgressBar android:id="@+id/sobot_msgProgressBar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_centerVertical="true" android:layout_marginStart="5dp" style="?android:attr/progressBarStyleSmallTitle"/>
+        <TextView android:id="@+id/sobot_name" android:visibility="gone" android:layout_toLeftOf="@+id/sobot_imgHead" android:layout_toStartOf="@+id/sobot_imgHead" style="@style/sobot_chatting_nickname"/>
+        <com.sobot.chat.widget.SobotImageView android:id="@+id/sobot_imgHead" android:visibility="gone" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/sobot_chatting_imghead"/>
+        <LinearLayout android:layout_gravity="end" android:id="@+id/sobot_ll_hollow_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/sobot_imgHead" android:layout_below="@+id/sobot_name" android:layout_toStartOf="@+id/sobot_imgHead" style="@style/sobot_msg_location_right_content_ll_bg_style">
+            <LinearLayout android:orientation="vertical" android:id="@+id/sobot_text_ll" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

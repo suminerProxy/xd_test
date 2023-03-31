@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <GridView android:gravity="center" android:layout_gravity="center" android:id="@+id/faceGrid" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:paddingBottom="@dimen/dimen_sw_80dp" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="250dp" android:listSelector="#00000000" android:horizontalSpacing="16dp" android:stretchMode="columnWidth" android:numColumns="auto_fit"/>
+    <FrameLayout android:layout_gravity="bottom|right" android:background="@mipmap/bg_im_over" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="bottom|right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_sw_10dp" android:layout_marginBottom="@dimen/dimen_sw_10dp">
+            <FrameLayout android:id="@+id/layout_remove" android:background="@drawable/shape_4dp_white" android:layout_width="@dimen/dimen_sw_55dp" android:layout_height="@dimen/dimen_sw_45dp" android:layout_marginRight="@dimen/dimen_sw_5dp">
+                <com.taihebase.activity.view.svg.SvgImageView android:layout_gravity="center" android:layout_width="@dimen/dimen_sw_20dp" android:layout_height="@dimen/dimen_sw_20dp" app:srcCompat="@drawable/ic_icon_face_remove" app:svg_color="@color/abc_ic_ab_back_material"/>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/dimen_sw_16sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:id="@+id/tv_send" android:background="@drawable/shape_4dp_white" android:layout_width="@dimen/dimen_sw_55dp" android:layout_height="@dimen/dimen_sw_45dp" android:text="发送"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

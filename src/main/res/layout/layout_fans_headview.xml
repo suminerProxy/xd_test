@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/statusView" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <ImageView android:id="@+id/headBg" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/head_view_height" android:scaleType="fitXY" android:layout_below="@+id/statusView"/>
+    <View android:id="@+id/head_shadow" android:background="@drawable/tab_home_gradient" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/head_view_height"/>
+    <RelativeLayout android:id="@+id/rootRly" android:layout_width="match_parent" android:layout_height="47dp" android:layout_below="@+id/statusView">
+        <RelativeLayout android:id="@+id/leftRly" android:paddingLeft="5dp" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_white" android:gravity="center" android:id="@+id/leftTv" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="@dimen/head_view_height" android:drawablePadding="5dp"/>
+        </RelativeLayout>
+        <ImageButton android:id="@+id/ibtn_back" android:background="@null" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/b_back_white" android:scaleType="centerInside" android:minWidth="@dimen/head_view_height" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="11sp" android:textColor="@color/color_white" android:ellipsize="end" android:gravity="center" android:id="@+id/txt_right_jubao" android:paddingRight="3dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="15dp" android:text="" android:singleLine="true" android:drawableLeft="@drawable/more_function" android:layout_alignParentRight="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_title_attention" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_alignParentRight="true">
+            <TextView android:textSize="12sp" android:textColor="@color/black1" android:gravity="center" android:id="@+id/txt_title_attention" android:background="@drawable/shap_bg_gray" android:layout_width="60dp" android:layout_height="26dp" android:text="关注TA"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_title_mid" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="260dp" android:layout_centerInParent="true">
+            <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/black1" android:ellipsize="end" android:id="@+id/txt_title_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="11sp" android:textColor="@color/black3" android:id="@+id/txt_title_city" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

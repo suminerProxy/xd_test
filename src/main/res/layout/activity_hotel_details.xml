@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/layout_coord" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/layout_abl" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/layout_collapsing" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_sw_50dp" app:layout_scrollFlags="0x3">
+                <include android:id="@+id/layoutTop" layout="@layout/layout_hotel_top"/>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_collapseMode="1">
+                <include android:id="@+id/layoutCenter" layout="@layout/layout_hotel_center"/>
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.taihebase.activity.view.LoadMoreRecyclerView android:id="@+id/rv_List" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

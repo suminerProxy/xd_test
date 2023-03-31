@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.viewpager.widget.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_sw_50dp"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/bar_root" android:background="@color/default_system_background" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_50dp">
+        <com.taihebase.activity.widget.magicTab.THMagicTab android:id="@+id/tabLayout" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginEnd="@dimen/dimen_sw_20dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/abc_ic_ab_back_material" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/home_city_str" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dimen_sw_100dp" android:text="成都" android:lines="1" android:drawableLeft="@drawable/nav_icon_addr" android:drawablePadding="2dp"/>
+        <com.showstartfans.activity.view.TopShopNumView android:id="@+id/shopping_car_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_48dp"/>
+        <ImageView android:id="@+id/home_search_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="@dimen/dimen_sw_1dp" android:src="@drawable/icon_search" android:contentDescription="@string/app_name" android:layout_marginStart="@dimen/dimen_sw_11dp"/>
+    </LinearLayout>
+</FrameLayout>

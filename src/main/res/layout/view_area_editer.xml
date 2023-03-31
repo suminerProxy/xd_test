@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_55dp">
+    <TextView android:textSize="13sp" android:textColor="@color/red_base" android:gravity="center_vertical" android:id="@+id/txt_phone_zone" android:paddingRight="@dimen/dimen_sw_15dp" android:layout_width="@dimen/dimen_sw_56dp" android:layout_height="@dimen/dimen_sw_55dp" android:text="+86"/>
+    <View android:background="@color/color_line" android:layout_width="0.3dp" android:layout_height="@dimen/dimen_sw_20dp"/>
+    <EditText android:textSize="14sp" android:textColor="@color/abc_ic_ab_back_material" android:textColorHint="@color/color_gray_input" android:gravity="center_vertical" android:id="@+id/userNameEdt" android:background="@null" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:hint="@string/user_name_hint" android:lines="1" android:maxLength="15" android:inputType="number"/>
+</merge>

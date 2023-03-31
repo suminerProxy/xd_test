@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:id="@+id/item_p" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_sw_30dp">
+    <com.taihebase.activity.view.LoadImageView android:id="@+id/channel_logo" android:visibility="visible" android:layout_width="@dimen/dimen_sw_20dp" android:layout_height="@dimen/dimen_sw_20dp" android:scaleType="centerCrop" android:layout_marginEnd="@dimen/dimen_sw_2dp" app:fadeDuration="0"/>
+    <TextView android:textSize="13sp" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center_vertical" android:id="@+id/tagName" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingTop="@dimen/dimen_sw_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="13sp" android:textColor="@color/abc_ic_voice_search_api_material" android:gravity="center" android:id="@+id/title_str" android:paddingTop="@dimen/dimen_sw_20dp" android:paddingBottom="@dimen/dimen_sw_40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/other_city_tips"/>
+    <View android:background="@drawable/home_other_show_view_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_24dp"/>
+    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/home_show_head_title" android:paddingLeft="@dimen/dimen_sw_18dp" android:paddingRight="@dimen/dimen_sw_18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_10dp" android:text="@string/other_city_title"/>
+</LinearLayout>

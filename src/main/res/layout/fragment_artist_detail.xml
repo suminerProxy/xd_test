@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_music" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingTop="@dimen/dimen_sw_30dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20sp" android:textColor="@color/abc_ic_star_black_48dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_piece"/>
+            <View android:layout_marginTop="@dimen/dimen_sw_15dp" android:layout_marginRight="@dimen/dimen_sw_20dp" style="@style/lineHorizontalEB"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/musiclist" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0dp"/>
+            <View android:id="@+id/line" android:layout_marginRight="@dimen/dimen_sw_20dp" style="@style/lineHorizontalEB"/>
+            <TextView android:textSize="12sp" android:textColor="@color/abc_list_longpressed_holo" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/moreBtn" android:paddingTop="@dimen/dimen_sw_10dp" android:paddingBottom="@dimen/dimen_sw_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zhankai"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_introduction" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:paddingBottom="@dimen/dimen_sw_30dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_30dp">
+            <TextView android:textSize="20sp" android:textColor="@color/abc_ic_star_black_48dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="简介"/>
+            <com.github.lzyzsd.jsbridge.BridgeWebView android:id="@+id/des_webview" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_15dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_artist" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_sw_30dp">
+            <TextView android:textSize="20sp" android:textColor="@color/abc_ic_star_black_48dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="艺人"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/qualifications_p" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_50dp">
+            <View android:id="@+id/line_strs" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginRight="@dimen/dimen_sw_20dp" style="@style/lineHorizontalEE"/>
+            <TextView android:textSize="13sp" android:textColor="@color/abc_ic_star_half_black_36dp" android:gravity="center_vertical" android:background="@drawable/item_selector" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/qualifications" android:drawableRight="@drawable/icon_arrow"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_bottom" android:layout_width="match_parent" android:layout_height="@dimen/dimen_sw_50dp">
+            <View android:id="@+id/line_str" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginRight="@dimen/dimen_sw_20dp" style="@style/lineHorizontalEE"/>
+            <TextView android:textSize="13sp" android:textColor="@color/abc_ic_star_half_black_36dp" android:gravity="center_vertical" android:background="@drawable/item_selector" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="入驻秀动" android:drawableRight="@drawable/icon_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

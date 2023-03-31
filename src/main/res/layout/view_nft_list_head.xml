@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.taihebase.activity.view.RatioLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_20dp" android:layout_marginTop="@dimen/dimen_sw_23dp" android:layout_marginRight="@dimen/dimen_sw_20dp" app:ratio="0.3552">
+            <ImageView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/head_nft" android:scaleType="fitXY"/>
+        </com.taihebase.activity.view.RatioLayout>
+        <ImageView android:layout_gravity="center" android:id="@+id/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_50dp" android:src="@mipmap/empty_my_nft"/>
+    </LinearLayout>
+</RelativeLayout>

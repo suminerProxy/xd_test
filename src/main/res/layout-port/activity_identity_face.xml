@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/toyger_circle_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.aliyun.identity.platform.camera.CameraSurfaceView android:id="@+id/cameraSurfaceView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/identity_face_page_left_right_margin" android:layout_marginRight="@dimen/identity_face_page_left_right_margin"/>
+        <com.aliyun.identity.face.ui.widget.RectMaskView android:id="@+id/identity_rect_mask_view" android:layout_width="match_parent" android:layout_height="match_parent" android:src="#ffffff" app:rectRoundCx="20dp"/>
+        <Button android:id="@+id/identity_face_btn_close" android:background="@mipmap/identity_face_img_close" android:layout_width="@dimen/identity_cmmon_close_button_size" android:layout_height="@dimen/identity_cmmon_close_button_size" android:layout_marginLeft="20dp" android:layout_marginTop="30dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/identity_face_page_left_right_margin" android:layout_marginTop="@dimen/identity_face_page_top_margin" android:layout_marginRight="@dimen/identity_face_page_left_right_margin">
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/identity_face_page_comm_tips_height" android:layout_marginBottom="@dimen/identity_face_page_comm_tips_bottom_margin" android:text="@string/face_comm_tips_text"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="20sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/messageCode" android:background="@drawable/rect_round_shape" android:layout_width="match_parent" android:layout_height="@dimen/identity_face_page_message_code_height" android:text="@string/face_init_text"/>
+                <ImageView android:id="@+id/identity_face_img_rect" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/identity_face_img_rect" android:scaleType="fitXY" android:alpha="0"/>
+            </FrameLayout>
+        </LinearLayout>
+        <com.aliyun.identity.face.ui.IdentityScanFrameView android:id="@+id/identity_face_id_scan_frame" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.aliyun.identity.platform.IdentityAlertOverlay android:id="@+id/identity_face_alert_overlay" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

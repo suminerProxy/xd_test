@@ -1,0 +1,10 @@
+{
+	"OCR_Type": 1,
+	"Dct_MinN": 5,
+	"Dct_MaxN": 10,
+	"Dct_Conf": 0.05,
+	"Dct_MaxWHR": 40,
+	"TopK_Num": 0,
+	"TopK_Type": 2,
+	"XNN_Mem": 40
+}

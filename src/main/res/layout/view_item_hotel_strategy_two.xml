@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_12dp_white" android:paddingLeft="@dimen/dimen_sw_20dp" android:paddingTop="@dimen/dimen_sw_20dp" android:paddingRight="@dimen/dimen_sw_20dp" android:paddingBottom="@dimen/dimen_sw_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dimen_sw_18sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="入住指南" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textSize="@dimen/dimen_sw_13sp" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/tv_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_sw_16dp" android:text="酒店办理入住时间是每日14:00后，办理离店时间是每日12:00前"/>
+        <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/dimen_sw_12dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/layoutPhone" android:paddingTop="@dimen/dimen_sw_11dp" android:paddingBottom="@dimen/dimen_sw_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dimen_sw_14sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:id="@+id/tv_PhoneNum" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/dimen_sw_10sp" android:textColor="@color/abc_ic_voice_search_api_material" android:background="@drawable/border_line_40dp_c8" android:paddingLeft="@dimen/dimen_sw_5dp" android:paddingRight="@dimen/dimen_sw_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_4dp" android:text="联系商家"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/p_c" android:background="@drawable/shap_4dp_f8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_sw_10dp">
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/abc_ic_ab_back_material" android:gravity="center" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:layout_marginTop="@dimen/dimen_sw_9dp" android:layout_marginRight="@dimen/dimen_sw_15dp" android:layout_marginBottom="@dimen/dimen_sw_9dp" android:text="7月7日" android:layout_marginHorizontal="@dimen/dimen_sw_15dp" android:layout_marginVertical="@dimen/dimen_sw_9dp"/>
+    </FrameLayout>
+</LinearLayout>

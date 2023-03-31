@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.taihebase.activity.widget.indicator.AutoHideInkPageIndicator xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" app:animationDuration="300" app:currentPageIndicatorColor="@color/abc_dialog_material_background" app:dotDiameter="@dimen/dimen_sw_6dp" app:dotGap="@dimen/dimen_sw_6dp" app:pageIndicatorColor="@color/abc_ic_voice_search_api_material"/>

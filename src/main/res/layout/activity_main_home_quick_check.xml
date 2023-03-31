@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="end|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/quick_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_sw_20dp" android:src="@drawable/hone_icon_cheking" android:contentDescription="@string/app_name" android:layout_marginEnd="@dimen/dimen_sw_20dp"/>
+</FrameLayout>

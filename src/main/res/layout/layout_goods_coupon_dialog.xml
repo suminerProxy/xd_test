@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/radius_6dp_white_top" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="55dp">
+        <Button android:textSize="15sp" android:textColor="@color/abc_ic_voice_search_api_material" android:id="@+id/btn_select_city_cancel" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" style="@style/btnBorderlessStyle"/>
+        <Button android:textSize="15sp" android:textColor="#333333" android:id="@+id/btn_select_city_ok" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" android:layout_alignParentRight="true" style="@style/btnBorderlessStyle"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.showstartfans.activity.view.wheel.WheelView android:layout_gravity="center_vertical" android:id="@+id/wheelView_coupon" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

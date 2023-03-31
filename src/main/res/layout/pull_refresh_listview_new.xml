@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.soli.pullupdownrefresh.PullRefreshLayout android:id="@+id/pullRefreshLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/confirmContainer">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ListView android:id="@+id/listView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:divider="@null" android:dividerHeight="0dp"/>
+        </FrameLayout>
+    </com.soli.pullupdownrefresh.PullRefreshLayout>
+    <FrameLayout android:id="@+id/confirmContainer" android:background="@color/abc_textfield_default_mtrl_alpha" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/dimen_sw_15sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/confirm" android:background="@drawable/shape_40dp_red_2" android:paddingTop="@dimen/dimen_sw_12dp" android:paddingBottom="@dimen/dimen_sw_12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_sw_15dp" android:layout_marginTop="@dimen/dimen_sw_20dp" android:layout_marginRight="@dimen/dimen_sw_15dp" android:layout_marginBottom="@dimen/dimen_sw_20dp" android:text="确认" android:layout_alignParentBottom="true" android:layout_marginHorizontal="@dimen/dimen_sw_15dp" android:layout_marginVertical="@dimen/dimen_sw_20dp" android:paddingVertical="@dimen/dimen_sw_12dp"/>
+    </FrameLayout>
+</RelativeLayout>

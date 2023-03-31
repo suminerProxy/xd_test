@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/share_p" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/share_vi" android:background="#1c1c1c" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/select_t" android:paddingLeft="24dp" android:paddingRight="24dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:text="直播观众"/>
+        <View android:background="#4f4f4f" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="0.3dp"/>
+        <com.taihebase.activity.view.LoadMoreRecyclerView android:id="@+id/audience_list" android:paddingTop="15dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:overScrollMode="never"/>
+    </LinearLayout>
+</LinearLayout>
